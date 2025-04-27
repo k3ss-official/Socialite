@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Parisien | French Café & Bistro</title>
+    <meta name="description" content="Bistro Parisien offers authentic French cuisine, pastries, and coffee in an elegant Parisian-inspired setting with outdoor seating and a relaxed atmosphere.">
+    <meta name="keywords" content="french bistro, parisian cafe, french cuisine, french pastries, authentic french food, croissants, espresso, outdoor seating">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B91C1C',
+                        secondary: '#1E3A8A',
+                        accent: '#FCD34D',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Cormorant Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display font-bold text-primary">
+                Bistro Parisien
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-dark hover:text-primary focus:outline-none focus:text-primary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-dark hover:text-primary transition-colors duration-300">Accueil</a>
+                <a href="#about" class="text-dark hover:text-primary transition-colors duration-300">À Propos</a>
+                <a href="#menu" class="text-dark hover:text-primary transition-colors duration-300">Menu</a>
+                <a href="#patisserie" class="text-dark hover:text-primary transition-colors duration-300">Pâtisserie</a>
+                <a href="#gallery" class="text-dark hover:text-primary transition-colors duration-300">Galerie</a>
+                <a href="#contact" class="text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Réservation</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-dark/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-white">Authentic <span class="text-accent">French</span> Cuisine</h1>
+                <p class="text-lg text-gray-200 mb-8">Experience the charm of Paris with our authentic French bistro cuisine, artisanal pastries, and exceptional coffee in an elegant setting.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#menu" class="bg-primary text-white text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Our Menu</a>
+                    <a href="#reservation" class="bg-white text-primary text-center px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-300 font-medium">Make a Reservation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Authentic Cuisine</h3>
+                    <p class="text-gray-600">Our menu features traditional French dishes prepared with authentic techniques and the finest ingredients imported from France.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bread-slice text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Fresh Pastries</h3>
+                    <p class="text-gray-600">Our in-house pâtisserie creates fresh croissants, pain au chocolat, and other French pastries daily using traditional recipes.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wine-glass-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Curated Wines</h3>
+                    <p class="text-gray-600">Enjoy our selection of fine French wines, carefully chosen to complement our menu and enhance your dining experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Notre Histoire</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the story behind our authentic French bistro and our passion for bringing a taste of Paris to your neighborhood.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bistro Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">A Taste of Paris</h3>
+                    <p class="text-gray-600 mb-6">Bistro Parisien was founded in 2018 by Chef Jean-Pierre Dubois, who spent over 20 years working in renowned restaurants throughout France before bringing his expertise and passion to our city. Born and raised in the heart of Paris, Chef Dubois learned the art of French cooking from his grandmother, whose recipes still inspire many of our signature dishes today.</p>
+                    <p class="text-gray-600 mb-6">Our bistro is designed to capture the essence of a traditional Parisian café, from the elegant décor and comfortable seating to the warm, inviting atmosphere that encourages guests to linger over coffee and conversation. Every detail, from the imported French tiles to the vintage posters adorning our walls, has been carefully selected to transport you to the streets of Paris.</p>
+                    <p class="text-gray-600 mb-6">At Bistro Parisien, we believe that French cuisine is not just about food—it's about a way of life that celebrates quality ingredients, meticulous preparation, and the joy of sharing a meal with loved ones. We're committed to providing an authentic French dining experience that honors these traditions while welcoming guests from all backgrounds to discover the pleasures of French gastronomy.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>French-Trained Chef</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Imported Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Traditional Recipes</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Authentic Atmosphere</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Notre Menu</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our selection of authentic French dishes, prepared with traditional techniques and the finest ingredients.</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-white rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Entrées</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Plats Principaux</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Desserts</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Boissons</button>
+            </div>
+            
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Menu Category 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Entrées</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Soupe à l'Oignon</h4>
+                            <span class="text-primary font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600">Traditional French onion soup with caramelized onions, rich beef broth, crusty baguette, and melted Gruyère cheese.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Escargots de Bourgogne</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Burgundy snails baked in garlic and parsley butter, served with crusty bread for dipping.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Salade Niçoise</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">Classic salad with tuna, hard-boiled eggs, olives, green beans, potatoes, and tomatoes in a Dijon vinaigrette.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Pâté de Campagne</h4>
+                            <span class="text-primary font-bold">$13</span>
+                        </div>
+                        <p class="text-gray-600">Rustic country-style pâté with cornichons, Dijon mustard, and toasted baguette slices.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Plats Principaux</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Coq au Vin</h4>
+                            <span class="text-primary font-bold">$26</span>
+                        </div>
+                        <p class="text-gray-600">Chicken braised with red wine, mushrooms, bacon, and pearl onions. Served with buttered potatoes.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Boeuf Bourguignon</h4>
+                            <span class="text-primary font-bold">$28</span>
+                        </div>
+                        <p class="text-gray-600">Slow-cooked beef stew with red wine, carrots, mushrooms, and pearl onions. Served with mashed potatoes.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Ratatouille</h4>
+                            <span class="text-primary font-bold">$22</span>
+                        </div>
+                        <p class="text-gray-600">Traditional Provençal vegetable stew with eggplant, zucchini, bell peppers, and tomatoes. Served with crusty bread.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Steak Frites</h4>
+                            <span class="text-primary font-bold">$30</span>
+                        </div>
+                        <p class="text-gray-600">Pan-seared ribeye steak with herb butter, served with crispy French fries and mixed greens.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Desserts</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Crème Brûlée</h4>
+                            <span class="text-primary font-bold">$10</span>
+                        </div>
+                        <p class="text-gray-600">Classic vanilla custard with a caramelized sugar crust, garnished with fresh berries.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Tarte Tatin</h4>
+                            <span class="text-primary font-bold">$11</span>
+                        </div>
+                        <p class="text-gray-600">Upside-down caramelized apple tart served warm with a scoop of vanilla ice cream.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Mousse au Chocolat</h4>
+                            <span class="text-primary font-bold">$9</span>
+                        </div>
+                        <p class="text-gray-600">Rich and airy chocolate mousse made with premium dark chocolate, topped with whipped cream.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Profiteroles</h4>
+                            <span class="text-primary font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600">Choux pastry puffs filled with vanilla ice cream, drizzled with warm chocolate sauce.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 4 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Boissons</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Café</h4>
+                            <span class="text-primary font-bold">$4</span>
+                        </div>
+                        <p class="text-gray-600">Espresso, Café au Lait, Cappuccino, or French Press coffee made with premium beans.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Vin Rouge</h4>
+                            <span class="text-primary font-bold">$10-15</span>
+                        </div>
+                        <p class="text-gray-600">Selection of French red wines by the glass, including Bordeaux, Burgundy, and Côtes du Rhône.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Vin Blanc</h4>
+                            <span class="text-primary font-bold">$10-15</span>
+                        </div>
+                        <p class="text-gray-600">Selection of French white wines by the glass, including Chablis, Sancerre, and Alsace varieties.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Champagne</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">Glass of premium French champagne, perfect for celebrations or as an apéritif.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Download Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patisserie Section -->
+    <section id="patisserie" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Pâtisserie</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Indulge in our selection of authentic French pastries, baked fresh daily using traditional recipes and techniques.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pastry 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1526&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Croissants</h3>
+                        <p class="text-gray-600 mb-4">Our buttery, flaky croissants are made using traditional French techniques, with layers of dough folded with premium European butter. Available plain or filled with chocolate, almond paste, or ham and cheese.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$3.50 - $5.50</span>
+                            <span class="text-gray-500">Available daily</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pastry 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558326567-98166332163b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1526&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Macarons</h3>
+                        <p class="text-gray-600 mb-4">Delicate almond meringue cookies with a crisp exterior and chewy interior, filled with flavored ganache or buttercream. Available in a variety of flavors including vanilla, chocolate, pistachio, raspberry, and lemon.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$2.50 each | $14 for 6</span>
+                            <span class="text-gray-500">Available daily</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pastry 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Tarte aux Fruits</h3>
+                        <p class="text-gray-600 mb-4">Buttery shortcrust pastry filled with vanilla pastry cream and topped with seasonal fresh fruits and a light glaze. Available as individual tarts or larger sizes to share.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$6.50 individual | $28 large</span>
+                            <span class="text-gray-500">Available weekends</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View All Pastries</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Galerie</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our bistro, dishes, and the authentic French atmosphere that awaits you.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bistro Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bistro Exterior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1526&q=80" alt="Croissants" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Coq au Vin" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1558326567-98166332163b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1526&q=80" alt="Macarons" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Fruit Tart" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1490&q=80" alt="French Onion Soup" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Steak Frites" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Témoignages</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our valued guests about their experiences at Bistro Parisien.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As someone who lived in Paris for several years, I'm always skeptical of French restaurants abroad, but Bistro Parisien truly delivers an authentic experience. The coq au vin transported me right back to a little bistro in the Marais district. The atmosphere is charming, with just the right balance of elegance and coziness. The staff is knowledgeable about the menu and wine pairings, and the service strikes that perfect French note of being attentive without hovering. Don't miss the crème brûlée—it's absolute perfection!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sophie Martin</h4>
+                            <p class="text-gray-500 text-sm">Regular Guest</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I celebrated my anniversary at Bistro Parisien, and it was the perfect choice for a special occasion. The escargots were buttery and garlicky—exactly as they should be—and the boeuf bourguignon was rich and flavorful. The wine list is impressive, with excellent French options at various price points. What really made our evening special was the attention to detail; when they learned it was our anniversary, they brought us complimentary champagne and a beautiful dessert with 'Joyeux Anniversaire' written in chocolate. The romantic ambiance and exceptional food made for an unforgettable evening."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Thomas Laurent</h4>
+                            <p class="text-gray-500 text-sm">Special Occasion Diner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I stop by Bistro Parisien at least once a week for their incredible pastries and coffee. The croissants are the real deal—buttery, flaky, and with that perfect honeycomb interior that's so hard to find outside of France. Their café au lait is the perfect accompaniment, and I love sitting at one of the outdoor tables with a good book, pretending I'm on a Parisian sidewalk. The staff remembers regular customers and their preferences, which adds to the welcoming atmosphere. It's become my little slice of France in the neighborhood!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Claire Dubois</h4>
+                            <p class="text-gray-500 text-sm">Local Patron</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Réservation</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Reserve your table at Bistro Parisien for an authentic French dining experience.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-light rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Bistro Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Hours</h4>
+                            <p class="mb-1">Monday - Friday: 8:00 AM - 10:00 PM</p>
+                            <p class="mb-1">Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Contact</h4>
+                            <p class="mb-1"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> info@bistroparisien.com</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> 123 French Street, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Private Events</h4>
+                            <p class="mb-4">For private dining and events, please contact us directly by phone or email to discuss your requirements.</p>
+                            <a href="mailto:events@bistroparisien.com" class="text-accent hover:text-white transition-colors duration-300">events@bistroparisien.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7-8 People</option>
+                                        <option value="8+">9+ People (Call for Reservation)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="breakfast">Breakfast (8:00 AM - 11:00 AM)</option>
+                                        <option value="lunch">Lunch (11:30 AM - 2:30 PM)</option>
+                                        <option value="dinner">Dinner (5:30 PM - 9:30 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-700 mb-2">Occasion (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select an occasion</option>
+                                    <option value="regular">Regular Dining</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Meal</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any dietary restrictions or seating preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve Now</button>
+                            <p class="text-gray-500 text-sm mt-4 text-center">Reservations recommended for dinner and weekends. For same-day reservations, please call us directly.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Contact</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>123 French Street, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@bistroparisien.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+                                    <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 French Street, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display font-bold mb-4">Join Our Mailing List</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for updates on seasonal menus, special events, and exclusive offers.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-primary">Bistro Parisien</h3>
+                    <p class="text-gray-400 mb-4">An authentic French bistro offering traditional cuisine, artisanal pastries, and fine wines in an elegant Parisian-inspired setting.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors duration-300">Accueil</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors duration-300">À Propos</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-primary transition-colors duration-300">Menu</a></li>
+                        <li><a href="#patisserie" class="text-gray-400 hover:text-primary transition-colors duration-300">Pâtisserie</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-primary transition-colors duration-300">Galerie</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-primary transition-colors duration-300">Réservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-primary"></i> 123 French Street, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-primary"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-primary"></i> info@bistroparisien.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-primary"></i> Mon-Fri: 8AM-10PM, Sat-Sun: 9AM-11PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">We Offer</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Authentic French Cuisine</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Fresh Pastries Daily</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Fine Wine Selection</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Outdoor Seating</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Private Dining</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Catering Services</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Gift Certificates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Bistro Parisien. All rights reserved. | Designed by <a href="#" class="text-primary">Socialite System</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

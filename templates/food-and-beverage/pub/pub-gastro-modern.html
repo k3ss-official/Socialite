@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastro Pub | Modern British Cuisine</title>
+    <meta name="description" content="Gastro Pub offers elevated British cuisine with a modern twist, craft beers, and a sophisticated yet relaxed dining experience in a stylish gastropub setting.">
+    <meta name="keywords" content="gastropub, modern british cuisine, craft beer, fine dining pub, gastro pub, upscale pub food, british restaurant">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#334155',
+                        secondary: '#94A3B8',
+                        accent: '#F59E0B',
+                        dark: '#0F172A',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                        display: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display font-bold text-primary">
+                Gastro <span class="text-accent">Pub</span>
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-dark hover:text-primary focus:outline-none focus:text-primary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-dark hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#about" class="text-dark hover:text-primary transition-colors duration-300">About</a>
+                <a href="#menu" class="text-dark hover:text-primary transition-colors duration-300">Menu</a>
+                <a href="#drinks" class="text-dark hover:text-primary transition-colors duration-300">Drinks</a>
+                <a href="#events" class="text-dark hover:text-primary transition-colors duration-300">Events</a>
+                <a href="#gallery" class="text-dark hover:text-primary transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Book a Table</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');">
+        <div class="absolute inset-0 bg-dark/70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-white">Modern British Cuisine <span class="text-accent">Reimagined</span></h1>
+                <p class="text-lg text-gray-300 mb-8">Experience elevated pub classics and innovative seasonal dishes paired with craft beers and fine wines in our stylish gastropub setting.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#menu" class="bg-accent text-dark text-center px-8 py-3 rounded-md hover:bg-accent/90 transition-colors duration-300 font-medium">Explore Our Menu</a>
+                    <a href="#reservation" class="bg-white text-primary text-center px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-300 font-medium">Make a Reservation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Seasonal British Cuisine</h3>
+                    <p class="text-gray-600">Our menu celebrates the best of British produce with a modern twist, changing seasonally to showcase the freshest local ingredients.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-beer text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Craft Beer Selection</h3>
+                    <p class="text-gray-600">Enjoy our carefully curated selection of local and international craft beers, rotating guest taps, and exclusive brewery collaborations.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Weekly Events</h3>
+                    <p class="text-gray-600">From beer tastings and chef's table experiences to live music nights, there's always something happening at Gastro Pub.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover how Gastro Pub is redefining the British pub experience with exceptional food, drink, and hospitality.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1574096079513-d8259312b785?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pub Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">Elevating Pub Tradition</h3>
+                    <p class="text-gray-600 mb-6">Gastro Pub was founded in 2018 by Chef James Wilson and restaurateur Sarah Mitchell, who shared a vision of creating a space that honored the convivial spirit of the traditional British pub while elevating the food and drink experience to new heights.</p>
+                    <p class="text-gray-600 mb-6">Housed in a beautifully restored Victorian building, our gastropub combines original architectural features with contemporary design elements to create a space that feels both timeless and modern. The warm, inviting atmosphere encourages lingering over good food and conversation, just as pubs have done for centuries.</p>
+                    <p class="text-gray-600 mb-6">Our culinary approach is rooted in British tradition but not bound by it. Chef Wilson and his team take classic pub dishes and reimagine them with refined techniques, seasonal ingredients, and creative presentation. We work closely with local farmers, fishermen, and artisanal producers to source the finest ingredients, many of which are highlighted on our menu.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Locally Sourced Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Award-Winning Chef</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Craft Beer Specialists</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Seasonal Menu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Menu</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our seasonal menu featuring modern interpretations of British classics and innovative new dishes.</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-white rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Starters</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Mains</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Sunday Roast</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Sides</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Desserts</button>
+            </div>
+            
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Menu Category 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Starters</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Scotch Egg</h4>
+                            <span class="text-accent font-bold">£9.50</span>
+                        </div>
+                        <p class="text-gray-600">Free-range egg wrapped in Black Pudding and Cumberland sausage meat, panko crumbed and deep-fried. Served with house piccalilli and watercress.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Potted Cornish Crab</h4>
+                            <span class="text-accent font-bold">£12.00</span>
+                        </div>
+                        <p class="text-gray-600">Fresh Cornish crab meat with brown crab butter, lemon, and herbs. Served with sourdough toast and pickled cucumber.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Roasted Bone Marrow</h4>
+                            <span class="text-accent font-bold">£10.50</span>
+                        </div>
+                        <p class="text-gray-600">Roasted beef bone marrow with parsley, shallot and caper salad. Served with toasted sourdough and Maldon sea salt.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Heritage Beetroot Salad</h4>
+                            <span class="text-accent font-bold">£9.00</span>
+                        </div>
+                        <p class="text-gray-600">Roasted and pickled heritage beetroots with whipped goat's cheese, candied walnuts, and aged balsamic. (V)</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Mains</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Fish & Chips</h4>
+                            <span class="text-accent font-bold">£18.50</span>
+                        </div>
+                        <p class="text-gray-600">Beer-battered North Sea haddock with triple-cooked chips, crushed peas, tartare sauce, and charred lemon.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Steak & Ale Pie</h4>
+                            <span class="text-accent font-bold">£17.00</span>
+                        </div>
+                        <p class="text-gray-600">Slow-braised beef and ale pie with a suet pastry lid. Served with buttered mash, seasonal greens, and rich gravy.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Lamb Rump</h4>
+                            <span class="text-accent font-bold">£24.00</span>
+                        </div>
+                        <p class="text-gray-600">Roasted Romney Marsh lamb rump with dauphinoise potatoes, braised red cabbage, and rosemary jus.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Wild Mushroom Wellington</h4>
+                            <span class="text-accent font-bold">£16.50</span>
+                        </div>
+                        <p class="text-gray-600">Wild mushrooms, spinach, and Stilton wrapped in puff pastry. Served with roasted root vegetables and vegetable gravy. (V)</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Sunday Roast</h3>
+                    <p class="text-gray-600 mb-4 italic">Available Sundays from 12pm until sold out. All roasts served with Yorkshire pudding, roast potatoes, seasonal vegetables, cauliflower cheese, and proper gravy.</p>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Roast Sirloin of Beef</h4>
+                            <span class="text-accent font-bold">£22.00</span>
+                        </div>
+                        <p class="text-gray-600">28-day aged Hereford beef sirloin, served medium-rare with horseradish cream.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Roast Pork Belly</h4>
+                            <span class="text-accent font-bold">£19.50</span>
+                        </div>
+                        <p class="text-gray-600">Slow-roasted Gloucester Old Spot pork belly with crackling and apple sauce.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Nut Roast</h4>
+                            <span class="text-accent font-bold">£17.00</span>
+                        </div>
+                        <p class="text-gray-600">Mixed nut and vegetable roast with vegetarian gravy. (V)</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 4 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Desserts</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Sticky Toffee Pudding</h4>
+                            <span class="text-accent font-bold">£8.50</span>
+                        </div>
+                        <p class="text-gray-600">Date sponge with toffee sauce and clotted cream ice cream.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Dark Chocolate Delice</h4>
+                            <span class="text-accent font-bold">£9.00</span>
+                        </div>
+                        <p class="text-gray-600">Rich chocolate delice with salted caramel, hazelnut praline, and crème fraîche.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Lemon Posset</h4>
+                            <span class="text-accent font-bold">£8.00</span>
+                        </div>
+                        <p class="text-gray-600">Creamy lemon posset with shortbread and fresh berries.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">British Cheese Board</h4>
+                            <span class="text-accent font-bold">£12.50</span>
+                        </div>
+                        <p class="text-gray-600">Selection of British cheeses with chutney, grapes, celery, and artisan crackers.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Download Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section id="drinks" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Drinks Selection</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our carefully curated selection of craft beers, fine wines, and signature cocktails.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Drinks Category 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Craft Beer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-4">Craft Beer</h3>
+                        <p class="text-gray-600 mb-6">Our rotating selection features the best local breweries alongside international craft favorites. From hoppy IPAs to rich stouts and refreshing lagers, there's something for every beer lover.</p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span>House IPA (5.6%)</span>
+                                <span class="text-accent font-bold">£5.80</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Session Pale Ale (4.2%)</span>
+                                <span class="text-accent font-bold">£5.50</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Milk Stout (6.0%)</span>
+                                <span class="text-accent font-bold">£6.20</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Rotating Guest Taps</span>
+                                <span class="text-accent font-bold">from £5.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Drinks Category 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wine" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-4">Wine Selection</h3>
+                        <p class="text-gray-600 mb-6">Our sommelier has curated a diverse wine list featuring old world classics and exciting new producers. Available by the glass or bottle to complement your meal.</p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span>House White</span>
+                                <span class="text-accent font-bold">£6.50 / £24</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>House Red</span>
+                                <span class="text-accent font-bold">£6.50 / £24</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Prosecco</span>
+                                <span class="text-accent font-bold">£7.50 / £32</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Premium Selection</span>
+                                <span class="text-accent font-bold">from £8.50 / £36</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Drinks Category 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Cocktails" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-4">Signature Cocktails</h3>
+                        <p class="text-gray-600 mb-6">Our bar team creates classic cocktails with a British twist, using premium spirits, house-made syrups, and seasonal ingredients.</p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span>English Garden (Gin, Elderflower, Cucumber)</span>
+                                <span class="text-accent font-bold">£10.50</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Blackberry Bramble (Gin, Blackberry, Lemon)</span>
+                                <span class="text-accent font-bold">£11.00</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Whisky Sour (Scotch, Lemon, Egg White)</span>
+                                <span class="text-accent font-bold">£12.00</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Seasonal Specials</span>
+                                <span class="text-accent font-bold">from £10.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Drinks Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Events & Experiences</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us for special events, tastings, and unique dining experiences throughout the year.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Beer Tasting" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-white text-sm font-bold px-4 py-2">
+                            MONTHLY
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Craft Beer Tasting</h3>
+                        <p class="text-gray-600 mb-4">Join our head beer sommelier for a guided tasting of six craft beers paired with small plates from our kitchen. Learn about brewing processes, beer styles, and food pairing principles.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">£35 per person</span>
+                            <a href="#reservation" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Book
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chef's Table" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-white text-sm font-bold px-4 py-2">
+                            WEEKLY
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Chef's Table Experience</h3>
+                        <p class="text-gray-600 mb-4">An intimate dining experience for up to 8 guests at our kitchen counter. Enjoy a special tasting menu with wine pairings while interacting with our chefs as they prepare your meal.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">£75 per person</span>
+                            <a href="#reservation" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Book
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Live Music" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-white text-sm font-bold px-4 py-2">
+                            THURSDAYS
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Live Acoustic Sessions</h3>
+                        <p class="text-gray-600 mb-4">Every Thursday evening, we host local musicians performing acoustic sets in our bar area. Enjoy the perfect backdrop to your evening with great food, drinks, and live music.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">8:00 PM - 10:00 PM</span>
+                            <a href="#reservation" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Gallery</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our gastropub, dishes, and the warm, inviting atmosphere.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Pub Exterior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1574096079513-d8259312b785?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pub Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Craft Beer" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Sunday Roast" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Cocktail" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Beer Tasting" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Food Dish" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chef's Table" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our valued customers about their dining experiences at Gastro Pub.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The Sunday roast at Gastro Pub is simply outstanding. The beef was perfectly cooked, the Yorkshire puddings were huge and crispy, and the vegetables were seasoned beautifully. The atmosphere strikes the perfect balance between traditional pub comfort and modern dining elegance. The staff were knowledgeable about the beer selection and helped me find the perfect pint to complement my meal. A new favorite!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">James Thompson</h4>
+                            <p class="text-gray-500 text-sm">Sunday Regular</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"We attended the Chef's Table experience for my partner's birthday and it was exceptional. Watching the chefs prepare our food while explaining their techniques and ingredient choices added a wonderful dimension to the meal. Each course was beautifully presented and delicious, and the wine pairings were spot on. The staff made the evening feel special and personal. Worth every penny for a memorable celebration."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emma Clarke</h4>
+                            <p class="text-gray-500 text-sm">Special Occasion Diner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a craft beer enthusiast, I was impressed by the selection at Gastro Pub. Their rotating guest taps always feature interesting breweries, and the staff are genuinely knowledgeable about what they're serving. The food menu complements the beer perfectly - the Scotch egg is a must-try! The monthly beer tasting events are excellent value and a great way to discover new favorites. This place has successfully elevated pub food and drink without losing the welcoming pub atmosphere."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Roberts</h4>
+                            <p class="text-gray-500 text-sm">Beer Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Make a Reservation</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Reserve your table at Gastro Pub for an exceptional dining experience.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-accent">Pub Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-accent">Hours</h4>
+                            <p class="mb-1 text-gray-300">Monday - Thursday: 12:00 PM - 11:00 PM</p>
+                            <p class="mb-1 text-gray-300">Friday - Saturday: 12:00 PM - 12:00 AM</p>
+                            <p class="mb-1 text-gray-300">Sunday: 12:00 PM - 10:00 PM</p>
+                            <p class="mb-1 text-gray-300">Kitchen closes one hour before closing</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-accent">Contact</h4>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-envelope mr-2"></i> info@gastropub.com</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-map-marker-alt mr-2"></i> 123 High Street, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-accent">Private Events</h4>
+                            <p class="mb-4 text-gray-300">We offer private dining options for special occasions and events. Our private room can accommodate up to 20 guests for a seated dinner or 30 for a standing reception.</p>
+                            <a href="mailto:events@gastropub.com" class="text-accent hover:text-secondary transition-colors duration-300">events@gastropub.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5-6 People</option>
+                                        <option value="6">7-8 People</option>
+                                        <option value="7">9+ People (Call for Availability)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="13:30">1:30 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="14:30">2:30 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-700 mb-2">Occasion/Event (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select an occasion</option>
+                                    <option value="regular">Regular Dining</option>
+                                    <option value="sunday">Sunday Roast</option>
+                                    <option value="beer">Beer Tasting</option>
+                                    <option value="chef">Chef's Table</option>
+                                    <option value="music">Live Music Night</option>
+                                    <option value="birthday">Birthday Celebration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="dietary" class="block text-gray-700 mb-2">Dietary Requirements</label>
+                                <textarea id="dietary" rows="2" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Please note any allergies or dietary requirements"></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="2" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any special requests or seating preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-accent">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Address</h4>
+                                    <p class="text-gray-300">123 High Street, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Phone</h4>
+                                    <p class="text-gray-300">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Email</h4>
+                                    <p class="text-gray-300">info@gastropub.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Hours</h4>
+                                    <p class="text-gray-300">Monday - Thursday: 12:00 PM - 11:00 PM</p>
+                                    <p class="text-gray-300">Friday - Saturday: 12:00 PM - 12:00 AM</p>
+                                    <p class="text-gray-300">Sunday: 12:00 PM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4 text-accent">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 High Street, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display font-bold mb-4">Join Our Mailing List</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for updates on special events, seasonal menus, and exclusive offers.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-accent">Gastro Pub</h3>
+                    <p class="text-gray-400 mb-4">A modern British gastropub offering elevated pub classics, craft beers, and a warm, inviting atmosphere. Join us for exceptional food, drink, and hospitality.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-accent transition-colors duration-300">Menu</a></li>
+                        <li><a href="#drinks" class="text-gray-400 hover:text-accent transition-colors duration-300">Drinks</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-accent transition-colors duration-300">Events</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-accent transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-accent transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 High Street, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-accent"></i> info@gastropub.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-accent"></i> Mon-Thu: 12PM-11PM, Fri-Sat: 12PM-12AM, Sun: 12PM-10PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Our Suppliers</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300">Riverside Farm Meats</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300">Coastal Seafood Co.</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300">Green Valley Produce</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300">Artisan Bakery</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300">Local Craft Brewery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Gastro Pub. All rights reserved. | Designed by <a href="#" class="text-accent">Socialite System</a></p>
+                <p class="text-gray-500 text-sm mt-2">Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

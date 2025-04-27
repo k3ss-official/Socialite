@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Sunshine | Breakfast & Brunch Café</title>
+    <meta name="description" content="Café Sunshine offers a bright, cheerful atmosphere with delicious breakfast and brunch options, specialty coffee, and freshly baked pastries.">
+    <meta name="keywords" content="breakfast café, brunch spot, morning coffee, specialty coffee, pastries, breakfast menu, sunny café, family-friendly café">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F59E0B',
+                        secondary: '#FBBF24',
+                        accent: '#D97706',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                        display: ['Pacifico', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display text-primary">
+                Café Sunshine
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-dark hover:text-primary focus:outline-none focus:text-primary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-dark hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#about" class="text-dark hover:text-primary transition-colors duration-300">About</a>
+                <a href="#menu" class="text-dark hover:text-primary transition-colors duration-300">Menu</a>
+                <a href="#specials" class="text-dark hover:text-primary transition-colors duration-300">Daily Specials</a>
+                <a href="#gallery" class="text-dark hover:text-primary transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Book a Table</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-dark/40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display leading-tight mb-6 text-white">Start Your Day with <span class="text-secondary">Sunshine</span></h1>
+                <p class="text-lg text-gray-200 mb-8">Enjoy delicious breakfast and brunch in a bright, cheerful atmosphere with specialty coffee and freshly baked pastries.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#menu" class="bg-primary text-white text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Our Menu</a>
+                    <a href="#reservation" class="bg-white text-primary text-center px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-300 font-medium">Make a Reservation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-coffee text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Specialty Coffee</h3>
+                    <p class="text-gray-600">Our baristas craft the perfect cup using ethically sourced beans from around the world, with options for every coffee lover.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bread-slice text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Fresh Pastries</h3>
+                    <p class="text-gray-600">Our in-house bakery produces fresh pastries, breads, and treats daily, using traditional recipes and premium ingredients.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-egg text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">All-Day Breakfast</h3>
+                    <p class="text-gray-600">Enjoy our breakfast and brunch favorites all day long, from classic egg dishes to creative seasonal specialties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover how Café Sunshine became the neighborhood's favorite breakfast and brunch destination.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Café Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">A Bright Beginning</h3>
+                    <p class="text-gray-600 mb-6">Café Sunshine was founded in 2018 by Sarah and Michael Thompson, a husband-and-wife team with a passion for great food and warm hospitality. After years of working in various restaurants and cafés, they dreamed of creating a space where people could start their day with delicious food, exceptional coffee, and a genuinely cheerful atmosphere.</p>
+                    <p class="text-gray-600 mb-6">The name "Sunshine" was inspired by Sarah's grandmother, who always said that breakfast should be as bright and uplifting as the morning sun. This philosophy guides everything we do, from our sunny yellow decor to our focus on fresh, vibrant ingredients that energize and delight.</p>
+                    <p class="text-gray-600 mb-6">What began as a small, 20-seat café has grown into a beloved community hub, where neighbors meet for morning catch-ups, friends gather for weekend brunches, and families create special memories together. We've expanded our space and menu over the years, but our commitment to quality, warmth, and that special "sunshine" feeling remains unchanged.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Locally Sourced</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Family Owned</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Scratch Kitchen</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Community Focused</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Our Menu</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our selection of breakfast and brunch favorites, specialty coffee, and freshly baked goods.</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-white rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Breakfast</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Brunch</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Bakery</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Coffee & Drinks</button>
+            </div>
+            
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Menu Category 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Breakfast Favorites</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Sunshine Breakfast</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Two eggs any style, crispy bacon or sausage, home fries, toast, and a side of fresh fruit.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Avocado Toast</h4>
+                            <span class="text-primary font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600">Sourdough toast topped with smashed avocado, cherry tomatoes, microgreens, and a poached egg.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Buttermilk Pancakes</h4>
+                            <span class="text-primary font-bold">$11</span>
+                        </div>
+                        <p class="text-gray-600">Fluffy buttermilk pancakes served with maple syrup, whipped butter, and your choice of toppings.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Veggie Omelette</h4>
+                            <span class="text-primary font-bold">$13</span>
+                        </div>
+                        <p class="text-gray-600">Three-egg omelette with spinach, bell peppers, mushrooms, onions, and cheddar cheese. Served with toast and home fries.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Brunch Specialties</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Eggs Benedict</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">English muffin topped with Canadian bacon, poached eggs, and hollandaise sauce. Served with home fries.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Breakfast Burrito</h4>
+                            <span class="text-primary font-bold">$13</span>
+                        </div>
+                        <p class="text-gray-600">Flour tortilla filled with scrambled eggs, black beans, chorizo, cheese, and pico de gallo. Served with salsa and sour cream.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">French Toast</h4>
+                            <span class="text-primary font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600">Thick-cut brioche bread dipped in cinnamon-vanilla batter, grilled to perfection, and topped with fresh berries and powdered sugar.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Chicken & Waffles</h4>
+                            <span class="text-primary font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600">Crispy fried chicken breast served on a Belgian waffle with maple syrup and hot honey butter.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Bakery & Pastries</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Croissant</h4>
+                            <span class="text-primary font-bold">$4</span>
+                        </div>
+                        <p class="text-gray-600">Buttery, flaky croissant baked fresh daily. Available plain or filled with chocolate, almond, or ham & cheese.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Muffins</h4>
+                            <span class="text-primary font-bold">$3.50</span>
+                        </div>
+                        <p class="text-gray-600">Freshly baked muffins in various flavors including blueberry, banana nut, chocolate chip, and seasonal specials.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Cinnamon Roll</h4>
+                            <span class="text-primary font-bold">$5</span>
+                        </div>
+                        <p class="text-gray-600">Soft, swirled cinnamon roll topped with cream cheese frosting. Baked fresh every morning.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Scones</h4>
+                            <span class="text-primary font-bold">$3.75</span>
+                        </div>
+                        <p class="text-gray-600">Buttery, crumbly scones in flavors like cranberry orange, lemon blueberry, and cheddar herb.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 4 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Coffee & Drinks</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Drip Coffee</h4>
+                            <span class="text-primary font-bold">$3.50</span>
+                        </div>
+                        <p class="text-gray-600">Our signature house blend, medium roast with notes of chocolate and caramel. Available hot or iced.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Latte</h4>
+                            <span class="text-primary font-bold">$4.75</span>
+                        </div>
+                        <p class="text-gray-600">Espresso with steamed milk and a light layer of foam. Available with various flavor syrups.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Fresh Juice</h4>
+                            <span class="text-primary font-bold">$5</span>
+                        </div>
+                        <p class="text-gray-600">Freshly squeezed orange, grapefruit, or green juice (kale, cucumber, apple, and lemon).</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Mimosa</h4>
+                            <span class="text-primary font-bold">$9</span>
+                        </div>
+                        <p class="text-gray-600">Sparkling wine with fresh orange juice. Available weekends only. (Must be 21+)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Download Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Specials Section -->
+    <section id="specials" class="py-20 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Daily Specials</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Check out our rotating daily specials, featuring seasonal ingredients and creative twists on breakfast classics.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Special 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Monday</h3>
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">BREAKFAST</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Berry Stuffed French Toast</h4>
+                        <p class="text-gray-600 mb-4">Brioche French toast stuffed with cream cheese and mixed berries, topped with berry compote and maple syrup.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$14</span>
+                            <span class="text-gray-500">Available until 2 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Special 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1608039790095-5031320264d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Wednesday</h3>
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">BRUNCH</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Smoked Salmon Benedict</h4>
+                        <p class="text-gray-600 mb-4">English muffin topped with smoked salmon, poached eggs, dill hollandaise, and capers. Served with home fries.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$16</span>
+                            <span class="text-gray-500">Available until 2 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Special 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600326145359-3a44909d1a39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Weekend</h3>
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">SPECIAL</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Brunch Board for Two</h4>
+                        <p class="text-gray-600 mb-4">A shareable board with mini pancakes, scrambled eggs, bacon, sausage, fresh fruit, pastries, and two mimosas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$32</span>
+                            <span class="text-gray-500">Saturday & Sunday Only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">Our daily specials change regularly based on seasonal ingredients and chef's inspiration.</p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View This Week's Specials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Gallery</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our café, dishes, and the warm, sunny atmosphere that awaits you.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Café Exterior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Café Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="French Toast" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1608039790095-5031320264d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Eggs Benedict" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1579888944880-d98341245702?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Coffee" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600326145359-3a44909d1a39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Brunch Spread" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pastries" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1449&q=80" alt="Pancakes" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our valued customers about their experiences at Café Sunshine.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Café Sunshine is my go-to spot for breakfast! The avocado toast is absolutely perfect—the bread is always fresh and the eggs are cooked just right. The staff is incredibly friendly and remembers my usual order. I love the bright, cheerful atmosphere, especially on gloomy mornings when I need a pick-me-up. Their coffee is also excellent, and I appreciate that they source beans from local roasters. This place truly lives up to its name!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emma Johnson</h4>
+                            <p class="text-gray-500 text-sm">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I brought my family here for a weekend brunch and we were all impressed! The menu has something for everyone—my kids loved the buttermilk pancakes while I enjoyed the eggs benedict. The pastries are clearly made in-house and taste amazing. We sat on the patio, which was perfect for a sunny morning. The service was attentive without being intrusive, and they were very accommodating with my daughter's food allergies. We'll definitely be back for our next family breakfast outing!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Family Visitor</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As someone who works remotely, I'm always looking for cafés with good food, reliable Wi-Fi, and a pleasant atmosphere for working. Café Sunshine checks all these boxes! Their breakfast burrito is my favorite—filling without being too heavy. The staff is understanding about people who stay for a few hours, and they never rush you to leave. The coffee refills are prompt, and they have plenty of outlets for charging devices. It's become my unofficial office a couple of mornings each week!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Kim</h4>
+                            <p class="text-gray-500 text-sm">Remote Worker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Make a Reservation</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Reserve your table at Café Sunshine for a delightful breakfast or brunch experience.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-light rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Café Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Hours</h4>
+                            <p class="mb-1">Monday - Friday: 7:00 AM - 3:00 PM</p>
+                            <p class="mb-1">Saturday - Sunday: 8:00 AM - 4:00 PM</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Contact</h4>
+                            <p class="mb-1"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> info@cafesunshine.com</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> 123 Sunny Street, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Group Bookings</h4>
+                            <p class="mb-4">For parties of 8 or more, please contact us directly by phone or email to arrange your reservation.</p>
+                            <a href="mailto:events@cafesunshine.com" class="text-secondary hover:text-white transition-colors duration-300">events@cafesunshine.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7 People</option>
+                                        <option value="8+">8+ People (Call for Reservation)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="7:00">7:00 AM (Weekdays Only)</option>
+                                        <option value="7:30">7:30 AM (Weekdays Only)</option>
+                                        <option value="8:00">8:00 AM</option>
+                                        <option value="8:30">8:30 AM</option>
+                                        <option value="9:00">9:00 AM</option>
+                                        <option value="9:30">9:30 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="10:30">10:30 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="1:00">1:00 PM</option>
+                                        <option value="1:30">1:30 PM</option>
+                                        <option value="2:00">2:00 PM</option>
+                                        <option value="2:30">2:30 PM (Weekends Only)</option>
+                                        <option value="3:00">3:00 PM (Weekends Only)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any dietary restrictions, high chair needs, or seating preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve Now</button>
+                            <p class="text-gray-500 text-sm mt-4 text-center">Reservations recommended for weekends and groups. Walk-ins always welcome based on availability.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>123 Sunny Street, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@cafesunshine.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p>Monday - Friday: 7:00 AM - 3:00 PM</p>
+                                    <p>Saturday - Sunday: 8:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Sunny Street, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display mb-4">Join Our Sunshine Club</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for updates on seasonal specials, events, and exclusive offers.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display mb-4 text-primary">Café Sunshine</h3>
+                    <p class="text-gray-400 mb-4">A bright and cheerful café offering delicious breakfast and brunch options, specialty coffee, and freshly baked pastries in a warm, welcoming atmosphere.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors duration-300">About</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-primary transition-colors duration-300">Menu</a></li>
+                        <li><a href="#specials" class="text-gray-400 hover:text-primary transition-colors duration-300">Daily Specials</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-primary transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-primary transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-primary"></i> 123 Sunny Street, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-primary"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-primary"></i> info@cafesunshine.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-primary"></i> Mon-Fri: 7AM-3PM, Sat-Sun: 8AM-4PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">We Offer</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> All-Day Breakfast</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Weekend Brunch</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Specialty Coffee</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Fresh Pastries</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Catering Services</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Free Wi-Fi</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Outdoor Seating</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Café Sunshine. All rights reserved. | Designed by <a href="#" class="text-primary">Socialite System</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

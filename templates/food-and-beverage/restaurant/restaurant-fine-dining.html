@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Elegance | Fine Dining Restaurant</title>
+    <meta name="description" content="Experience exquisite fine dining at Bistro Elegance. Enjoy our chef-crafted seasonal menu, elegant atmosphere, and impeccable service for a memorable culinary journey.">
+    <meta name="keywords" content="fine dining, upscale restaurant, gourmet cuisine, chef-crafted menu, elegant dining, wine pairing, culinary experience">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A1A1A',
+                        secondary: '#4A4A4A',
+                        accent: '#D4AF37',
+                        dark: '#0F0F0F',
+                        light: '#F9F9F9'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-primary bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-primary">
+        <nav class="container mx-auto px-4 py-6 flex items-center justify-between">
+            <a href="#" class="text-2xl font-serif font-bold text-accent">
+                Bistro Elegance
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-light hover:text-accent focus:outline-none focus:text-accent" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Home</a>
+                <a href="#about" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">About</a>
+                <a href="#menu" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Menu</a>
+                <a href="#chef" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Chef</a>
+                <a href="#gallery" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Gallery</a>
+                <a href="#contact" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Contact</a>
+                <a href="#reservation" class="bg-accent text-primary px-6 py-2 uppercase text-sm tracking-wider hover:bg-accent/90 transition-colors duration-300">Reserve a Table</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-32 md:py-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-primary/70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6 text-light">A Culinary Journey of Elegance</h1>
+                <p class="text-lg text-gray-300 mb-8">Experience the art of fine dining with our chef-crafted seasonal menu, elegant atmosphere, and impeccable service.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#menu" class="bg-accent text-primary text-center px-8 py-3 uppercase tracking-wider hover:bg-accent/90 transition-colors duration-300">Explore Menu</a>
+                    <a href="#reservation" class="bg-transparent text-light border border-light text-center px-8 py-3 uppercase tracking-wider hover:bg-white/10 transition-colors duration-300">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Seasonal Cuisine</h3>
+                    <p class="text-gray-600">Our menu changes with the seasons, featuring the freshest local and sustainable ingredients.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wine-glass-alt text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Curated Wine List</h3>
+                    <p class="text-gray-600">An extensive selection of fine wines carefully chosen to complement our culinary creations.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-concierge-bell text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Impeccable Service</h3>
+                    <p class="text-gray-600">Our attentive staff ensures a memorable dining experience with personalized service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the passion and philosophy behind Bistro Elegance, where culinary artistry meets elegant dining.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Elegant Restaurant Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">A Commitment to Excellence</h3>
+                    <p class="text-gray-600 mb-6">Founded in 2015, Bistro Elegance was born from a vision to create a dining experience that celebrates the art of fine cuisine. Our restaurant combines classic culinary techniques with contemporary innovation, resulting in dishes that are both familiar and surprising.</p>
+                    <p class="text-gray-600 mb-6">We believe that exceptional dining is about more than just food—it's about creating moments of joy and connection. Our elegant yet comfortable atmosphere provides the perfect backdrop for celebrations, romantic dinners, and business meetings alike.</p>
+                    <p class="text-gray-600 mb-6">At Bistro Elegance, we are committed to sustainability and supporting local producers. We carefully select our ingredients from trusted farmers and suppliers who share our values of quality and environmental responsibility.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Locally Sourced</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Seasonal Menu</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Award-Winning Chef</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Sustainable Practices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Menu</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our seasonal menu featuring chef-crafted dishes made with the finest ingredients.</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-white uppercase text-sm tracking-wider rounded-none">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-primary uppercase text-sm tracking-wider rounded-none border border-primary hover:bg-primary/5 transition-colors duration-300">Starters</button>
+                <button class="px-6 py-2 m-2 bg-light text-primary uppercase text-sm tracking-wider rounded-none border border-primary hover:bg-primary/5 transition-colors duration-300">Main Courses</button>
+                <button class="px-6 py-2 m-2 bg-light text-primary uppercase text-sm tracking-wider rounded-none border border-primary hover:bg-primary/5 transition-colors duration-300">Desserts</button>
+                <button class="px-6 py-2 m-2 bg-light text-primary uppercase text-sm tracking-wider rounded-none border border-primary hover:bg-primary/5 transition-colors duration-300">Wine List</button>
+            </div>
+            
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Left Column -->
+                <div>
+                    <h3 class="text-2xl font-serif font-bold mb-8 text-center">Starters</h3>
+                    
+                    <!-- Menu Item 1 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Seared Scallops</h4>
+                            <span class="text-accent font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Pan-seared sea scallops, cauliflower purée, crispy pancetta, micro herbs</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">GF</span>
+                            <span class="text-xs text-gray-500">Chef's Recommendation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 2 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Foie Gras Terrine</h4>
+                            <span class="text-accent font-bold">$22</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">House-made terrine, brioche toast, fig jam, pickled vegetables</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500">Pairs with Sauternes</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 3 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Heirloom Tomato Salad</h4>
+                            <span class="text-accent font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Local heirloom tomatoes, burrata, basil oil, aged balsamic, sea salt</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">V</span>
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">GF</span>
+                            <span class="text-xs text-gray-500">Seasonal</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-serif font-bold mb-8 mt-12 text-center">Main Courses</h3>
+                    
+                    <!-- Menu Item 4 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Filet Mignon</h4>
+                            <span class="text-accent font-bold">$42</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">8oz grass-fed beef, truffle mashed potatoes, seasonal vegetables, red wine reduction</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">GF</span>
+                            <span class="text-xs text-gray-500">Pairs with Cabernet Sauvignon</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 5 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Pan-Seared Duck Breast</h4>
+                            <span class="text-accent font-bold">$36</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Maple-glazed duck breast, wild rice pilaf, roasted root vegetables, cherry gastrique</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">GF</span>
+                            <span class="text-xs text-gray-500">Chef's Recommendation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div>
+                    <!-- Menu Item 6 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Wild Mushroom Risotto</h4>
+                            <span class="text-accent font-bold">$28</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Arborio rice, seasonal wild mushrooms, truffle oil, aged parmesan, fresh herbs</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">V</span>
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">GF</span>
+                            <span class="text-xs text-gray-500">Pairs with Chardonnay</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 7 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Seared Sea Bass</h4>
+                            <span class="text-accent font-bold">$38</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Line-caught sea bass, saffron risotto, asparagus, lemon beurre blanc</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">GF</span>
+                            <span class="text-xs text-gray-500">Sustainable Seafood</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-serif font-bold mb-8 mt-12 text-center">Desserts</h3>
+                    
+                    <!-- Menu Item 8 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Chocolate Soufflé</h4>
+                            <span class="text-accent font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Valrhona chocolate, vanilla bean ice cream, salted caramel sauce (please allow 20 minutes)</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">V</span>
+                            <span class="text-xs text-gray-500">Chef's Recommendation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 9 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Crème Brûlée</h4>
+                            <span class="text-accent font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Classic vanilla bean custard, caramelized sugar crust, seasonal berries</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">V</span>
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">GF</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 10 -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-serif font-bold">Artisanal Cheese Plate</h4>
+                            <span class="text-accent font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Selection of fine cheeses, house-made preserves, honey, artisanal crackers</p>
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 border border-gray-300 px-2 py-1 mr-2">V</span>
+                            <span class="text-xs text-gray-500">Pairs with Port</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-500 mb-6 max-w-2xl mx-auto">Our menu changes seasonally to showcase the freshest ingredients. Please inform your server of any dietary restrictions or allergies.</p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 uppercase text-sm tracking-wider hover:bg-primary/90 transition-colors duration-300">Download Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section id="chef" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Meet Our Chef</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">The culinary vision and expertise behind Bistro Elegance's exceptional dining experience.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-12 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1377&q=80" alt="Chef Portrait" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-16">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Chef Alexandre Laurent</h3>
+                    <p class="text-accent uppercase tracking-wider text-sm mb-6">Executive Chef & Founder</p>
+                    <p class="text-gray-600 mb-6">With over 20 years of culinary experience in Michelin-starred restaurants across Europe and North America, Chef Alexandre Laurent brings his passion for innovative cuisine to Bistro Elegance.</p>
+                    <p class="text-gray-600 mb-6">Chef Laurent's culinary philosophy centers on respecting the integrity of ingredients while applying classic techniques with modern sensibilities. His commitment to sustainability and supporting local producers is reflected in every dish on our menu.</p>
+                    <p class="text-gray-600 mb-6">"My goal is to create memorable dining experiences that engage all the senses. Each dish tells a story—of the land, the season, and the hands that helped bring it to your table." — Chef Laurent</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-primary hover:text-accent transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-primary hover:text-accent transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-primary hover:text-accent transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Culinary Gallery</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">A visual journey through our elegant atmosphere and artfully crafted dishes.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gourmet Dish" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Elegant Dining Room" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wine Selection" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Dessert Plate" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chef Plating" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bar Area" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Seafood Dish" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Guest Experiences</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">What our guests say about their dining experience at Bistro Elegance.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-none shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"An extraordinary dining experience from start to finish. Chef Laurent's seasonal tasting menu was a revelation, with each course more impressive than the last. The wine pairings were impeccable, and the service was attentive yet unobtrusive. A perfect evening."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Elizabeth Morgan</h4>
+                            <p class="text-gray-500 text-sm">Food Critic</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-none shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"We celebrated our anniversary at Bistro Elegance and were thoroughly impressed. The filet mignon was cooked to perfection, and the chocolate soufflé was divine. The elegant atmosphere and exceptional service made our special occasion truly memorable."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Robert & Sarah Thompson</h4>
+                            <p class="text-gray-500 text-sm">Regular Guests</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-none shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"As someone with dietary restrictions, I'm often limited in fine dining establishments. Bistro Elegance went above and beyond to accommodate my needs, creating a custom vegetarian tasting menu that was innovative and delicious. The attention to detail and willingness to adapt was truly appreciated."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Jennifer Chen</h4>
+                            <p class="text-gray-500 text-sm">First-time Visitor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Reserve a Table</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Secure your dining experience at Bistro Elegance. Reservations are recommended to ensure availability.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-light rounded-none shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Dining Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Hours</h4>
+                            <p class="mb-1">Tuesday - Thursday: 5:30 PM - 10:00 PM</p>
+                            <p class="mb-1">Friday - Saturday: 5:30 PM - 11:00 PM</p>
+                            <p class="mb-1">Sunday: 5:00 PM - 9:00 PM</p>
+                            <p class="mb-1">Monday: Closed</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Contact</h4>
+                            <p class="mb-1"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> reservations@bistroelegance.com</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> 123 Gourmet Avenue, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Special Events</h4>
+                            <p class="mb-4">For private dining and special events, please contact our events team directly.</p>
+                            <a href="#" class="text-accent hover:text-accent/80 transition-colors duration-300">events@bistroelegance.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7+ People</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-700 mb-2">Occasion (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                    <option value="">Select an occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Dinner</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Any dietary restrictions, allergies, or special requests?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 uppercase tracking-wider hover:bg-primary/90 transition-colors duration-300">Request Reservation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-white rounded-none shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 uppercase tracking-wider hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-accent text-primary p-3 rounded-none mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>123 Gourmet Avenue, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-primary p-3 rounded-none mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-primary p-3 rounded-none mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@bistroelegance.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-primary p-3 rounded-none mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p>Tuesday - Thursday: 5:30 PM - 10:00 PM</p>
+                                    <p>Friday - Saturday: 5:30 PM - 11:00 PM</p>
+                                    <p>Sunday: 5:00 PM - 9:00 PM</p>
+                                    <p>Monday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent text-primary p-3 hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-accent text-primary p-3 hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-accent text-primary p-3 hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Gourmet Avenue, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Bistro Elegance</h3>
+                    <p class="text-gray-400 mb-4">A fine dining establishment offering seasonal cuisine, an extensive wine list, and an elegant atmosphere for memorable culinary experiences.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-accent transition-colors duration-300">Menu</a></li>
+                        <li><a href="#chef" class="text-gray-400 hover:text-accent transition-colors duration-300">Chef</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-accent transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-accent transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Gourmet Avenue, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i> info@bistroelegance.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2"></i> Tue-Thu: 5:30PM-10PM, Fri-Sat: 5:30PM-11PM, Sun: 5PM-9PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates on seasonal menus, special events, and exclusive offers.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your Email Address" class="px-4 py-2 w-full rounded-none focus:outline-none">
+                            <button type="submit" class="bg-accent text-primary px-4 py-2 rounded-none hover:bg-accent/90 transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Bistro Elegance. All rights reserved. | Designed by <a href="#" class="text-accent">Socialite System</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

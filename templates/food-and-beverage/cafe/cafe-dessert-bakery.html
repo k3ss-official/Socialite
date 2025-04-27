@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights | Artisan Dessert Café & Bakery</title>
+    <meta name="description" content="Indulge in handcrafted desserts, pastries, and specialty coffees at our artisan dessert café and bakery. Perfect for sweet cravings and special occasions.">
+    <meta name="keywords" content="dessert cafe, bakery, pastries, cakes, coffee, sweet treats, artisan desserts, specialty coffee">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E11D48', // Rose
+                        secondary: '#FB7185', // Lighter rose
+                        accent: '#FBBF24', // Amber
+                        dark: '#1F2937',
+                        light: '#FDF2F8' // Very light pink
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Great Vibes', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-display text-primary">
+                Sweet Delights
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-dark hover:text-primary focus:outline-none focus:text-primary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-dark hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#about" class="text-dark hover:text-primary transition-colors duration-300">About</a>
+                <a href="#desserts" class="text-dark hover:text-primary transition-colors duration-300">Desserts</a>
+                <a href="#pastries" class="text-dark hover:text-primary transition-colors duration-300">Pastries</a>
+                <a href="#coffee" class="text-dark hover:text-primary transition-colors duration-300">Coffee</a>
+                <a href="#gallery" class="text-dark hover:text-primary transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                <a href="#order" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Order Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center py-24 md:py-32" style="background-image: url('https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');">
+        <div class="absolute inset-0 bg-dark/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display leading-tight mb-6 text-white">Indulge in <span class="text-accent">Sweet</span> Perfection</h1>
+                <p class="text-lg text-gray-200 mb-8">Experience the artistry of handcrafted desserts, pastries, and specialty coffees at our charming dessert café and bakery.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#desserts" class="bg-primary text-white text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Menu</a>
+                    <a href="#order" class="bg-white text-primary text-center px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-300 font-medium">Order Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-birthday-cake text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Artisan Desserts</h3>
+                    <p class="text-gray-600">Our pastry chefs create exquisite desserts using premium ingredients, traditional techniques, and innovative flavor combinations.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-coffee text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Specialty Coffee</h3>
+                    <p class="text-gray-600">Enjoy our carefully selected coffee beans, expertly brewed by our baristas to perfectly complement our sweet creations.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-gift text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Custom Orders</h3>
+                    <p class="text-gray-600">From celebration cakes to catered events, we create personalized dessert experiences for your special occasions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Our Sweet Story</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the passion behind our dessert creations.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bakery Kitchen" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">Crafting Sweet Memories Since 2015</h3>
+                    <p class="text-gray-600 mb-6">Sweet Delights began as a small passion project by pastry chef Emma Laurent, who dreamed of creating a space where traditional baking techniques could meet innovative flavor profiles. After years of training in Paris and working in renowned patisseries around the world, Emma returned home to establish a dessert café that would celebrate the art of sweet indulgence.</p>
+                    <p class="text-gray-600 mb-6">What started as a tiny bakery with just three signature desserts has blossomed into a beloved destination for dessert enthusiasts. Today, our team of talented pastry chefs and baristas work together to create memorable experiences through our carefully crafted treats and warm, inviting atmosphere.</p>
+                    <p class="text-gray-600 mb-6">We believe in using only the finest ingredients—organic flour, European butter, premium chocolate, and seasonal fruits—to ensure that every bite delivers pure delight. Each dessert is handcrafted with meticulous attention to detail, balancing flavors, textures, and visual appeal to create edible works of art.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Premium Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Artisan Techniques</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Daily Fresh Baking</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Seasonal Specialties</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section id="desserts" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Signature Desserts</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Indulge in our collection of handcrafted desserts, each one a perfect balance of flavor, texture, and artistry.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Dessert 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Chocolate Hazelnut Entremet</h3>
+                        <p class="text-gray-600 mb-4">Layers of chocolate sponge, hazelnut praline crunch, and silky chocolate mousse, glazed with a mirror-like chocolate finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$8.50</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Chef's Favorite</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Vanilla Bean Panna Cotta</h3>
+                        <p class="text-gray-600 mb-4">Silky smooth vanilla custard topped with seasonal berry compote and delicate edible flowers.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$7.50</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Lemon Meringue Tart</h3>
+                        <p class="text-gray-600 mb-4">Buttery shortcrust pastry filled with tangy lemon curd and topped with a cloud of torched Italian meringue.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$7.95</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Bestseller</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 4 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551059429-99854e8cd219?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Pistachio Rose Macaron</h3>
+                        <p class="text-gray-600 mb-4">Delicate almond meringue shells filled with pistachio buttercream and a hint of rose water.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$3.50</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Elegant</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 5 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1587248720327-8eb72564be1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Tiramisu Verrine</h3>
+                        <p class="text-gray-600 mb-4">Layers of coffee-soaked ladyfingers, mascarpone cream, and cocoa powder served in an elegant glass.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$8.25</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Classic</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 6 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1541599188900-695c3d989c05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Salted Caramel Éclair</h3>
+                        <p class="text-gray-600 mb-4">Light choux pastry filled with salted caramel cream and topped with a caramel glaze and fleur de sel.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$6.75</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Sweet & Salty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Dessert Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pastries Section -->
+    <section id="pastries" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Fresh Pastries</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Start your day with our freshly baked pastries, made from scratch every morning.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Pastry Category 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Viennoiserie</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Classic Croissant</h4>
+                            <span class="text-primary font-bold">$3.95</span>
+                        </div>
+                        <p class="text-gray-600">Buttery, flaky layers with a golden exterior and soft, airy interior.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Pain au Chocolat</h4>
+                            <span class="text-primary font-bold">$4.50</span>
+                        </div>
+                        <p class="text-gray-600">Chocolate-filled croissant pastry with a rich, buttery texture.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Almond Croissant</h4>
+                            <span class="text-primary font-bold">$4.95</span>
+                        </div>
+                        <p class="text-gray-600">Twice-baked croissant filled with almond cream and topped with sliced almonds.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Morning Bun</h4>
+                            <span class="text-primary font-bold">$4.25</span>
+                        </div>
+                        <p class="text-gray-600">Croissant dough rolled with cinnamon sugar and baked to caramelized perfection.</p>
+                    </div>
+                </div>
+                
+                <!-- Pastry Category 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Sweet Pastries</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Fruit Danish</h4>
+                            <span class="text-primary font-bold">$4.75</span>
+                        </div>
+                        <p class="text-gray-600">Flaky pastry topped with vanilla custard and seasonal fresh fruits.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Cinnamon Roll</h4>
+                            <span class="text-primary font-bold">$4.95</span>
+                        </div>
+                        <p class="text-gray-600">Soft, swirled pastry with cinnamon filling and cream cheese frosting.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Kouign-Amann</h4>
+                            <span class="text-primary font-bold">$5.25</span>
+                        </div>
+                        <p class="text-gray-600">Breton cake with layers of buttery, caramelized pastry.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Raspberry Brioche</h4>
+                            <span class="text-primary font-bold">$4.50</span>
+                        </div>
+                        <p class="text-gray-600">Buttery brioche filled with raspberry jam and topped with streusel.</p>
+                    </div>
+                </div>
+                
+                <!-- Pastry Category 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Savory Options</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Ham & Cheese Croissant</h4>
+                            <span class="text-primary font-bold">$5.95</span>
+                        </div>
+                        <p class="text-gray-600">Buttery croissant filled with premium ham and Gruyère cheese.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Spinach & Feta Pastry</h4>
+                            <span class="text-primary font-bold">$5.75</span>
+                        </div>
+                        <p class="text-gray-600">Flaky pastry filled with sautéed spinach, feta cheese, and herbs.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Mushroom Tart</h4>
+                            <span class="text-primary font-bold">$6.25</span>
+                        </div>
+                        <p class="text-gray-600">Savory tart with wild mushrooms, caramelized onions, and goat cheese.</p>
+                    </div>
+                </div>
+                
+                <!-- Pastry Category 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Specialty Breads</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Sourdough Loaf</h4>
+                            <span class="text-primary font-bold">$7.50</span>
+                        </div>
+                        <p class="text-gray-600">Naturally fermented sourdough with a crisp crust and tender crumb.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Olive Focaccia</h4>
+                            <span class="text-primary font-bold">$6.95</span>
+                        </div>
+                        <p class="text-gray-600">Italian flatbread with olives, rosemary, and extra virgin olive oil.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Walnut Raisin Bread</h4>
+                            <span class="text-primary font-bold">$8.25</span>
+                        </div>
+                        <p class="text-gray-600">Hearty bread studded with toasted walnuts and sweet raisins.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">All pastries are baked fresh daily. Availability may vary.</p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Pastry Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Section -->
+    <section id="coffee" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Specialty Coffee</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Complement your sweet treats with our carefully crafted coffee beverages, made with premium beans and expert technique.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Coffee 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6 mx-auto">
+                        <i class="fas fa-coffee text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-center mb-4">Espresso Based</h3>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between">
+                            <span class="font-medium">Espresso</span>
+                            <span class="text-primary font-bold">$3.25</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Americano</span>
+                            <span class="text-primary font-bold">$3.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Cappuccino</span>
+                            <span class="text-primary font-bold">$4.50</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Latte</span>
+                            <span class="text-primary font-bold">$4.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Mocha</span>
+                            <span class="text-primary font-bold">$5.25</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Flat White</span>
+                            <span class="text-primary font-bold">$4.50</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Coffee 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6 mx-auto">
+                        <i class="fas fa-mug-hot text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-center mb-4">Specialty Drinks</h3>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between">
+                            <span class="font-medium">Vanilla Rose Latte</span>
+                            <span class="text-primary font-bold">$5.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Lavender Honey Latte</span>
+                            <span class="text-primary font-bold">$5.95</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Caramel Macchiato</span>
+                            <span class="text-primary font-bold">$5.50</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Hazelnut Praline Latte</span>
+                            <span class="text-primary font-bold">$5.95</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Cardamom Spice Latte</span>
+                            <span class="text-primary font-bold">$5.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Affogato</span>
+                            <span class="text-primary font-bold">$6.50</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Coffee 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6 mx-auto">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-center mb-4">Non-Coffee Options</h3>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between">
+                            <span class="font-medium">Chai Tea Latte</span>
+                            <span class="text-primary font-bold">$4.95</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Matcha Latte</span>
+                            <span class="text-primary font-bold">$5.25</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">London Fog</span>
+                            <span class="text-primary font-bold">$4.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Hot Chocolate</span>
+                            <span class="text-primary font-bold">$4.50</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Loose Leaf Tea</span>
+                            <span class="text-primary font-bold">$3.95</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Fresh Fruit Smoothie</span>
+                            <span class="text-primary font-bold">$6.25</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <div class="bg-primary/5 p-8 rounded-lg">
+                    <h3 class="text-2xl font-serif font-bold text-center mb-6">Our Coffee Story</h3>
+                    <p class="text-gray-600 text-center mb-8">We source our coffee beans from ethical, sustainable farms around the world. Our house blend is a medium roast with notes of chocolate, caramel, and a hint of citrus. Each batch is roasted in small quantities to ensure freshness and optimal flavor. Our baristas are trained in the art of coffee preparation, ensuring that every cup is crafted to perfection.</p>
+                    <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <h4 class="font-bold text-lg mb-2">Single Origin</h4>
+                            <p class="text-gray-600 mb-2">Rotating selection</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <h4 class="font-bold text-lg mb-2">Alternative Milks</h4>
+                            <p class="text-gray-600 mb-2">Oat, almond, soy</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <h4 class="font-bold text-lg mb-2">Flavor Syrups</h4>
+                            <p class="text-gray-600 mb-2">House-made, natural</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Sweet Gallery</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Feast your eyes on our delectable creations before you indulge your taste buds.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Chocolate Dessert" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Panna Cotta" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80" alt="Lemon Tart" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1551059429-99854e8cd219?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Macarons" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1587248720327-8eb72564be1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Tiramisu" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1541599188900-695c3d989c05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Éclair" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Croissants" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f8e1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Coffee" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Sweet Words</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear what our customers have to say about their experiences at Sweet Delights.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The desserts at Sweet Delights are absolutely divine! I tried the Chocolate Hazelnut Entremet and was blown away by the complexity of flavors and textures. The attention to detail is remarkable, and you can taste the quality of ingredients in every bite. The café itself is charming and cozy, perfect for catching up with friends or enjoying a quiet moment with a good book. The staff is knowledgeable and passionate about their craft. This has become my go-to spot for satisfying my sweet tooth!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sophia Martinez</h4>
+                            <p class="text-gray-500 text-sm">Dessert Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I ordered a custom birthday cake from Sweet Delights for my daughter's 10th birthday, and it exceeded all expectations! Not only was it visually stunning with delicate sugar flowers and perfect writing, but it was also the most delicious cake we've ever had. The vanilla sponge was light and moist, and the raspberry buttercream was the perfect balance of sweet and tart. Emma and her team were a pleasure to work with throughout the design process. They listened to our ideas and created something truly special. We'll definitely be back for future celebrations!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Thompson</h4>
+                            <p class="text-gray-500 text-sm">Satisfied Parent</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As someone with a gluten intolerance, finding delicious desserts can be challenging. Sweet Delights has been a game-changer for me! Their selection of gluten-free options is impressive, and you would never know they're gluten-free by the taste. The Vanilla Bean Panna Cotta is my absolute favorite—silky smooth and perfectly set with the most amazing seasonal berry compote. Their attention to dietary restrictions without compromising on flavor is commendable. The staff is always careful about cross-contamination, which gives me peace of mind. Plus, their coffee is some of the best in town!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emily Chen</h4>
+                            <p class="text-gray-500 text-sm">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Order Online</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Place your order for pickup or local delivery. Custom cake orders require 48 hours notice.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Ordering Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Hours</h4>
+                            <p class="mb-1">Monday - Friday: 7:00 AM - 7:00 PM</p>
+                            <p class="mb-1">Saturday: 8:00 AM - 8:00 PM</p>
+                            <p class="mb-1">Sunday: 8:00 AM - 6:00 PM</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Contact</h4>
+                            <p class="mb-1"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> orders@sweetdelights.com</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> 123 Bakery Street, Suite 101, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Order Policy</h4>
+                            <p class="mb-4">Same-day pickup orders must be placed at least 3 hours in advance. Custom cake orders require 48 hours notice. Delivery is available within a 5-mile radius for orders over $30.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="order-type" class="block text-gray-700 mb-2">Order Type</label>
+                                    <select id="order-type" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="pickup">Pickup</option>
+                                        <option value="delivery">Delivery</option>
+                                        <option value="custom">Custom Cake Order</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Pickup/Delivery Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Preferred Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="">Select a time</option>
+                                        <option value="morning">Morning (8:00 AM - 11:00 AM)</option>
+                                        <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
+                                        <option value="evening">Evening (4:00 PM - 7:00 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="order-details" class="block text-gray-700 mb-2">Order Details</label>
+                                <textarea id="order-details" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Please list the items you would like to order, including quantities. For custom cakes, please provide details about size, flavor, and any design preferences."></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-instructions" class="block text-gray-700 mb-2">Special Instructions</label>
+                                <textarea id="special-instructions" rows="2" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any allergies, dietary restrictions, or special requests?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Place Order</button>
+                            <p class="text-gray-500 text-sm mt-4 text-center">By placing an order, you agree to our terms and conditions.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>123 Bakery Street, Suite 101, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@sweetdelights.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+                                    <p>Saturday: 8:00 AM - 8:00 PM</p>
+                                    <p>Sunday: 8:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Bakery Street, Suite 101, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display mb-4">Join Our Sweet Community</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for seasonal menu updates, special offers, and baking tips.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display mb-4 text-accent">Sweet Delights</h3>
+                    <p class="text-gray-400 mb-4">Indulge in handcrafted desserts, pastries, and specialty coffees at our artisan dessert café and bakery. Perfect for sweet cravings and special occasions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="#desserts" class="text-gray-400 hover:text-accent transition-colors duration-300">Desserts</a></li>
+                        <li><a href="#pastries" class="text-gray-400 hover:text-accent transition-colors duration-300">Pastries</a></li>
+                        <li><a href="#coffee" class="text-gray-400 hover:text-accent transition-colors duration-300">Coffee</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-accent transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#order" class="text-gray-400 hover:text-accent transition-colors duration-300">Order Online</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 Bakery Street, Suite 101, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-accent"></i> info@sweetdelights.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-accent"></i> Mon-Fri: 7AM-7PM, Sat: 8AM-8PM, Sun: 8AM-6PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">We Offer</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Artisan Desserts</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Fresh Pastries</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Specialty Coffee</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Custom Cakes</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Catering Services</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Gluten-Free Options</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Local Delivery</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Sweet Delights Dessert Café & Bakery. All rights reserved. | Designed by <a href="#" class="text-accent">Socialite System</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

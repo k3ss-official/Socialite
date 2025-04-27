@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooftop Lounge | Skyline Views & Craft Cocktails</title>
+    <meta name="description" content="Experience breathtaking skyline views and premium craft cocktails at our sophisticated rooftop lounge. Perfect for sunset drinks, date nights, and special occasions.">
+    <meta name="keywords" content="rooftop bar, skyline views, craft cocktails, lounge, premium spirits, outdoor seating, city views, nightlife">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1', // Indigo
+                        secondary: '#4F46E5', // Darker indigo
+                        accent: '#F59E0B', // Amber
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="absolute top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display text-white">
+                Skyline <span class="text-accent">Rooftop</span>
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-white hover:text-accent focus:outline-none focus:text-accent" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-white hover:text-accent transition-colors duration-300">Home</a>
+                <a href="#about" class="text-white hover:text-accent transition-colors duration-300">About</a>
+                <a href="#cocktails" class="text-white hover:text-accent transition-colors duration-300">Cocktails</a>
+                <a href="#menu" class="text-white hover:text-accent transition-colors duration-300">Menu</a>
+                <a href="#events" class="text-white hover:text-accent transition-colors duration-300">Events</a>
+                <a href="#gallery" class="text-white hover:text-accent transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-accent text-dark px-6 py-2 rounded-md hover:bg-accent/90 transition-colors duration-300">Reserve</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1629&q=80');">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/50"></div>
+        <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display leading-tight mb-6 text-white">Elevate Your <span class="text-accent">Experience</span></h1>
+                <p class="text-lg text-gray-200 mb-8">Indulge in handcrafted cocktails and breathtaking skyline views from our sophisticated rooftop lounge. The perfect setting for unforgettable evenings.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#cocktails" class="bg-primary text-white text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Cocktails</a>
+                    <a href="#reservation" class="bg-accent text-dark text-center px-8 py-3 rounded-md hover:bg-accent/90 transition-colors duration-300 font-medium">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center">
+            <a href="#about" class="text-white animate-bounce">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cocktail text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Craft Cocktails</h3>
+                    <p class="text-gray-600">Our mixologists create innovative signature cocktails using premium spirits, fresh ingredients, and house-made infusions.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mountain text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Panoramic Views</h3>
+                    <p class="text-gray-600">Enjoy breathtaking 360° views of the city skyline from our stylish open-air rooftop lounge, perfect for sunset cocktails.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-music text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Ambient Atmosphere</h3>
+                    <p class="text-gray-600">Experience our carefully curated music selection and sophisticated ambiance, creating the perfect mood for your evening.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the vision behind Skyline Rooftop Lounge.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Rooftop Lounge" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">Elevating the Art of Hospitality</h3>
+                    <p class="text-gray-600 mb-6">Skyline Rooftop Lounge was born from a vision to create an extraordinary escape above the bustling city streets. Perched atop one of the city's most iconic buildings, our lounge offers a sophisticated retreat where guests can enjoy premium craft cocktails while taking in breathtaking panoramic views.</p>
+                    <p class="text-gray-600 mb-6">Founded in 2020 by acclaimed mixologist Elena Rodriguez and hospitality veteran James Chen, Skyline combines their passion for exceptional service, innovative mixology, and creating memorable experiences. The space was thoughtfully designed to blend contemporary elegance with comfortable luxury, featuring both intimate seating areas and communal spaces that encourage connection.</p>
+                    <p class="text-gray-600 mb-6">Our team of expert mixologists has curated a menu that showcases both reimagined classics and innovative signature creations, using premium spirits, house-made infusions, and the freshest seasonal ingredients. Complementing our cocktails is a selection of gourmet small plates designed to enhance your drinking experience.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Premium Spirits</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Expert Mixologists</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Seasonal Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Skyline Views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cocktails Section -->
+    <section id="cocktails" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Signature Cocktails</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our collection of handcrafted cocktails, expertly prepared by our talented mixologists.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cocktail 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Skyline Sunset</h3>
+                        <p class="text-gray-600 mb-4">Our signature cocktail featuring premium tequila, fresh grapefruit, lime, agave nectar, and a hint of rosemary, garnished with a smoked salt rim.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$16</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">House Favorite</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Urban Oasis</h3>
+                        <p class="text-gray-600 mb-4">A refreshing blend of gin, cucumber, elderflower liqueur, fresh lime, and mint, topped with a splash of soda water.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$15</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Refreshing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Midnight Manhattan</h3>
+                        <p class="text-gray-600 mb-4">Our elevated take on a classic, featuring small-batch bourbon, house-made sweet vermouth, aromatic bitters, and brandied cherries.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$17</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Classic</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 4 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Lavender Cloud</h3>
+                        <p class="text-gray-600 mb-4">A delicate blend of vodka, house-made lavender syrup, fresh lemon juice, and egg white, topped with a lavender mist.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$16</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Aromatic</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 5 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1587223962930-cb7f31384c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Smoked Maple Old Fashioned</h3>
+                        <p class="text-gray-600 mb-4">Rye whiskey, maple syrup, and aromatic bitters, served over a large ice cube and smoked with applewood chips.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$18</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Smoky</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 6 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1606924735276-fbb5b325e933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Passion Fruit Mojito</h3>
+                        <p class="text-gray-600 mb-4">White rum, fresh mint, lime juice, and passion fruit puree, topped with soda water and garnished with mint sprigs.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$15</span>
+                            <span class="bg-primary/10 text-primary text-xs font-bold py-1 px-2 rounded-full">Tropical</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Cocktail Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Small Plates</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Complement your cocktails with our selection of gourmet small plates, perfect for sharing.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Menu Category 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Shareable Starters</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Artisanal Cheese Board</h4>
+                            <span class="text-primary font-bold">$22</span>
+                        </div>
+                        <p class="text-gray-600">Selection of premium cheeses, seasonal fruits, honey, nuts, and artisanal crackers.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Truffle Fries</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Hand-cut fries tossed with truffle oil, parmesan, and fresh herbs, served with garlic aioli.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Spiced Olives</h4>
+                            <span class="text-primary font-bold">$10</span>
+                        </div>
+                        <p class="text-gray-600">Warm marinated olives with citrus, herbs, and chili flakes.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Roasted Garlic Hummus</h4>
+                            <span class="text-primary font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600">House-made hummus with roasted garlic, olive oil, and za'atar, served with warm pita and crudités.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Small Plates</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Tuna Tartare</h4>
+                            <span class="text-primary font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600">Fresh ahi tuna with avocado, cucumber, sesame, and ponzu sauce, served with wonton crisps.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Wagyu Beef Sliders</h4>
+                            <span class="text-primary font-bold">$20</span>
+                        </div>
+                        <p class="text-gray-600">Three mini Wagyu beef burgers with caramelized onions, aged cheddar, and truffle aioli.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Crispy Brussels Sprouts</h4>
+                            <span class="text-primary font-bold">$13</span>
+                        </div>
+                        <p class="text-gray-600">Fried Brussels sprouts tossed with honey, balsamic glaze, and crispy pancetta.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Lobster Mac & Cheese</h4>
+                            <span class="text-primary font-bold">$24</span>
+                        </div>
+                        <p class="text-gray-600">Creamy three-cheese sauce with chunks of Maine lobster, topped with herb breadcrumbs.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Flatbreads</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Prosciutto & Fig</h4>
+                            <span class="text-primary font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600">Thin-crust flatbread with fig jam, prosciutto, goat cheese, arugula, and balsamic glaze.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Wild Mushroom</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">Assorted wild mushrooms, fontina cheese, truffle oil, and fresh thyme.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Margherita</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">San Marzano tomato sauce, fresh mozzarella, basil, and extra virgin olive oil.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Desserts</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Chocolate Lava Cake</h4>
+                            <span class="text-primary font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600">Warm chocolate cake with a molten center, served with vanilla bean ice cream.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Crème Brûlée</h4>
+                            <span class="text-primary font-bold">$10</span>
+                        </div>
+                        <p class="text-gray-600">Classic vanilla bean custard with a caramelized sugar crust.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Seasonal Fruit Tart</h4>
+                            <span class="text-primary font-bold">$11</span>
+                        </div>
+                        <p class="text-gray-600">Buttery pastry shell filled with vanilla custard and topped with fresh seasonal fruits.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">Menu items may contain allergens. Please inform your server of any dietary restrictions.</p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Download Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Special Events</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us for our recurring events and special experiences at Skyline Rooftop Lounge.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6 mx-auto">
+                        <i class="fas fa-glass-cheers text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-center mb-4">Sunset Sessions</h3>
+                    <p class="text-gray-600 text-center mb-4">Every Friday & Saturday | 5:00 PM - 8:00 PM</p>
+                    <p class="text-gray-600 mb-6">Experience the magic of sunset with live DJ sets, special cocktail offerings, and the best views in the city. Enjoy our signature Sunset Spritz for $10 during happy hour.</p>
+                    <div class="flex justify-center">
+                        <a href="#reservation" class="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Reserve</a>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6 mx-auto">
+                        <i class="fas fa-cocktail text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-center mb-4">Mixology Masterclass</h3>
+                    <p class="text-gray-600 text-center mb-4">First Sunday of Every Month | 3:00 PM - 5:00 PM</p>
+                    <p class="text-gray-600 mb-6">Join our expert mixologists for an interactive cocktail-making class. Learn techniques, recipes, and the art of presentation while enjoying your creations. Includes three cocktails and small bites.</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Book Class</a>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6 mx-auto">
+                        <i class="fas fa-music text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-center mb-4">Jazz Under the Stars</h3>
+                    <p class="text-gray-600 text-center mb-4">Every Thursday | 7:00 PM - 10:00 PM</p>
+                    <p class="text-gray-600 mb-6">Enjoy the smooth sounds of live jazz while sipping craft cocktails under the night sky. Our resident jazz trio and special guest performers create the perfect ambiance for an elegant evening.</p>
+                    <div class="flex justify-center">
+                        <a href="#reservation" class="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Reserve</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <div class="bg-primary/5 p-8 rounded-lg">
+                    <h3 class="text-2xl font-serif font-bold text-center mb-6">Private Events</h3>
+                    <p class="text-gray-600 text-center mb-8">Host your next special occasion at Skyline Rooftop Lounge. Our stunning venue is perfect for corporate events, birthday celebrations, engagement parties, and more. Our events team will work with you to create a customized experience that exceeds your expectations.</p>
+                    <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <h4 class="font-bold text-lg mb-2">Full Venue Buyout</h4>
+                            <p class="text-gray-600 mb-2">Up to 150 guests</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <h4 class="font-bold text-lg mb-2">Private Lounge Area</h4>
+                            <p class="text-gray-600 mb-2">Up to 40 guests</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <h4 class="font-bold text-lg mb-2">VIP Section</h4>
+                            <p class="text-gray-600 mb-2">Up to 20 guests</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-8">
+                        <a href="#contact" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Inquire About Events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Gallery</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our rooftop lounge, cocktails, and the stunning views that await you.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1629&q=80" alt="Rooftop View" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Lounge Seating" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Cocktail" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Whiskey Cocktail" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Signature Cocktail" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1587223962930-cb7f31384c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80" alt="Old Fashioned" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1606924735276-fbb5b325e933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mojito" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Small Plates" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Guest Experiences</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear what our guests have to say about their experiences at Skyline Rooftop Lounge.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Skyline Rooftop Lounge is absolutely breathtaking! The panoramic views of the city are unmatched, especially at sunset. We tried several of their signature cocktails, and each one was expertly crafted and delicious. The Skyline Sunset was my favorite—perfectly balanced and refreshing. The staff was attentive and knowledgeable, offering great recommendations. The ambiance is sophisticated yet comfortable, making it perfect for our anniversary celebration. We'll definitely be back!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emily Johnson</h4>
+                            <p class="text-gray-500 text-sm">Visited April 2025</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I hosted a corporate event at Skyline Rooftop Lounge, and it exceeded all expectations. The events team was incredibly professional and helped customize every aspect of our experience. Our guests were impressed by the stunning views, exceptional service, and creative cocktails. The small plates menu was perfect for our networking event—the truffle fries and tuna tartare were particular favorites. Several attendees have already asked about hosting their own events here. Highly recommend for any special occasion!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Corporate Event Planner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The Jazz Under the Stars event at Skyline Rooftop Lounge is now my Thursday night tradition! The combination of live jazz, craft cocktails, and city views creates the perfect atmosphere to unwind after work. I've tried most of their signature cocktails by now, and they're consistently excellent—creative without being pretentious. The Midnight Manhattan is exceptional. The small plates menu offers great options to share, and the service is always friendly and attentive. It gets busy, so I recommend making a reservation, especially for sunset hours."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sophia Chen</h4>
+                            <p class="text-gray-500 text-sm">Regular Guest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Make a Reservation</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Reserve your table at Skyline Rooftop Lounge for an elevated experience.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Lounge Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Hours</h4>
+                            <p class="mb-1">Monday - Wednesday: 4:00 PM - 12:00 AM</p>
+                            <p class="mb-1">Thursday: 4:00 PM - 1:00 AM</p>
+                            <p class="mb-1">Friday - Saturday: 3:00 PM - 2:00 AM</p>
+                            <p class="mb-1">Sunday: 3:00 PM - 11:00 PM</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Contact</h4>
+                            <p class="mb-1"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> reservations@skylinerooftop.com</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> 123 Skyline Avenue, 15th Floor, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Reservation Policy</h4>
+                            <p class="mb-4">Reservations are recommended, especially for sunset hours and weekends. A credit card is required to hold reservations for parties of 6 or more. Please note that outdoor seating is subject to weather conditions.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7 People</option>
+                                        <option value="8">8 People</option>
+                                        <option value="9+">9+ People (Call for Reservation)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="16:00">4:00 PM</option>
+                                        <option value="16:30">4:30 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                        <option value="21:30">9:30 PM</option>
+                                        <option value="22:00">10:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-700 mb-2">Occasion (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select an occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="seating" class="block text-gray-700 mb-2">Seating Preference</label>
+                                <select id="seating" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select a seating area</option>
+                                    <option value="outdoor">Outdoor Terrace</option>
+                                    <option value="lounge">Lounge Seating</option>
+                                    <option value="bar">Bar Seating</option>
+                                    <option value="vip">VIP Section (Additional Fee)</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any special requests or preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve Now</button>
+                            <p class="text-gray-500 text-sm mt-4 text-center">Reservations recommended. For parties of 9 or more, please call us directly.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>123 Skyline Avenue, 15th Floor, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@skylinerooftop.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p>Monday - Wednesday: 4:00 PM - 12:00 AM</p>
+                                    <p>Thursday: 4:00 PM - 1:00 AM</p>
+                                    <p>Friday - Saturday: 3:00 PM - 2:00 AM</p>
+                                    <p>Sunday: 3:00 PM - 11:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Skyline Avenue, 15th Floor, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display mb-4">Join Our VIP List</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for updates on special events, seasonal cocktails, and exclusive offers.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display mb-4 text-accent">Skyline Rooftop</h3>
+                    <p class="text-gray-400 mb-4">Elevate your experience with handcrafted cocktails and breathtaking skyline views from our sophisticated rooftop lounge. The perfect setting for unforgettable evenings.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="#cocktails" class="text-gray-400 hover:text-accent transition-colors duration-300">Cocktails</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-accent transition-colors duration-300">Menu</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-accent transition-colors duration-300">Events</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-accent transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-accent transition-colors duration-300">Reservations</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 Skyline Avenue, 15th Floor, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-accent"></i> info@skylinerooftop.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-accent"></i> Mon-Wed: 4PM-12AM, Thu: 4PM-1AM, Fri-Sat: 3PM-2AM, Sun: 3PM-11PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">We Offer</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Craft Cocktails</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Panoramic Views</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Gourmet Small Plates</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Private Events</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Live Music</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Mixology Classes</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> VIP Experiences</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Skyline Rooftop Lounge. All rights reserved. | Designed by <a href="#" class="text-accent">Socialite System</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

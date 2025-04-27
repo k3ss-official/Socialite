@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Méditerranée | Mediterranean Restaurant</title>
+    <meta name="description" content="Bistro Méditerranée offers authentic Mediterranean cuisine with fresh ingredients, a warm atmosphere, and flavors from Greece, Italy, Spain, and the Middle East.">
+    <meta name="keywords" content="mediterranean restaurant, mediterranean cuisine, greek food, italian food, spanish tapas, middle eastern cuisine, healthy dining">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A5F7A',
+                        secondary: '#FFA62B',
+                        accent: '#E14658',
+                        dark: '#2C3E50',
+                        light: '#F9F7F3'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-serif font-bold text-primary">
+                Bistro <span class="text-secondary">Méditerranée</span>
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-dark hover:text-primary focus:outline-none focus:text-primary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-dark hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#about" class="text-dark hover:text-primary transition-colors duration-300">About</a>
+                <a href="#menu" class="text-dark hover:text-primary transition-colors duration-300">Menu</a>
+                <a href="#specialties" class="text-dark hover:text-primary transition-colors duration-300">Specialties</a>
+                <a href="#gallery" class="text-dark hover:text-primary transition-colors duration-300">Gallery</a>
+                <a href="#testimonials" class="text-dark hover:text-primary transition-colors duration-300">Testimonials</a>
+                <a href="#contact" class="text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Reserve a Table</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-dark/70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6 text-white">A Taste of the <span class="text-secondary">Mediterranean</span></h1>
+                <p class="text-lg text-gray-300 mb-8">Experience the vibrant flavors and warm hospitality of the Mediterranean coast. Fresh ingredients, traditional recipes, and a welcoming atmosphere await you.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#menu" class="bg-primary text-white text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Our Menu</a>
+                    <a href="#reservation" class="bg-secondary text-dark text-center px-8 py-3 rounded-md hover:bg-secondary/90 transition-colors duration-300 font-medium">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Fresh Ingredients</h3>
+                    <p class="text-gray-600">We source the freshest local and imported ingredients to create authentic Mediterranean flavors that transport you to the coastal regions.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Traditional Recipes</h3>
+                    <p class="text-gray-600">Our chefs prepare dishes using time-honored recipes from Greece, Italy, Spain, and the Middle East, preserving authentic flavors.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wine-glass-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Curated Wine Selection</h3>
+                    <p class="text-gray-600">Complement your meal with our carefully selected wines from Mediterranean vineyards, perfectly paired with our menu offerings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the passion and heritage behind Bistro Méditerranée, where culinary traditions from across the Mediterranean come together.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Restaurant Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">A Mediterranean Journey</h3>
+                    <p class="text-gray-600 mb-6">Bistro Méditerranée was born from Chef Maria Rossi's travels throughout the Mediterranean region. After years of studying under renowned chefs in Greece, Italy, Spain, and Lebanon, she returned home with a vision to create a dining experience that celebrates the diverse yet interconnected culinary traditions of the Mediterranean.</p>
+                    <p class="text-gray-600 mb-6">Opened in 2018, our restaurant quickly became known for its authentic flavors, warm hospitality, and commitment to quality. We believe in honoring traditional cooking methods while incorporating contemporary techniques to enhance the dining experience.</p>
+                    <p class="text-gray-600 mb-6">Our space was designed to evoke the feeling of a seaside Mediterranean bistro, with azure blue accents, natural wood, and terracotta elements creating a warm, inviting atmosphere. Whether you're enjoying a romantic dinner, family celebration, or casual lunch, we aim to transport you to the sun-drenched coasts of the Mediterranean.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Authentic Recipes</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Imported Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Seasonal Menu</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Sustainable Practices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Menu</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our selection of Mediterranean dishes, crafted with authentic recipes and the freshest ingredients.</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-white rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Appetizers</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Salads</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Main Courses</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Seafood</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Desserts</button>
+            </div>
+            
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Item 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1551326844-4df70f78d0e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80" alt="Mediterranean Mezze Platter" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Mediterranean Mezze Platter</h3>
+                            <span class="text-primary font-bold">$18.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A selection of traditional Mediterranean appetizers including hummus, baba ganoush, tzatziki, dolmas, feta, olives, and warm pita bread. Perfect for sharing.</p>
+                        <div class="flex items-center">
+                            <span class="bg-secondary/20 text-dark text-xs font-bold px-3 py-1 rounded-full mr-2">SIGNATURE</span>
+                            <span class="bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full">VEGETARIAN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1615802546478-9c6e4c9c9ab9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Seafood Paella" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Seafood Paella</h3>
+                            <span class="text-primary font-bold">$28.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Traditional Spanish rice dish with saffron, shrimp, mussels, clams, calamari, and fish, slow-cooked with bell peppers, tomatoes, and peas. Serves two.</p>
+                        <div class="flex items-center">
+                            <span class="bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full">CHEF'S SPECIAL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Greek Lamb Souvlaki" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Greek Lamb Souvlaki</h3>
+                            <span class="text-primary font-bold">$24.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Tender marinated lamb skewers grilled to perfection, served with Greek salad, tzatziki sauce, and warm pita bread. Includes a side of lemon-herb roasted potatoes.</p>
+                        <div class="flex items-center">
+                            <span class="bg-secondary/20 text-dark text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="py-20 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Chef's Specialties</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our chef's signature creations, showcasing the best of Mediterranean cuisine with a contemporary twist.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Specialty 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row">
+                    <div class="md:w-1/3 mb-6 md:mb-0 md:mr-6">
+                        <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Branzino" class="w-full h-40 object-cover rounded-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Whole Roasted Branzino</h3>
+                            <span class="text-primary font-bold">$32.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Mediterranean sea bass stuffed with lemon, herbs, and garlic, roasted to perfection and served with a white wine and caper sauce. Accompanied by roasted vegetables and herbed couscous.</p>
+                        <div class="flex items-center">
+                            <span class="bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full">CHEF'S SIGNATURE</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row">
+                    <div class="md:w-1/3 mb-6 md:mb-0 md:mr-6">
+                        <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Osso Buco" class="w-full h-40 object-cover rounded-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Osso Buco</h3>
+                            <span class="text-primary font-bold">$29.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Slow-braised veal shanks in a rich tomato, vegetable, and white wine sauce, garnished with gremolata. Served with creamy saffron risotto and seasonal vegetables.</p>
+                        <div class="flex items-center">
+                            <span class="bg-secondary/20 text-dark text-xs font-bold px-3 py-1 rounded-full">WEEKEND SPECIAL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row">
+                    <div class="md:w-1/3 mb-6 md:mb-0 md:mr-6">
+                        <img src="https://images.unsplash.com/photo-1616299915952-04c803388e5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Vegetable Moussaka" class="w-full h-40 object-cover rounded-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Vegetable Moussaka</h3>
+                            <span class="text-primary font-bold">$22.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Layers of roasted eggplant, zucchini, potatoes, and lentils topped with a creamy béchamel sauce and baked until golden. Served with a fresh Greek salad and tzatziki.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full">VEGETARIAN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row">
+                    <div class="md:w-1/3 mb-6 md:mb-0 md:mr-6">
+                        <img src="https://images.unsplash.com/photo-1541781550486-81b7a2328578?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Seafood Linguine" class="w-full h-40 object-cover rounded-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Seafood Linguine</h3>
+                            <span class="text-primary font-bold">$26.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Fresh linguine pasta tossed with shrimp, mussels, clams, and calamari in a light tomato and white wine sauce with garlic, chili flakes, and fresh herbs.</p>
+                        <div class="flex items-center">
+                            <span class="bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full">BESTSELLER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Gallery</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our restaurant, dishes, and the Mediterranean-inspired atmosphere.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mediterranean Dish" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Restaurant Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1551326844-4df70f78d0e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80" alt="Mezze Platter" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1615802546478-9c6e4c9c9ab9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Seafood Paella" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Lamb Souvlaki" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Branzino" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1616299915952-04c803388e5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Moussaka" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1559742811-822873691df8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Outdoor Dining" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our valued customers about their dining experiences at Bistro Méditerranée.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The most authentic Mediterranean cuisine I've had outside of Greece! The mezze platter was exceptional, with perfectly balanced flavors in every component. The service was attentive without being intrusive, and the atmosphere transported me back to my travels along the Mediterranean coast. A true gem in the city!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sophia Anderson</h4>
+                            <p class="text-gray-500 text-sm">Food Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"We celebrated our anniversary at Bistro Méditerranée and it was perfect. The seafood paella was incredible - packed with fresh seafood and perfectly cooked rice. The wine pairing suggested by our server complemented the meal beautifully. The romantic ambiance and excellent service made our special night even more memorable."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Johnson</h4>
+                            <p class="text-gray-500 text-sm">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As someone with dietary restrictions, I'm always nervous about dining out. The staff at Bistro Méditerranée was incredibly accommodating and knowledgeable about ingredients. The vegetable moussaka was delicious and satisfied my Mediterranean food cravings. The atmosphere is lovely and the outdoor seating area is perfect for summer evenings."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emma Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Vegetarian Diner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Reserve a Table</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Secure your spot at Bistro Méditerranée for a delightful Mediterranean dining experience.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-light rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-secondary">Restaurant Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-secondary">Hours</h4>
+                            <p class="mb-1 text-gray-300">Tuesday - Thursday: 5:00 PM - 10:00 PM</p>
+                            <p class="mb-1 text-gray-300">Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                            <p class="mb-1 text-gray-300">Sunday: 12:00 PM - 9:00 PM</p>
+                            <p class="mb-1 text-gray-300">Monday: Closed</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-secondary">Contact</h4>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-envelope mr-2"></i> reservations@bistromediterranee.com</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-map-marker-alt mr-2"></i> 123 Mediterranean Avenue, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-secondary">Private Events</h4>
+                            <p class="mb-4 text-gray-300">We offer private dining options for special occasions and events. Please contact our events team for more information.</p>
+                            <a href="mailto:events@bistromediterranee.com" class="text-secondary hover:text-accent transition-colors duration-300">events@bistromediterranee.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7-8 People</option>
+                                        <option value="8">9+ People (Call for Availability)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-700 mb-2">Occasion (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select an occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Dinner</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any dietary restrictions, seating preferences, or special requests?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve a Table</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-secondary">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-secondary text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-secondary">Address</h4>
+                                    <p class="text-gray-300">123 Mediterranean Avenue, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-secondary">Phone</h4>
+                                    <p class="text-gray-300">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-secondary">Email</h4>
+                                    <p class="text-gray-300">info@bistromediterranee.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-secondary">Hours</h4>
+                                    <p class="text-gray-300">Tuesday - Thursday: 5:00 PM - 10:00 PM</p>
+                                    <p class="text-gray-300">Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                                    <p class="text-gray-300">Sunday: 12:00 PM - 9:00 PM</p>
+                                    <p class="text-gray-300">Monday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4 text-secondary">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-secondary text-dark p-3 rounded-md hover:bg-secondary/90 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-secondary text-dark p-3 rounded-md hover:bg-secondary/90 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-secondary text-dark p-3 rounded-md hover:bg-secondary/90 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Mediterranean Avenue, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Bistro Méditerranée</h3>
+                    <p class="text-gray-400 mb-4">Experience the authentic flavors of the Mediterranean in a warm, inviting atmosphere. Our passion for traditional recipes and fresh ingredients creates a dining experience that transports you to the coastal regions of the Mediterranean.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-secondary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-secondary transition-colors duration-300">About</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-secondary transition-colors duration-300">Menu</a></li>
+                        <li><a href="#specialties" class="text-gray-400 hover:text-secondary transition-colors duration-300">Specialties</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-secondary transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-secondary transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-secondary transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-secondary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 Mediterranean Avenue, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-accent"></i> info@bistromediterranee.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-accent"></i> Tue-Thu: 5PM-10PM, Fri-Sat: 5PM-11PM, Sun: 12PM-9PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates on seasonal menus, special events, and exclusive offers.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your Email Address" class="px-4 py-2 w-full rounded-l-md focus:outline-none">
+                            <button type="submit" class="bg-secondary text-dark px-4 py-2 rounded-r-md hover:bg-secondary/90 transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Bistro Méditerranée. All rights reserved. | Designed by <a href="#" class="text-secondary">Socialite System</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions Sports Bar | Game Day Destination</title>
+    <meta name="description" content="Champions Sports Bar is the ultimate game day destination with multiple screens, craft beers, delicious pub food, and an energetic atmosphere for sports fans.">
+    <meta name="keywords" content="sports bar, game day, craft beer, pub food, watch sports, big screens, live games, sports viewing, fan zone">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF', // Deep blue
+                        secondary: '#15803D', // Forest green
+                        accent: '#FBBF24', // Athletic gold
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-dark shadow-md">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display text-accent flex items-center">
+                <i class="fas fa-trophy text-3xl mr-2"></i> CHAMPIONS
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-white hover:text-accent focus:outline-none focus:text-accent" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-white hover:text-accent transition-colors duration-300">Home</a>
+                <a href="#games" class="text-white hover:text-accent transition-colors duration-300">Games</a>
+                <a href="#menu" class="text-white hover:text-accent transition-colors duration-300">Menu</a>
+                <a href="#beers" class="text-white hover:text-accent transition-colors duration-300">Beers</a>
+                <a href="#events" class="text-white hover:text-accent transition-colors duration-300">Events</a>
+                <a href="#gallery" class="text-white hover:text-accent transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Reserve a Table</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1567337710282-00832b415979?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1630&q=80');">
+        <div class="absolute inset-0 bg-dark/80"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display leading-tight mb-6 text-white">THE ULTIMATE <span class="text-accent">GAME DAY</span> DESTINATION</h1>
+                <p class="text-lg text-gray-200 mb-8">30+ HD screens, craft beers on tap, delicious pub food, and the best atmosphere for sports fans. Never miss a moment of the action!</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#games" class="bg-primary text-white text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">TODAY'S GAMES</a>
+                    <a href="#reservation" class="bg-accent text-dark text-center px-8 py-3 rounded-md hover:bg-accent/90 transition-colors duration-300 font-medium">RESERVE A TABLE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tv text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-2">30+ HD SCREENS</h3>
+                    <p class="text-gray-600">Watch every game from any seat in the house with our strategically placed HD screens and premium sound system.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-beer text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-2">24 CRAFT BEERS</h3>
+                    <p class="text-gray-600">Choose from our rotating selection of 24 craft beers on tap, featuring local breweries and seasonal favorites.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hamburger text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-2">GAME DAY MENU</h3>
+                    <p class="text-gray-600">Enjoy our chef-crafted pub favorites, from loaded nachos and wings to gourmet burgers and hearty entrees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Schedule Section -->
+    <section id="games" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">TODAY'S GAMES</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Check out what's playing today on our screens. We show all major sporting events live!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Game Schedule Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-primary text-white text-sm font-bold py-1 px-3 rounded">FOOTBALL</span>
+                        <span class="text-gray-500">7:30 PM</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://via.placeholder.com/50" alt="Team Logo" class="w-12 h-12 mr-3">
+                            <span class="font-display font-bold text-lg">EAGLES</span>
+                        </div>
+                        <div class="text-center px-4">
+                            <span class="font-display text-xl">VS</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="font-display font-bold text-lg">COWBOYS</span>
+                            <img src="https://via.placeholder.com/50" alt="Team Logo" class="w-12 h-12 ml-3">
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-600">Main Bar Area - All Screens</p>
+                        <div class="mt-2 flex items-center">
+                            <span class="bg-accent/20 text-secondary text-xs font-bold py-1 px-2 rounded-full mr-2">SPECIAL</span>
+                            <span class="text-sm text-gray-600">$5 Draft Beers During Game</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game Schedule Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-secondary text-white text-sm font-bold py-1 px-3 rounded">BASKETBALL</span>
+                        <span class="text-gray-500">8:00 PM</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://via.placeholder.com/50" alt="Team Logo" class="w-12 h-12 mr-3">
+                            <span class="font-display font-bold text-lg">LAKERS</span>
+                        </div>
+                        <div class="text-center px-4">
+                            <span class="font-display text-xl">VS</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="font-display font-bold text-lg">CELTICS</span>
+                            <img src="https://via.placeholder.com/50" alt="Team Logo" class="w-12 h-12 ml-3">
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-600">Zone 2 - Screens 10-20</p>
+                        <div class="mt-2 flex items-center">
+                            <span class="bg-accent/20 text-secondary text-xs font-bold py-1 px-2 rounded-full mr-2">SPECIAL</span>
+                            <span class="text-sm text-gray-600">Half-Price Wings During Game</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game Schedule Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-accent">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-accent text-dark text-sm font-bold py-1 px-3 rounded">BASEBALL</span>
+                        <span class="text-gray-500">6:10 PM</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://via.placeholder.com/50" alt="Team Logo" class="w-12 h-12 mr-3">
+                            <span class="font-display font-bold text-lg">YANKEES</span>
+                        </div>
+                        <div class="text-center px-4">
+                            <span class="font-display text-xl">VS</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="font-display font-bold text-lg">RED SOX</span>
+                            <img src="https://via.placeholder.com/50" alt="Team Logo" class="w-12 h-12 ml-3">
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-600">Zone 3 - Screens 21-25</p>
+                        <div class="mt-2 flex items-center">
+                            <span class="bg-accent/20 text-secondary text-xs font-bold py-1 px-2 rounded-full mr-2">SPECIAL</span>
+                            <span class="text-sm text-gray-600">$10 Pitcher Special</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game Schedule Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-primary text-white text-sm font-bold py-1 px-3 rounded">HOCKEY</span>
+                        <span class="text-gray-500">7:00 PM</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://via.placeholder.com/50" alt="Team Logo" class="w-12 h-12 mr-3">
+                            <span class="font-display font-bold text-lg">BRUINS</span>
+                        </div>
+                        <div class="text-center px-4">
+                            <span class="font-display text-xl">VS</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="font-display font-bold text-lg">RANGERS</span>
+                            <img src="https://via.placeholder.com/50" alt="Team Logo" class="w-12 h-12 ml-3">
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-600">Zone 1 - Screens 5-9</p>
+                        <div class="mt-2 flex items-center">
+                            <span class="bg-accent/20 text-secondary text-xs font-bold py-1 px-2 rounded-full mr-2">SPECIAL</span>
+                            <span class="text-sm text-gray-600">$7 Signature Cocktails</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">VIEW FULL SCHEDULE</a>
+                <p class="text-gray-500 mt-4">Schedule subject to change. Please check our social media for the most up-to-date information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">GAME DAY MENU</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Fuel up with our chef-crafted pub favorites, perfect for sharing while watching the game.</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-white rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Starters</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Burgers</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Wings</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Entrees</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Sides</button>
+            </div>
+            
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Menu Category 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-display font-bold mb-6 text-primary">STARTERS</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">LOADED NACHOS</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Crispy tortilla chips topped with melted cheese, jalapeños, black beans, pico de gallo, guacamole, and sour cream. Add chicken or beef for $3.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">CHAMPION QUESADILLA</h4>
+                            <span class="text-primary font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600">Grilled flour tortilla filled with melted cheese, grilled peppers, and onions. Served with salsa and sour cream. Add chicken or steak for $3.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">MOZZARELLA STICKS</h4>
+                            <span class="text-primary font-bold">$10</span>
+                        </div>
+                        <p class="text-gray-600">Golden-fried mozzarella sticks served with marinara sauce.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">LOADED POTATO SKINS</h4>
+                            <span class="text-primary font-bold">$11</span>
+                        </div>
+                        <p class="text-gray-600">Crispy potato skins topped with melted cheddar, bacon bits, and green onions. Served with sour cream.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-display font-bold mb-6 text-primary">WINGS</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">TRADITIONAL WINGS</h4>
+                            <span class="text-primary font-bold">$14 / $24</span>
+                        </div>
+                        <p class="text-gray-600">Crispy bone-in wings tossed in your choice of sauce. Choose from Buffalo, BBQ, Honey Garlic, Lemon Pepper, or our signature Champions sauce. Served with celery and blue cheese or ranch. (10 or 20 pieces)</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">BONELESS WINGS</h4>
+                            <span class="text-primary font-bold">$13 / $22</span>
+                        </div>
+                        <p class="text-gray-600">Crispy boneless wings tossed in your choice of sauce. Choose from Buffalo, BBQ, Honey Garlic, Lemon Pepper, or our signature Champions sauce. Served with celery and blue cheese or ranch. (10 or 20 pieces)</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">WING SAMPLER</h4>
+                            <span class="text-primary font-bold">$26</span>
+                        </div>
+                        <p class="text-gray-600">Try four of our signature wing flavors with this 20-piece sampler. Perfect for sharing during the game.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">GAME DAY PLATTER</h4>
+                            <span class="text-primary font-bold">$32</span>
+                        </div>
+                        <p class="text-gray-600">The ultimate sharing platter with 10 wings, loaded potato skins, mozzarella sticks, and onion rings. Served with assorted dipping sauces.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-display font-bold mb-6 text-primary">BURGERS</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">CHAMPIONS BURGER</h4>
+                            <span class="text-primary font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600">Our signature 8oz Angus beef patty topped with cheddar cheese, bacon, lettuce, tomato, onion, and special sauce on a brioche bun. Served with fries.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">DOUBLE OVERTIME BURGER</h4>
+                            <span class="text-primary font-bold">$19</span>
+                        </div>
+                        <p class="text-gray-600">Double 8oz Angus beef patties with double cheese, bacon, lettuce, tomato, onion, and special sauce on a brioche bun. Served with fries.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">BUFFALO CHICKEN SANDWICH</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">Crispy or grilled chicken breast tossed in Buffalo sauce, topped with blue cheese dressing, lettuce, and tomato on a brioche bun. Served with fries.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">VEGGIE BURGER</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Plant-based patty topped with lettuce, tomato, onion, and avocado on a whole grain bun. Served with fries.</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 4 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-display font-bold mb-6 text-primary">ENTREES</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">FISH & CHIPS</h4>
+                            <span class="text-primary font-bold">$17</span>
+                        </div>
+                        <p class="text-gray-600">Beer-battered cod served with fries, coleslaw, and tartar sauce.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">STEAK FRITES</h4>
+                            <span class="text-primary font-bold">$22</span>
+                        </div>
+                        <p class="text-gray-600">10oz grilled sirloin steak with garlic butter, served with fries and a side salad.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">CHICKEN TENDERS</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Crispy chicken tenders served with fries and your choice of dipping sauce.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">LOADED MAC & CHEESE</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">Creamy mac & cheese topped with bacon, jalapeños, and breadcrumbs. Add buffalo chicken for $3.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">All items are available for dine-in or takeout. Ask your server about our daily specials.</p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">DOWNLOAD FULL MENU</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beer Section -->
+    <section id="beers" class="py-20 bg-secondary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">CRAFT BEERS ON TAP</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">We proudly offer 24 rotating taps featuring local and national craft breweries. Here's what's pouring now:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Beer Card 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1535958636474-b021ee887b13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-display font-bold">HAZY IPA</h3>
+                            <span class="bg-accent text-dark text-xs font-bold py-1 px-2 rounded-full">7.2% ABV</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Local Brewery</p>
+                        <p class="text-gray-600 mb-4">A juicy, hazy IPA with notes of tropical fruit, citrus, and a smooth finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$7 / $9</span>
+                            <span class="text-gray-500">16oz / 20oz</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beer Card 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1567696911980-2c473965c147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-display font-bold">AMBER ALE</h3>
+                            <span class="bg-accent text-dark text-xs font-bold py-1 px-2 rounded-full">5.8% ABV</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Regional Brewery</p>
+                        <p class="text-gray-600 mb-4">A balanced amber ale with caramel malt flavors and a subtle hop bitterness.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$6 / $8</span>
+                            <span class="text-gray-500">16oz / 20oz</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beer Card 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584225064785-c62a8b43d148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-display font-bold">PILSNER</h3>
+                            <span class="bg-accent text-dark text-xs font-bold py-1 px-2 rounded-full">4.8% ABV</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Local Brewery</p>
+                        <p class="text-gray-600 mb-4">A crisp, clean pilsner with a light body and refreshing finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$6 / $8</span>
+                            <span class="text-gray-500">16oz / 20oz</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beer Card 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-display font-bold">STOUT</h3>
+                            <span class="bg-accent text-dark text-xs font-bold py-1 px-2 rounded-full">6.5% ABV</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Regional Brewery</p>
+                        <p class="text-gray-600 mb-4">A rich, full-bodied stout with notes of chocolate, coffee, and a smooth finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$7 / $9</span>
+                            <span class="text-gray-500">16oz / 20oz</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beer Card 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1612528443702-f6741f70a049?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-display font-bold">WHEAT ALE</h3>
+                            <span class="bg-accent text-dark text-xs font-bold py-1 px-2 rounded-full">5.2% ABV</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Local Brewery</p>
+                        <p class="text-gray-600 mb-4">A refreshing wheat ale with notes of citrus and a smooth, crisp finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$6 / $8</span>
+                            <span class="text-gray-500">16oz / 20oz</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beer Card 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1618183479302-1e0aa382c36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-display font-bold">SOUR ALE</h3>
+                            <span class="bg-accent text-dark text-xs font-bold py-1 px-2 rounded-full">4.5% ABV</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Regional Brewery</p>
+                        <p class="text-gray-600 mb-4">A tart and fruity sour ale with notes of raspberry and a refreshing finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$7 / $9</span>
+                            <span class="text-gray-500">16oz / 20oz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">VIEW ALL BEERS</a>
+                <p class="text-gray-500 mt-4">Beer selection rotates regularly. Ask your server about our current offerings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">UPCOMING EVENTS</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us for special events, watch parties, and promotions throughout the season.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-6 mx-auto">
+                        <span class="font-display font-bold text-xl">15</span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-center mb-4">FOOTBALL SEASON KICKOFF PARTY</h3>
+                    <p class="text-gray-600 text-center mb-4">September 15, 2025 | 6:00 PM</p>
+                    <p class="text-gray-600 mb-6">Join us for the start of football season with food and drink specials, giveaways, and all the games on our screens!</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">DETAILS</a>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-secondary text-white rounded-full mb-6 mx-auto">
+                        <span class="font-display font-bold text-xl">22</span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-center mb-4">CRAFT BEER TASTING NIGHT</h3>
+                    <p class="text-gray-600 text-center mb-4">September 22, 2025 | 7:00 PM</p>
+                    <p class="text-gray-600 mb-6">Sample our newest craft beer selections with guided tastings from local brewers. Food pairings included!</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">DETAILS</a>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center w-16 h-16 bg-accent text-dark rounded-full mb-6 mx-auto">
+                        <span class="font-display font-bold text-xl">29</span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-center mb-4">TRIVIA NIGHT: SPORTS EDITION</h3>
+                    <p class="text-gray-600 text-center mb-4">September 29, 2025 | 8:00 PM</p>
+                    <p class="text-gray-600 mb-6">Test your sports knowledge with our special sports-themed trivia night. Prizes for the winning teams!</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">DETAILS</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">VIEW ALL EVENTS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">GALLERY</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a look at our sports bar, food, and the game day atmosphere that awaits you.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1630&q=80" alt="Sports Bar" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Burger and Fries" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Craft Beer" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Wings" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bar Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nachos" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1574797577533-b0e3136e79a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Fans Watching Game" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Beer Flight" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">FAN REVIEWS</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear what our customers have to say about their experience at Champions Sports Bar.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Best sports bar in town! The atmosphere during game days is electric. I love that they have so many screens that you can watch multiple games at once. The wings are fantastic, and they have a great selection of craft beers. The staff is friendly and knowledgeable about sports. It's my go-to spot for watching football on Sundays!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mike Johnson</h4>
+                            <p class="text-gray-500 text-sm">Football Fan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I organized a birthday party for my husband at Champions, and they went above and beyond to make it special. They reserved a section for our group, helped with decorations, and even put his favorite team's game on the screens near us. The food was delicious, especially the loaded nachos and burgers. Everyone had a great time, and the staff was attentive throughout the evening. Highly recommend for any sports-themed celebration!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Thompson</h4>
+                            <p class="text-gray-500 text-sm">Event Planner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Champions is my favorite place to watch basketball games. The multiple screens mean I never miss any action, and the sound is always on for the big games. Their craft beer selection is impressive, with lots of local options that rotate regularly. I've tried most of their menu, and the wings and burgers are standouts. The Champions Burger is one of the best in town! The staff remembers regular customers and always makes sure your drink is full during the game."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Basketball Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">RESERVE A TABLE</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Secure your spot for the big game! Reservations recommended for game days and events.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-display font-bold mb-6">GAME DAY INFO</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Hours</h4>
+                            <p class="mb-1">Monday - Thursday: 11:00 AM - 12:00 AM</p>
+                            <p class="mb-1">Friday - Saturday: 11:00 AM - 2:00 AM</p>
+                            <p class="mb-1">Sunday: 10:00 AM - 12:00 AM</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Contact</h4>
+                            <p class="mb-1"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> reservations@championsbar.com</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> 123 Sports Avenue, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Game Day Policy</h4>
+                            <p class="mb-4">Reservations for major sporting events must be made at least 48 hours in advance. A minimum food and beverage purchase may apply for reserved tables during championship games and special events.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7 People</option>
+                                        <option value="8">8 People</option>
+                                        <option value="9+">9+ People (Call for Reservation)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="13:30">1:30 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="14:30">2:30 PM</option>
+                                        <option value="15:00">3:00 PM</option>
+                                        <option value="15:30">3:30 PM</option>
+                                        <option value="16:00">4:00 PM</option>
+                                        <option value="16:30">4:30 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="game" class="block text-gray-700 mb-2">Game/Event (Optional)</label>
+                                <input type="text" id="game" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Which game do you want to watch?">
+                            </div>
+                            <div class="mb-6">
+                                <label for="seating" class="block text-gray-700 mb-2">Seating Preference</label>
+                                <select id="seating" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select a seating area</option>
+                                    <option value="main-bar">Main Bar Area</option>
+                                    <option value="high-top">High-Top Tables</option>
+                                    <option value="booth">Booth Seating</option>
+                                    <option value="private">Private Room (10+ people)</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any special requests or preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">RESERVE NOW</button>
+                            <p class="text-gray-500 text-sm mt-4 text-center">Reservations recommended for game days. For parties of 9 or more, please call us directly.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">CONTACT US</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-display font-bold mb-6">SEND US A MESSAGE</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-display font-bold mb-6">FIND US</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>123 Sports Avenue, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@championsbar.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p>Monday - Thursday: 11:00 AM - 12:00 AM</p>
+                                    <p>Friday - Saturday: 11:00 AM - 2:00 AM</p>
+                                    <p>Sunday: 10:00 AM - 12:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Sports Avenue, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display mb-4">JOIN OUR TEAM</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for updates on upcoming games, special events, and exclusive offers.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">SUBSCRIBE</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display mb-4 text-accent flex items-center">
+                        <i class="fas fa-trophy text-2xl mr-2"></i> CHAMPIONS
+                    </h3>
+                    <p class="text-gray-400 mb-4">The ultimate game day destination with 30+ HD screens, craft beers on tap, delicious pub food, and the best atmosphere for sports fans.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-accent">QUICK LINKS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#games" class="text-gray-400 hover:text-accent transition-colors duration-300">Games</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-accent transition-colors duration-300">Menu</a></li>
+                        <li><a href="#beers" class="text-gray-400 hover:text-accent transition-colors duration-300">Beers</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-accent transition-colors duration-300">Events</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-accent transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-accent transition-colors duration-300">Reservations</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-accent">CONTACT INFO</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 Sports Avenue, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-accent"></i> info@championsbar.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-accent"></i> Mon-Thu: 11AM-12AM, Fri-Sat: 11AM-2AM, Sun: 10AM-12AM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-accent">WE OFFER</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> 30+ HD Screens</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> 24 Craft Beers on Tap</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Game Day Food Specials</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Private Event Spaces</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Sports Viewing Packages</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Fantasy Sports Leagues</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-accent mr-2"></i> Team Sponsorships</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Champions Sports Bar. All rights reserved. | Designed by <a href="#" class="text-accent">Socialite System</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

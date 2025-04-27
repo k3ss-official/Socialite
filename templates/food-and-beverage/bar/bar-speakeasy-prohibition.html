@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakeasy | Prohibition-Style Cocktail Bar</title>
+    <meta name="description" content="Speakeasy is a hidden prohibition-style cocktail bar offering classic and innovative craft cocktails, live jazz music, and an authentic 1920s atmosphere.">
+    <meta name="keywords" content="speakeasy, prohibition bar, craft cocktails, 1920s bar, jazz bar, hidden bar, vintage cocktails, secret bar">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#64748B',
+                        accent: '#B45309',
+                        gold: '#CA8A04',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Abril Fatface', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-primary bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-primary shadow-sm">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display text-gold">
+                The Speakeasy
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-light hover:text-gold focus:outline-none focus:text-gold" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-light hover:text-gold transition-colors duration-300">Home</a>
+                <a href="#about" class="text-light hover:text-gold transition-colors duration-300">About</a>
+                <a href="#cocktails" class="text-light hover:text-gold transition-colors duration-300">Cocktails</a>
+                <a href="#entertainment" class="text-light hover:text-gold transition-colors duration-300">Entertainment</a>
+                <a href="#gallery" class="text-light hover:text-gold transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-light hover:text-gold transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-accent text-light px-6 py-2 rounded-md hover:bg-accent/90 transition-colors duration-300">Reserve</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');">
+        <div class="absolute inset-0 bg-primary/80"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display leading-tight mb-6 text-gold">A Hidden Gem from the <span class="text-light">Prohibition Era</span></h1>
+                <p class="text-lg text-gray-300 mb-8">Step back in time to the 1920s at our exclusive speakeasy, where classic cocktails, live jazz, and vintage ambiance create an unforgettable experience.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#cocktails" class="bg-accent text-light text-center px-8 py-3 rounded-md hover:bg-accent/90 transition-colors duration-300 font-medium">Explore Our Cocktails</a>
+                    <a href="#reservation" class="bg-transparent border-2 border-gold text-gold text-center px-8 py-3 rounded-md hover:bg-gold/10 transition-colors duration-300 font-medium">Make a Reservation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-gold/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cocktail text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2 text-gold">Craft Cocktails</h3>
+                    <p class="text-gray-300">Our expert mixologists create both classic Prohibition-era cocktails and innovative signature drinks using premium spirits and house-made ingredients.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-gold/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-music text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2 text-gold">Live Jazz</h3>
+                    <p class="text-gray-300">Enjoy nightly performances from talented jazz musicians, creating the perfect soundtrack for your evening in our intimate, vintage-inspired space.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-gold/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-door-closed text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2 text-gold">Hidden Entrance</h3>
+                    <p class="text-gray-300">True to speakeasy tradition, our bar is concealed behind an unassuming facade. Find the secret entrance and the correct password to gain admission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4 text-primary">Our Story</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the history and inspiration behind our authentic Prohibition-era speakeasy.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bar Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-primary">A Tribute to the Roaring Twenties</h3>
+                    <p class="text-gray-600 mb-6">The Speakeasy was founded in 2018 by cocktail historian and mixologist James Sullivan, whose fascination with Prohibition-era drinking culture inspired him to create an authentic experience for modern patrons. Housed in a historic building that once served as an actual speakeasy during the 1920s, our establishment pays homage to this rich history while offering contemporary comforts.</p>
+                    <p class="text-gray-600 mb-6">Every detail of our space has been meticulously designed to transport guests back to the Roaring Twenties. From the vintage furniture and Art Deco accents to the period-appropriate lighting and music, we've created an immersive environment that captures the allure and excitement of a bygone era. Even our staff dress in period-appropriate attire, enhancing the authentic speakeasy experience.</p>
+                    <p class="text-gray-600 mb-6">Our cocktail program is the heart of The Speakeasy, featuring both historically accurate recipes from the Prohibition era and creative interpretations that honor the spirit of innovation that characterized the underground bar scene of the 1920s. We use traditional techniques, premium spirits, and house-made ingredients to craft drinks that would make even the most discerning flapper or gangster proud.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Authentic Atmosphere</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Period Cocktails</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Live Jazz Music</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Historic Building</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cocktails Section -->
+    <section id="cocktails" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4 text-primary">Our Cocktails</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our menu of meticulously crafted cocktails inspired by the Prohibition era and beyond.</p>
+            </div>
+            
+            <!-- Cocktail Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-light rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-primary rounded-md hover:bg-gray-200 transition-colors duration-300">Classics</button>
+                <button class="px-6 py-2 m-2 bg-light text-primary rounded-md hover:bg-gray-200 transition-colors duration-300">House Signatures</button>
+                <button class="px-6 py-2 m-2 bg-light text-primary rounded-md hover:bg-gray-200 transition-colors duration-300">Prohibition Era</button>
+                <button class="px-6 py-2 m-2 bg-light text-primary rounded-md hover:bg-gray-200 transition-colors duration-300">Non-Alcoholic</button>
+            </div>
+            
+            <!-- Cocktail Items -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cocktail 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Old Fashioned" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">The Old Fashioned</h3>
+                            <span class="text-accent font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A timeless classic featuring bourbon or rye whiskey, sugar, Angostura bitters, and an orange twist. Served over a large ice cube in a rocks glass.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">CLASSIC</span>
+                            <span class="bg-gold/10 text-accent text-xs font-bold px-3 py-1 rounded-full">WHISKEY</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gin Fizz" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Southside Fizz</h3>
+                            <span class="text-accent font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A refreshing Prohibition favorite with gin, fresh lime juice, mint, simple syrup, and soda water. Served tall over ice with a mint garnish.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">PROHIBITION ERA</span>
+                            <span class="bg-gold/10 text-accent text-xs font-bold px-3 py-1 rounded-full">GIN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Manhattan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Perfect Manhattan</h3>
+                            <span class="text-accent font-bold">$17</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A sophisticated blend of rye whiskey, sweet and dry vermouth, and Angostura bitters. Served up in a coupe glass with a brandied cherry.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">CLASSIC</span>
+                            <span class="bg-gold/10 text-accent text-xs font-bold px-3 py-1 rounded-full">WHISKEY</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1609951651556-5334e2706168?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bee's Knees" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Bee's Knees</h3>
+                            <span class="text-accent font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A Prohibition classic featuring gin, fresh lemon juice, and honey syrup. Shaken and served up in a coupe glass with a lemon twist.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">PROHIBITION ERA</span>
+                            <span class="bg-gold/10 text-accent text-xs font-bold px-3 py-1 rounded-full">GIN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1578664182354-e3878063f4e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bootlegger" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">The Bootlegger</h3>
+                            <span class="text-accent font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Our signature cocktail with bourbon, amaretto, black walnut bitters, and maple syrup. Smoked with cherrywood and served over a clear ice sphere.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">HOUSE SIGNATURE</span>
+                            <span class="bg-gold/10 text-accent text-xs font-bold px-3 py-1 rounded-full">WHISKEY</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mocktail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Temperance Tonic</h3>
+                            <span class="text-accent font-bold">$10</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A sophisticated non-alcoholic option with house-made ginger syrup, fresh lime juice, aromatic bitters, and soda water. Garnished with candied ginger.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">HOUSE SIGNATURE</span>
+                            <span class="bg-gold/10 text-accent text-xs font-bold px-3 py-1 rounded-full">NON-ALCOHOLIC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-light px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entertainment Section -->
+    <section id="entertainment" class="py-20 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4 text-gold">Live Entertainment</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">Experience the vibrant sounds of the Jazz Age with our nightly live music performances.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Entertainment 1 -->
+                <div class="bg-primary/50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-700">
+                    <img src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Jazz Trio" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2 text-gold">The Gatsby Quartet</h3>
+                        <p class="text-gray-300 mb-4">Our house jazz band performs classic jazz standards from the 1920s and 1930s, creating the perfect soundtrack for your speakeasy experience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-accent font-bold">Every Friday & Saturday</span>
+                            <span class="text-light">9:00 PM - 12:00 AM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Entertainment 2 -->
+                <div class="bg-primary/50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-700">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Blues Singer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2 text-gold">Vintage Vocals</h3>
+                        <p class="text-gray-300 mb-4">Join us for an intimate evening of soulful jazz and blues vocals, featuring rotating guest vocalists accompanied by piano.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-accent font-bold">Every Thursday</span>
+                            <span class="text-light">8:00 PM - 11:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Entertainment 3 -->
+                <div class="bg-primary/50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-700">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Swing Dancing" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2 text-gold">Swing Dance Night</h3>
+                        <p class="text-gray-300 mb-4">Put on your dancing shoes for our monthly swing dance night, featuring live music and complimentary dance lessons for beginners.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-accent font-bold">First Sunday Monthly</span>
+                            <span class="text-light">7:00 PM - 10:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-accent text-light px-8 py-3 rounded-md hover:bg-accent/90 transition-colors duration-300">View Full Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4 text-primary">Gallery</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our speakeasy, cocktails, and the vintage atmosphere.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Bar Entrance" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bar Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Old Fashioned" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gin Fizz" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Jazz Band" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1578664182354-e3878063f4e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cocktail" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Manhattan" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Swing Dancing" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4 text-primary">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our valued patrons about their experiences at The Speakeasy.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Finding the hidden entrance was half the fun! Once inside, I was transported to another era. The attention to detail in the decor is remarkable, and the cocktails are some of the best I've ever had. The Old Fashioned was perfectly balanced, and watching the bartender smoke The Bootlegger was a show in itself. The jazz quartet created the perfect ambiance for a sophisticated night out. This place is a gem for anyone who appreciates craft cocktails and vintage vibes."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Robert Anderson</h4>
+                            <p class="text-gray-500 text-sm">Cocktail Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I brought a date to The Speakeasy for our anniversary, and it was the perfect choice for a special occasion. The staff went above and beyond to make our evening memorable, even arranging for the band to play our song. The Bee's Knees cocktail was exceptional—perfectly balanced and beautifully presented. The intimate atmosphere made conversation easy despite the live music. If you're looking for a unique date night spot that feels both special and fun, this is it. We'll definitely be back!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Jennifer Martinez</h4>
+                            <p class="text-gray-500 text-sm">Regular Patron</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a non-drinker, I was pleasantly surprised by the thought put into the non-alcoholic options at The Speakeasy. The Temperance Tonic was complex and satisfying—not an afterthought like at most bars. The atmosphere is incredibly immersive; from the moment you enter through the hidden door, you feel like you've stepped back in time. The vintage decor, the staff's period attire, and the live jazz create an experience that's about much more than just drinks. I appreciated that I could enjoy the full speakeasy experience without alcohol."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Thompson</h4>
+                            <p class="text-gray-500 text-sm">Music Lover</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4 text-primary">Make a Reservation</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Reserve your table at The Speakeasy for an unforgettable evening of craft cocktails and live jazz.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-light rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-gold">Bar Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-gold">Hours</h4>
+                            <p class="mb-1 text-gray-300">Wednesday - Thursday: 6:00 PM - 12:00 AM</p>
+                            <p class="mb-1 text-gray-300">Friday - Saturday: 6:00 PM - 2:00 AM</p>
+                            <p class="mb-1 text-gray-300">Sunday: 6:00 PM - 11:00 PM</p>
+                            <p class="mb-1 text-gray-300">Monday - Tuesday: Closed</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-gold">Contact</h4>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-envelope mr-2"></i> info@thespeakeasy.com</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-map-marker-alt mr-2"></i> 123 Hidden Street, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-gold">Private Events</h4>
+                            <p class="mb-4 text-gray-300">We offer private event options for special occasions. Our space can accommodate up to 60 guests for a full buyout or 20 guests in our private room.</p>
+                            <a href="mailto:events@thespeakeasy.com" class="text-gold hover:text-accent transition-colors duration-300">events@thespeakeasy.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5-6 People</option>
+                                        <option value="6">7-8 People</option>
+                                        <option value="7">9+ People (Call for Availability)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                        <option value="21:30">9:30 PM</option>
+                                        <option value="22:00">10:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-700 mb-2">Occasion (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select an occasion</option>
+                                    <option value="regular">Regular Visit</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any special requests or seating preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve Now</button>
+                            <p class="text-gray-500 text-sm mt-4 text-center">The password for entry will be provided upon confirmation of your reservation.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4 text-primary">Contact Us</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-gold">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-gold text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-gold">Address</h4>
+                                    <p class="text-gray-300">123 Hidden Street, City, Country</p>
+                                    <p class="text-gray-300 italic mt-2">Look for the red door in the alley behind the bookstore.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-gold text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-gold">Phone</h4>
+                                    <p class="text-gray-300">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-gold text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-gold">Email</h4>
+                                    <p class="text-gray-300">info@thespeakeasy.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-gold text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-gold">Hours</h4>
+                                    <p class="text-gray-300">Wednesday - Thursday: 6:00 PM - 12:00 AM</p>
+                                    <p class="text-gray-300">Friday - Saturday: 6:00 PM - 2:00 AM</p>
+                                    <p class="text-gray-300">Sunday: 6:00 PM - 11:00 PM</p>
+                                    <p class="text-gray-300">Monday - Tuesday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4 text-gold">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gold text-primary p-3 rounded-md hover:bg-gold/90 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-gold text-primary p-3 rounded-md hover:bg-gold/90 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-gold text-primary p-3 rounded-md hover:bg-gold/90 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Hidden Street, City, Country</p>
+                <p class="text-gray-500 italic mt-2">Look for the red door in the alley behind the bookstore.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display mb-4 text-primary">Join Our Secret Society</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for the latest cocktail recipes, event announcements, and the monthly password for entry.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display mb-4 text-gold">The Speakeasy</h3>
+                    <p class="text-gray-400 mb-4">A hidden gem from the Prohibition era, offering craft cocktails, live jazz, and an authentic 1920s atmosphere in a secret location.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-gold transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-gold transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-gold transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-gold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-gold transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-gold transition-colors duration-300">About</a></li>
+                        <li><a href="#cocktails" class="text-gray-400 hover:text-gold transition-colors duration-300">Cocktails</a></li>
+                        <li><a href="#entertainment" class="text-gray-400 hover:text-gold transition-colors duration-300">Entertainment</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-gold transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-gold transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-gold transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-gold">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 Hidden Street, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-accent"></i> info@thespeakeasy.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-accent"></i> Wed-Thu: 6PM-12AM, Fri-Sat: 6PM-2AM, Sun: 6PM-11PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-gold">House Rules</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Reservations strongly recommended</li>
+                        <li>Smart casual dress code enforced</li>
+                        <li>Password required for entry</li>
+                        <li>No photography policy</li>
+                        <li>Please speak easy (keep noise levels down)</li>
+                        <li>21+ only after 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 The Speakeasy. All rights reserved. | Designed by <a href="#" class="text-gold">Socialite System</a></p>
+                <p class="text-gray-500 text-sm mt-2">Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

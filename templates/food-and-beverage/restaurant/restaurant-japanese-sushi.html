@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Sakura | Japanese Restaurant</title>
+    <meta name="description" content="Sushi Sakura offers authentic Japanese cuisine with fresh sushi, sashimi, and traditional dishes in an elegant and serene atmosphere.">
+    <meta name="keywords" content="sushi, Japanese restaurant, sashimi, omakase, sake, authentic Japanese cuisine, fine dining">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E53E3E',
+                        secondary: '#1A202C',
+                        accent: '#F6AD55',
+                        light: '#F7FAFC',
+                        dark: '#2D3748'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans JP', 'sans-serif'],
+                        serif: ['Noto Serif JP', 'serif'],
+                        display: ['Noto Serif JP', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display text-primary flex items-center">
+                <span class="text-3xl mr-2">寿司</span> Sushi Sakura
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-dark hover:text-primary focus:outline-none focus:text-primary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-dark hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#about" class="text-dark hover:text-primary transition-colors duration-300">About</a>
+                <a href="#menu" class="text-dark hover:text-primary transition-colors duration-300">Menu</a>
+                <a href="#omakase" class="text-dark hover:text-primary transition-colors duration-300">Omakase</a>
+                <a href="#gallery" class="text-dark hover:text-primary transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Reservations</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-dark/70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display leading-tight mb-6 text-white">Authentic <span class="text-primary">Japanese</span> Cuisine</h1>
+                <p class="text-lg text-gray-200 mb-8">Experience the art of traditional Japanese dining with our master chefs' creations using the freshest seasonal ingredients.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#menu" class="bg-primary text-white text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Our Menu</a>
+                    <a href="#reservation" class="bg-white text-dark text-center px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-300 font-medium">Make a Reservation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-fish text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Fresh Ingredients</h3>
+                    <p class="text-gray-600">We source the finest seafood daily from trusted suppliers, ensuring peak freshness and exceptional quality in every dish.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Master Chefs</h3>
+                    <p class="text-gray-600">Our skilled chefs have trained for years in Japan, mastering traditional techniques to create authentic and exquisite dishes.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wine-glass-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Premium Sake</h3>
+                    <p class="text-gray-600">Complement your meal with our curated selection of fine sake, imported directly from Japan's most respected breweries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the tradition and passion behind Sushi Sakura.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">A Tradition of Excellence</h3>
+                    <p class="text-gray-600 mb-6">Sushi Sakura was founded by Master Chef Hiroshi Tanaka, who brought his culinary expertise from Tokyo to create an authentic Japanese dining experience. After years of training under renowned sushi masters in Japan, Chef Tanaka established Sushi Sakura with a commitment to honoring traditional techniques while embracing seasonal ingredients.</p>
+                    <p class="text-gray-600 mb-6">Our restaurant is designed to evoke the serene beauty of Japan, with minimalist décor, natural materials, and subtle touches that create a tranquil atmosphere. The name "Sakura" pays homage to Japan's beloved cherry blossoms, symbolizing beauty, renewal, and the fleeting nature of life—principles that guide our approach to cuisine.</p>
+                    <p class="text-gray-600 mb-6">At Sushi Sakura, we believe in the Japanese concept of "Omotenashi"—wholehearted hospitality that anticipates guests' needs. Our team is dedicated to providing an exceptional dining experience, where every detail is thoughtfully considered, from the presentation of each dish to the ambiance of our dining room.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Authentic Techniques</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Seasonal Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Traditional Recipes</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Japanese Hospitality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Our Menu</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our selection of traditional Japanese dishes, prepared with the freshest ingredients and expert technique.</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-white rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Sushi</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Sashimi</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Rolls</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Hot Dishes</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Desserts</button>
+            </div>
+            
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Menu Category 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Nigiri Sushi</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Maguro (Tuna)</h4>
+                            <span class="text-primary font-bold">$8</span>
+                        </div>
+                        <p class="text-gray-600">Fresh bluefin tuna, wasabi, sushi rice (2 pieces)</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Sake (Salmon)</h4>
+                            <span class="text-primary font-bold">$7</span>
+                        </div>
+                        <p class="text-gray-600">Norwegian salmon, wasabi, sushi rice (2 pieces)</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Hamachi (Yellowtail)</h4>
+                            <span class="text-primary font-bold">$9</span>
+                        </div>
+                        <p class="text-gray-600">Japanese yellowtail, wasabi, sushi rice (2 pieces)</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Unagi (Freshwater Eel)</h4>
+                            <span class="text-primary font-bold">$10</span>
+                        </div>
+                        <p class="text-gray-600">Grilled eel with sweet soy glaze, sushi rice (2 pieces)</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Ebi (Shrimp)</h4>
+                            <span class="text-primary font-bold">$7</span>
+                        </div>
+                        <p class="text-gray-600">Poached tiger shrimp, wasabi, sushi rice (2 pieces)</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Signature Rolls</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Sakura Roll</h4>
+                            <span class="text-primary font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600">Spicy tuna, avocado, cucumber inside, topped with seared salmon, thin lemon slices, and yuzu sauce</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Dragon Roll</h4>
+                            <span class="text-primary font-bold">$20</span>
+                        </div>
+                        <p class="text-gray-600">Tempura shrimp, cucumber inside, topped with avocado, eel, and sweet soy glaze</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Rainbow Roll</h4>
+                            <span class="text-primary font-bold">$19</span>
+                        </div>
+                        <p class="text-gray-600">California roll topped with assorted sashimi, avocado, and tobiko</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Volcano Roll</h4>
+                            <span class="text-primary font-bold">$17</span>
+                        </div>
+                        <p class="text-gray-600">California roll topped with baked scallops, crab, and spicy mayo</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Vegetable Roll</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Avocado, cucumber, pickled radish, oshinko, and asparagus with sesame seeds</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Sashimi</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Sashimi Moriawase (Assortment)</h4>
+                            <span class="text-primary font-bold">$32</span>
+                        </div>
+                        <p class="text-gray-600">Chef's selection of fresh sashimi including tuna, salmon, yellowtail, and white fish (15 pieces)</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Maguro Sashimi</h4>
+                            <span class="text-primary font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600">Sliced bluefin tuna with wasabi and pickled ginger (6 pieces)</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Sake Sashimi</h4>
+                            <span class="text-primary font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600">Sliced Norwegian salmon with wasabi and pickled ginger (6 pieces)</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Hamachi Sashimi</h4>
+                            <span class="text-primary font-bold">$20</span>
+                        </div>
+                        <p class="text-gray-600">Sliced Japanese yellowtail with wasabi and pickled ginger (6 pieces)</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Hotate Sashimi</h4>
+                            <span class="text-primary font-bold">$22</span>
+                        </div>
+                        <p class="text-gray-600">Fresh scallops with citrus ponzu and microgreens (6 pieces)</p>
+                    </div>
+                </div>
+                
+                <!-- Menu Category 4 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Hot Dishes</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Miso Soup</h4>
+                            <span class="text-primary font-bold">$5</span>
+                        </div>
+                        <p class="text-gray-600">Traditional dashi broth with miso, tofu, wakame seaweed, and green onions</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Tempura Moriawase</h4>
+                            <span class="text-primary font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600">Assorted tempura with prawns and seasonal vegetables, served with tentsuyu dipping sauce</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Teriyaki Salmon</h4>
+                            <span class="text-primary font-bold">$24</span>
+                        </div>
+                        <p class="text-gray-600">Grilled salmon fillet with house-made teriyaki sauce, served with steamed rice and vegetables</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Tonkatsu</h4>
+                            <span class="text-primary font-bold">$22</span>
+                        </div>
+                        <p class="text-gray-600">Panko-crusted pork cutlet with tonkatsu sauce, shredded cabbage, and steamed rice</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Nabeyaki Udon</h4>
+                            <span class="text-primary font-bold">$19</span>
+                        </div>
+                        <p class="text-gray-600">Thick udon noodles in hot dashi broth with tempura shrimp, chicken, vegetables, and poached egg</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">All sushi and sashimi are served with fresh wasabi, pickled ginger, and soy sauce.</p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Download Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Omakase Section -->
+    <section id="omakase" class="py-20 bg-secondary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Omakase Experience</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Trust our master chefs to create a personalized dining journey with the finest seasonal ingredients.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Omakase Experience" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">The Art of "Omakase"</h3>
+                    <p class="text-gray-600 mb-6">Omakase, meaning "I leave it up to you," is a traditional Japanese dining experience where guests entrust the chef to create a memorable meal. At Sushi Sakura, our Omakase experience showcases the finest seasonal ingredients and our chefs' creativity and expertise.</p>
+                    <p class="text-gray-600 mb-6">Each Omakase course is thoughtfully prepared and presented, taking you on a culinary journey through various flavors, textures, and cooking techniques. From delicate sashimi to perfectly seasoned sushi rice and creative hot dishes, every element is crafted with precision and care.</p>
+                    <p class="text-gray-600 mb-6">Our Omakase is served at the sushi counter, where you can interact with our chefs and watch as each dish is prepared before your eyes. This intimate setting allows for a personalized experience, as our chefs adjust each course based on your preferences and reactions.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Signature Omakase</h4>
+                            <p class="text-gray-600 mb-2">A complete dining experience featuring 12-15 courses of our chef's finest creations.</p>
+                            <p class="text-primary font-bold">$120 per person</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Sushi Omakase</h4>
+                            <p class="text-gray-600 mb-2">A focused journey through 10 pieces of premium nigiri sushi and hand rolls.</p>
+                            <p class="text-primary font-bold">$85 per person</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Sake Pairing</h4>
+                            <p class="text-gray-600 mb-2">Enhance your Omakase with a curated selection of premium sake to complement each course.</p>
+                            <p class="text-primary font-bold">$45 per person</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <p class="text-gray-600 text-sm">Omakase is available by reservation only. Please inform us of any dietary restrictions or allergies when booking.</p>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="#reservation" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Reserve Omakase Experience</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Gallery</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our restaurant, dishes, and the elegant atmosphere that awaits you.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sushi Platter" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Omakase" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sake" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1582450871972-ab5ca641643d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sushi Chef" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Sashimi" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1607301406259-dfb186e15de8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tempura" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1562158074-d49fbeffcc91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Private Dining" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Guest Experiences</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our valued guests about their dining experiences at Sushi Sakura.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As someone who lived in Japan for several years, I'm quite particular about Japanese cuisine. Sushi Sakura is the most authentic Japanese restaurant I've found since returning to the States. The fish is impeccably fresh, the rice is perfectly seasoned, and the presentation is beautiful. I especially recommend the Omakase experience—Chef Tanaka's selection was outstanding, with several unique items I hadn't tried before. The service was attentive and knowledgeable, and the sake recommendations paired wonderfully with each course. A truly exceptional dining experience."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Chen</h4>
+                            <p class="text-gray-500 text-sm">Japanese Cuisine Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I celebrated my anniversary at Sushi Sakura, and it was a memorable evening from start to finish. The ambiance is elegant yet comfortable, with beautiful Japanese-inspired décor that creates a serene atmosphere. We ordered the Signature Omakase with sake pairing, and each course was a delightful surprise. The chef took time to explain each dish and the origin of the ingredients. The standout was the toro nigiri—absolutely melt-in-your-mouth delicious. The staff even surprised us with a special dessert for our anniversary. Impeccable service and exquisite food make this our new favorite special occasion restaurant."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">Special Occasion Diner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I've been coming to Sushi Sakura regularly for business dinners, and it never disappoints. The quality and consistency are remarkable. The menu offers an excellent variety of traditional Japanese dishes beyond just sushi—the tempura is light and crispy, and the nabeyaki udon is perfect on a cold day. What I appreciate most is how accommodating they are with dietary restrictions. One of my colleagues is vegetarian, and the chef created a beautiful vegetable sushi platter that wasn't even on the menu. The private dining room is perfect for business discussions, with discreet service and a quiet atmosphere. Highly recommended for both casual dining and special occasions."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Guest" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Regular Business Diner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Make a Reservation</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Reserve your table at Sushi Sakura for an authentic Japanese dining experience.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-secondary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Restaurant Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Hours</h4>
+                            <p class="mb-1">Tuesday - Thursday: 5:00 PM - 10:00 PM</p>
+                            <p class="mb-1">Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                            <p class="mb-1">Sunday: 5:00 PM - 9:00 PM</p>
+                            <p class="mb-1">Monday: Closed</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Contact</h4>
+                            <p class="mb-1"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> reservations@sushisakura.com</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> 123 Cherry Blossom Lane, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Special Requests</h4>
+                            <p class="mb-4">For Omakase reservations or parties of 8 or more, please call us directly. Please inform us of any dietary restrictions or allergies when making your reservation.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7 People</option>
+                                        <option value="8+">8+ People (Call for Reservation)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="5:00">5:00 PM</option>
+                                        <option value="5:30">5:30 PM</option>
+                                        <option value="6:00">6:00 PM</option>
+                                        <option value="6:30">6:30 PM</option>
+                                        <option value="7:00">7:00 PM</option>
+                                        <option value="7:30">7:30 PM</option>
+                                        <option value="8:00">8:00 PM</option>
+                                        <option value="8:30">8:30 PM</option>
+                                        <option value="9:00">9:00 PM</option>
+                                        <option value="9:30">9:30 PM (Fri-Sat Only)</option>
+                                        <option value="10:00">10:00 PM (Fri-Sat Only)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="dining-option" class="block text-gray-700 mb-2">Dining Option</label>
+                                <select id="dining-option" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="regular">Regular Dining</option>
+                                    <option value="sushi-bar">Sushi Bar</option>
+                                    <option value="omakase">Omakase Experience (Subject to Availability)</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any dietary restrictions, allergies, or seating preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve Now</button>
+                            <p class="text-gray-500 text-sm mt-4 text-center">Reservations recommended. For Omakase or parties of 8 or more, please call us directly.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-secondary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white text-secondary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>123 Cherry Blossom Lane, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-secondary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-secondary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@sushisakura.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-secondary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p>Tuesday - Thursday: 5:00 PM - 10:00 PM</p>
+                                    <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                                    <p>Sunday: 5:00 PM - 9:00 PM</p>
+                                    <p>Monday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-white text-secondary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-white text-secondary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-white text-secondary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Cherry Blossom Lane, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display mb-4">Join Our Mailing List</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for updates on seasonal menus, special events, and exclusive offers.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display mb-4 text-primary flex items-center">
+                        <span class="text-2xl mr-2">寿司</span> Sushi Sakura
+                    </h3>
+                    <p class="text-gray-400 mb-4">Authentic Japanese cuisine featuring the freshest ingredients, prepared with traditional techniques and presented with artistic flair in an elegant atmosphere.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors duration-300">About</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-primary transition-colors duration-300">Menu</a></li>
+                        <li><a href="#omakase" class="text-gray-400 hover:text-primary transition-colors duration-300">Omakase</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-primary transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-primary transition-colors duration-300">Reservations</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-primary"></i> 123 Cherry Blossom Lane, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-primary"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-primary"></i> info@sushisakura.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-primary"></i> Tue-Thu: 5PM-10PM, Fri-Sat: 5PM-11PM, Sun: 5PM-9PM, Mon: Closed</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-primary">We Offer</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Authentic Japanese Cuisine</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Omakase Experience</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Premium Sake Selection</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Private Dining</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Catering Services</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Gift Certificates</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-primary mr-2"></i> Takeout Available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Sushi Sakura. All rights reserved. | Designed by <a href="#" class="text-primary">Socialite System</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

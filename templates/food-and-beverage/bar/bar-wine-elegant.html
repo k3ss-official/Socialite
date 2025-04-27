@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineyard Lounge | Wine Bar</title>
+    <meta name="description" content="Vineyard Lounge is an elegant wine bar offering a curated selection of fine wines, artisanal cheese boards, and a sophisticated atmosphere for wine enthusiasts.">
+    <meta name="keywords" content="wine bar, fine wines, wine tasting, sommelier, wine and cheese, wine lounge, vineyard">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#722F37',
+                        secondary: '#A9927D',
+                        accent: '#F2E2D2',
+                        dark: '#2C1A1D',
+                        light: '#F8F4F0'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-dark">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-serif font-bold text-accent">
+                Vineyard Lounge
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-accent hover:text-secondary focus:outline-none focus:text-secondary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-accent hover:text-secondary transition-colors duration-300">Home</a>
+                <a href="#about" class="text-accent hover:text-secondary transition-colors duration-300">About</a>
+                <a href="#wines" class="text-accent hover:text-secondary transition-colors duration-300">Wine List</a>
+                <a href="#food" class="text-accent hover:text-secondary transition-colors duration-300">Food</a>
+                <a href="#events" class="text-accent hover:text-secondary transition-colors duration-300">Events</a>
+                <a href="#contact" class="text-accent hover:text-secondary transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-accent px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Reserve</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-dark/70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6 text-accent">Discover the Art of Fine Wine</h1>
+                <p class="text-lg text-gray-300 mb-8">Experience our curated selection of exceptional wines from around the world in an elegant and intimate setting.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#wines" class="bg-primary text-accent text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Our Wines</a>
+                    <a href="#reservation" class="bg-transparent text-accent border border-accent text-center px-8 py-3 rounded-md hover:bg-white/10 transition-colors duration-300">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wine-glass-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Curated Selection</h3>
+                    <p class="text-gray-600">Over 200 wines carefully selected from renowned vineyards across the globe, with options for every palate.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-tie text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Expert Sommeliers</h3>
+                    <p class="text-gray-600">Our knowledgeable staff will guide you through your wine journey with personalized recommendations.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cheese text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Artisanal Pairings</h3>
+                    <p class="text-gray-600">Complement your wine with our selection of gourmet cheeses, charcuterie, and small plates designed to enhance flavors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the passion and expertise behind Vineyard Lounge, where wine appreciation meets elegant hospitality.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1528823872057-9c018a7a7553?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wine Bar Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">A Sanctuary for Wine Lovers</h3>
+                    <p class="text-gray-600 mb-6">Founded in 2018 by sommelier Claire Dubois and restaurateur Michael Chen, Vineyard Lounge was born from a shared passion for exceptional wines and a desire to create a space where both connoisseurs and curious newcomers could explore the world of wine in a welcoming environment.</p>
+                    <p class="text-gray-600 mb-6">Our wine bar features an ever-evolving selection of wines from established estates and emerging vineyards alike. We believe that every bottle tells a story—of terroir, tradition, and craftsmanship—and we're dedicated to sharing these stories with our guests.</p>
+                    <p class="text-gray-600 mb-6">The interior of Vineyard Lounge was designed to create an atmosphere of refined comfort, with warm lighting, natural materials, and intimate seating arrangements that encourage conversation and connection.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Sommelier-Selected Wines</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Wine Tasting Events</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Private Wine Cellar</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Wine Club Membership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wine List Section -->
+    <section id="wines" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Wine Selection</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our carefully curated collection of exceptional wines from around the world.</p>
+            </div>
+            
+            <!-- Wine Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-accent rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Red Wines</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">White Wines</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Sparkling</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Rosé</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Dessert Wines</button>
+            </div>
+            
+            <!-- Wine Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Wine Item 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Château Margaux" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-accent text-xs font-bold px-3 py-1 rounded-full">
+                            PREMIUM
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-serif font-bold">Château Margaux</h3>
+                            <span class="text-primary font-bold">$24 / Glass</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4">Bordeaux, France | 2015</p>
+                        <p class="text-gray-600 mb-4">An exceptional Bordeaux blend with notes of blackcurrant, cedar, and violet. Elegant tannins with a long, complex finish.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star-half-alt"></i></span>
+                                <span class="text-gray-600 text-sm ml-2">(96 points)</span>
+                            </div>
+                            <span class="text-primary text-sm font-medium">$120 / Bottle</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wine Item 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Cloudy Bay Sauvignon Blanc" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full">
+                            STAFF PICK
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-serif font-bold">Cloudy Bay Sauvignon Blanc</h3>
+                            <span class="text-primary font-bold">$16 / Glass</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4">Marlborough, New Zealand | 2022</p>
+                        <p class="text-gray-600 mb-4">Vibrant and crisp with intense flavors of passionfruit, lime, and fresh herbs. Refreshing acidity with a clean, mineral finish.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-gray-400 mr-1"><i class="far fa-star"></i></span>
+                                <span class="text-gray-600 text-sm ml-2">(92 points)</span>
+                            </div>
+                            <span class="text-primary text-sm font-medium">$68 / Bottle</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wine Item 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1566754436893-98224ee84a07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Dom Pérignon" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-accent text-xs font-bold px-3 py-1 rounded-full">
+                            PREMIUM
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-serif font-bold">Dom Pérignon Vintage</h3>
+                            <span class="text-primary font-bold">$35 / Glass</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4">Champagne, France | 2012</p>
+                        <p class="text-gray-600 mb-4">Elegant and complex with notes of almond, powdered cocoa, and dried flowers. Fine bubbles with a persistent finish.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-yellow-400 mr-1"><i class="fas fa-star"></i></span>
+                                <span class="text-gray-600 text-sm ml-2">(98 points)</span>
+                            </div>
+                            <span class="text-primary text-sm font-medium">$220 / Bottle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-accent px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Wine List</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="food" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Food Pairings</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Complement your wine experience with our selection of artisanal cheeses, charcuterie, and small plates.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Cheese & Charcuterie -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Cheese & Charcuterie</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Artisanal Cheese Board</h4>
+                            <span class="text-primary font-bold">$24</span>
+                        </div>
+                        <p class="text-gray-600">Selection of four premium cheeses served with fig jam, honey, fresh fruit, and artisanal crackers. Perfect for sharing.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Charcuterie Selection</h4>
+                            <span class="text-primary font-bold">$26</span>
+                        </div>
+                        <p class="text-gray-600">Assortment of cured meats including prosciutto, salami, and chorizo, served with cornichons, mustard, and toasted baguette.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Grand Tasting Board</h4>
+                            <span class="text-primary font-bold">$42</span>
+                        </div>
+                        <p class="text-gray-600">The perfect combination of our artisanal cheeses and charcuterie selections, with all accompaniments. Ideal for 3-4 people.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Sommelier's Pairing</h4>
+                            <span class="text-primary font-bold">$65</span>
+                        </div>
+                        <p class="text-gray-600">Our grand tasting board paired with three 3oz pours of wines selected by our sommelier to complement the flavors.</p>
+                    </div>
+                </div>
+                
+                <!-- Small Plates -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Small Plates</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Marinated Olives</h4>
+                            <span class="text-primary font-bold">$8</span>
+                        </div>
+                        <p class="text-gray-600">Assorted olives marinated in herbs, citrus, and extra virgin olive oil.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Truffle Arancini</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Crispy risotto balls with black truffle and parmesan, served with truffle aioli.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Seared Scallops</h4>
+                            <span class="text-primary font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600">Pan-seared sea scallops with cauliflower purée, brown butter, and capers.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Duck Rillettes</h4>
+                            <span class="text-primary font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600">Slow-cooked duck confit spread, served with cornichons, whole grain mustard, and toasted sourdough.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-accent px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Wine Events & Tastings</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us for special wine tastings, educational events, and exclusive winemaker dinners.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1567072379583-c21aab1a2287?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Wine Tasting Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary text-accent text-sm font-bold px-3 py-1 rounded-full mr-2">
+                                MAY 15
+                            </div>
+                            <span class="text-gray-600 text-sm">7:00 PM - 9:00 PM</span>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold mb-2">Old World vs. New World Reds</h3>
+                        <p class="text-gray-600 mb-4">Compare classic European red wines with their New World counterparts in this educational tasting led by our head sommelier.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$65 per person</span>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors duration-300 inline-flex items-center">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1515779122185-2390ccdf060b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Winemaker Dinner" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary text-accent text-sm font-bold px-3 py-1 rounded-full mr-2">
+                                MAY 22
+                            </div>
+                            <span class="text-gray-600 text-sm">6:30 PM - 9:30 PM</span>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold mb-2">Winemaker Dinner: Antinori Estates</h3>
+                        <p class="text-gray-600 mb-4">A special five-course dinner featuring wines from the renowned Antinori family, with guest speaker Allegra Antinori.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$120 per person</span>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors duration-300 inline-flex items-center">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1470158499416-75be9aa0c4db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Champagne Masterclass" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary text-accent text-sm font-bold px-3 py-1 rounded-full mr-2">
+                                JUNE 5
+                            </div>
+                            <span class="text-gray-600 text-sm">2:00 PM - 4:00 PM</span>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold mb-2">Champagne Masterclass</h3>
+                        <p class="text-gray-600 mb-4">Discover the art of Champagne production and taste six distinctive styles from leading houses and grower producers.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">$85 per person</span>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors duration-300 inline-flex items-center">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-accent px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our patrons about their experiences at Vineyard Lounge.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a wine enthusiast, I'm always looking for places that offer both exceptional wines and knowledgeable staff. Vineyard Lounge exceeds expectations on both counts. Their sommelier recommended a Barolo that perfectly matched my preferences, and the cheese pairing was divine."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Mitchell</h4>
+                            <p class="text-gray-500 text-sm">Wine Collector</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I attended the 'Women in Wine' tasting event and was thoroughly impressed. The selection showcased female winemakers from around the world, and the presentation was both educational and entertaining. The intimate setting made it easy to ask questions and connect with other attendees."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Jennifer Lopez</h4>
+                            <p class="text-gray-500 text-sm">Event Attendee</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Vineyard Lounge has become our favorite date night spot. The ambiance is sophisticated yet comfortable, and we love exploring different wines by the glass. The small plates menu is perfect for sharing, and the duck rillettes are absolutely outstanding. Highly recommend for a romantic evening!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah & Michael Thompson</h4>
+                            <p class="text-gray-500 text-sm">Regular Patrons</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Reserve Your Experience</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Secure your table at Vineyard Lounge for an exceptional wine experience.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-light rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-accent">Wine Bar Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-accent">Hours</h4>
+                            <p class="mb-1 text-gray-300">Tuesday - Thursday: 4:00 PM - 11:00 PM</p>
+                            <p class="mb-1 text-gray-300">Friday - Saturday: 3:00 PM - 1:00 AM</p>
+                            <p class="mb-1 text-gray-300">Sunday: 3:00 PM - 10:00 PM</p>
+                            <p class="mb-1 text-gray-300">Monday: Closed</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-accent">Contact</h4>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-envelope mr-2"></i> reservations@vineyardlounge.com</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-map-marker-alt mr-2"></i> 123 Wine Street, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-accent">Private Events</h4>
+                            <p class="mb-4 text-gray-300">For private events and group bookings of 8 or more, please contact our events team directly.</p>
+                            <a href="mailto:events@vineyardlounge.com" class="text-accent hover:text-secondary transition-colors duration-300">events@vineyardlounge.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7 People</option>
+                                        <option value="8">8+ People (Please Call)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="16:00">4:00 PM</option>
+                                        <option value="16:30">4:30 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-700 mb-2">Occasion (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select an occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any special requests, wine preferences, or dietary restrictions?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-accent py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve a Table</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Inquiry">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-accent py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-accent">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-accent text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Address</h4>
+                                    <p class="text-gray-300">123 Wine Street, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Phone</h4>
+                                    <p class="text-gray-300">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Email</h4>
+                                    <p class="text-gray-300">info@vineyardlounge.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Hours</h4>
+                                    <p class="text-gray-300">Tuesday - Thursday: 4:00 PM - 11:00 PM</p>
+                                    <p class="text-gray-300">Friday - Saturday: 3:00 PM - 1:00 AM</p>
+                                    <p class="text-gray-300">Sunday: 3:00 PM - 10:00 PM</p>
+                                    <p class="text-gray-300">Monday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4 text-accent">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent text-primary p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-accent text-primary p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-accent text-primary p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Wine Street, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Vineyard Lounge</h3>
+                    <p class="text-gray-400 mb-4">An elegant wine bar offering a curated selection of fine wines, artisanal cheese boards, and a sophisticated atmosphere for wine enthusiasts.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="#wines" class="text-gray-400 hover:text-accent transition-colors duration-300">Wine List</a></li>
+                        <li><a href="#food" class="text-gray-400 hover:text-accent transition-colors duration-300">Food</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-accent transition-colors duration-300">Events</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-accent transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-primary"></i> 123 Wine Street, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-primary"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-primary"></i> info@vineyardlounge.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-primary"></i> Tue-Thu: 4PM-11PM, Fri-Sat: 3PM-1AM, Sun: 3PM-10PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-accent">Wine Club</h3>
+                    <p class="text-gray-400 mb-4">Join our Wine Club for exclusive tastings, special discounts, and first access to limited releases and events.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your Email Address" class="px-4 py-2 w-full rounded-l-md focus:outline-none">
+                            <button type="submit" class="bg-primary text-accent px-4 py-2 rounded-r-md hover:bg-primary/90 transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Vineyard Lounge. All rights reserved. | Designed by <a href="#" class="text-accent">Socialite System</a></p>
+                <p class="text-gray-500 text-sm mt-2">Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

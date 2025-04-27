@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoppy Hour | Sports Pub</title>
+    <meta name="description" content="Hoppy Hour is a lively sports pub offering craft beers, classic pub fare, multiple screens for sports viewing, and a vibrant atmosphere for game days and casual gatherings.">
+    <meta name="keywords" content="sports pub, craft beer, sports bar, game day, pub food, beer garden, sports viewing, live sports">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E4D2B',
+                        secondary: '#D4AF37',
+                        accent: '#C75000',
+                        dark: '#0A2814',
+                        light: '#F5F5F5'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-primary">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display font-bold text-secondary uppercase tracking-wider">
+                Hoppy <span class="text-light">Hour</span>
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-light hover:text-secondary focus:outline-none focus:text-secondary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-light hover:text-secondary transition-colors duration-300 uppercase text-sm font-bold tracking-wider">Home</a>
+                <a href="#about" class="text-light hover:text-secondary transition-colors duration-300 uppercase text-sm font-bold tracking-wider">About</a>
+                <a href="#menu" class="text-light hover:text-secondary transition-colors duration-300 uppercase text-sm font-bold tracking-wider">Menu</a>
+                <a href="#beers" class="text-light hover:text-secondary transition-colors duration-300 uppercase text-sm font-bold tracking-wider">Beers</a>
+                <a href="#events" class="text-light hover:text-secondary transition-colors duration-300 uppercase text-sm font-bold tracking-wider">Events</a>
+                <a href="#gallery" class="text-light hover:text-secondary transition-colors duration-300 uppercase text-sm font-bold tracking-wider">Gallery</a>
+                <a href="#contact" class="text-light hover:text-secondary transition-colors duration-300 uppercase text-sm font-bold tracking-wider">Contact</a>
+                <a href="#reservation" class="bg-accent text-light px-6 py-2 uppercase text-sm font-bold tracking-wider hover:bg-accent/90 transition-colors duration-300">Reserve</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1566633806327-68e152aaf26d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-dark/80"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-light uppercase">Where Great <span class="text-secondary">Sports</span> & <span class="text-secondary">Brews</span> Unite</h1>
+                <p class="text-lg text-gray-300 mb-8">Join us for the game, stay for the atmosphere. Cold craft beers, delicious pub fare, and all your favorite sports on our big screens.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#menu" class="bg-accent text-light text-center px-8 py-3 uppercase font-bold tracking-wider hover:bg-accent/90 transition-colors duration-300">View Our Menu</a>
+                    <a href="#events" class="bg-secondary text-dark text-center px-8 py-3 uppercase font-bold tracking-wider hover:bg-secondary/90 transition-colors duration-300">Upcoming Games</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-beer text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-2 uppercase">Craft Beer Selection</h3>
+                    <p class="text-gray-600">Over 30 craft beers on tap, rotating seasonal selections, and knowledgeable staff to help you find your perfect pint.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tv text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-2 uppercase">Ultimate Sports Viewing</h3>
+                    <p class="text-gray-600">20+ HD screens throughout the pub, premium sound system, and multiple viewing zones for all your favorite games.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-2 uppercase">Elevated Pub Fare</h3>
+                    <p class="text-gray-600">Classic pub favorites with a gourmet twist, made from scratch daily using fresh, locally-sourced ingredients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Our Story</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">From passionate sports fans to craft beer enthusiasts, discover how Hoppy Hour became the ultimate game day destination.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pub Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-display font-bold mb-4 uppercase">Born From Passion</h3>
+                    <p class="text-gray-600 mb-6">Hoppy Hour was founded in 2012 by former college athletes and longtime friends, Mike and Dave. After years of struggling to find the perfect place to watch games with great beer and food, they decided to create it themselves.</p>
+                    <p class="text-gray-600 mb-6">What started as a small neighborhood bar with just a few TVs has grown into the premier sports viewing destination in the city. We've expanded our space, added our outdoor beer garden, and continuously refined our craft beer selection and menu offerings.</p>
+                    <p class="text-gray-600 mb-6">Our mission remains the same: to create the ultimate gathering place for sports fans and beer enthusiasts alike, where everyone feels welcome and the energy on game day is unmatched.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>20+ HD Screens</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>30+ Craft Beers</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Outdoor Beer Garden</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span>Game Day Specials</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Pub Fare</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Classic pub favorites with a gourmet twist, perfect for sharing while watching the game.</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-light rounded-md uppercase font-bold text-sm tracking-wider">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300 uppercase font-bold text-sm tracking-wider">Starters</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300 uppercase font-bold text-sm tracking-wider">Burgers</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300 uppercase font-bold text-sm tracking-wider">Wings</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300 uppercase font-bold text-sm tracking-wider">Mains</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300 uppercase font-bold text-sm tracking-wider">Sides</button>
+            </div>
+            
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Item 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" alt="Signature Burger" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-display font-bold uppercase">The MVP Burger</h3>
+                            <span class="text-accent font-bold">$16.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Half-pound Angus beef patty, aged cheddar, applewood smoked bacon, caramelized onions, lettuce, tomato, and our signature sauce on a toasted brioche bun. Served with seasoned fries.</p>
+                        <div class="flex items-center">
+                            <span class="bg-secondary/20 text-dark text-xs font-bold px-3 py-1 rounded-full uppercase">House Favorite</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1576072446584-4a8eec0b2a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Loaded Nachos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-display font-bold uppercase">Loaded Game Day Nachos</h3>
+                            <span class="text-accent font-bold">$14.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">House-made tortilla chips topped with beer cheese sauce, seasoned ground beef, black beans, jalapeños, pico de gallo, sour cream, and guacamole. Perfect for sharing.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase">Shareable</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1536&q=80" alt="Chicken Wings" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-display font-bold uppercase">Championship Wings</h3>
+                            <span class="text-accent font-bold">$15.95</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">One pound of jumbo wings, fried crispy and tossed in your choice of sauce: Classic Buffalo, Honey BBQ, Garlic Parmesan, or our signature Hoppy Sauce. Served with celery and blue cheese dressing.</p>
+                        <div class="flex items-center">
+                            <span class="bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full uppercase">Bestseller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-light px-8 py-3 uppercase font-bold tracking-wider hover:bg-primary/90 transition-colors duration-300">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beer Section -->
+    <section id="beers" class="py-20 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Craft Beer Selection</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our rotating selection of craft beers from local breweries and around the world.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Beer Category 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-display font-bold mb-6 text-primary uppercase">On Tap</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Hoppy Hour IPA</h4>
+                                <p class="text-sm text-gray-500">House Brew - 6.8% ABV</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-accent font-bold">$7 / $9</span>
+                                <p class="text-sm text-gray-500">16oz / 20oz</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Our signature IPA brewed exclusively for us by Local Brewery. Citrus and pine notes with a balanced hoppy finish.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Riverside Amber Ale</h4>
+                                <p class="text-sm text-gray-500">Riverside Brewing - 5.5% ABV</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-accent font-bold">$6 / $8</span>
+                                <p class="text-sm text-gray-500">16oz / 20oz</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A malty amber ale with caramel notes and a subtle hop character. Smooth and easy drinking.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Foggy Mountain Hazy IPA</h4>
+                                <p class="text-sm text-gray-500">Mountain Brewing Co. - 7.2% ABV</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-accent font-bold">$7 / $9</span>
+                                <p class="text-sm text-gray-500">16oz / 20oz</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Juicy, hazy IPA with tropical fruit flavors and low bitterness. Notes of mango, pineapple, and citrus.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Victory Stout</h4>
+                                <p class="text-sm text-gray-500">Champion Brewing - 6.5% ABV</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-accent font-bold">$7 / $9</span>
+                                <p class="text-sm text-gray-500">16oz / 20oz</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Rich, creamy stout with notes of chocolate, coffee, and a hint of vanilla. Perfect for sipping.</p>
+                    </div>
+                </div>
+                
+                <!-- Beer Category 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-display font-bold mb-6 text-primary uppercase">Seasonal Selections</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Summer Citrus Wheat</h4>
+                                <p class="text-sm text-gray-500">Sunshine Brewing - 5.2% ABV</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-accent font-bold">$6 / $8</span>
+                                <p class="text-sm text-gray-500">16oz / 20oz</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Light, refreshing wheat beer with orange and lemon zest. Perfect for warm weather.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Oktoberfest Märzen</h4>
+                                <p class="text-sm text-gray-500">Bavarian Traditions - 5.8% ABV</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-accent font-bold">$7 / $9</span>
+                                <p class="text-sm text-gray-500">16oz / 20oz</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Traditional German-style amber lager with rich malt flavors and a clean, crisp finish.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Winter Spiced Ale</h4>
+                                <p class="text-sm text-gray-500">Northwoods Brewing - 7.5% ABV</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-accent font-bold">$7 / $9</span>
+                                <p class="text-sm text-gray-500">16oz / 20oz</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Warming winter ale with notes of cinnamon, nutmeg, and clove. Rich malt backbone with a subtle hop presence.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Spring Blossom Saison</h4>
+                                <p class="text-sm text-gray-500">Farmhouse Ales - 6.2% ABV</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-accent font-bold">$7 / $9</span>
+                                <p class="text-sm text-gray-500">16oz / 20oz</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Farmhouse-style saison with floral notes, light spice, and a dry finish. Brewed with local honey.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-light px-8 py-3 uppercase font-bold tracking-wider hover:bg-primary/90 transition-colors duration-300">View Full Beer List</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Upcoming Games & Events</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us for live sports, trivia nights, and special events. Reserve your table early for big games!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Football Game" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-light text-sm font-bold px-4 py-2">
+                            SAT, MAY 15
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-2 uppercase">Championship Final</h3>
+                        <p class="text-gray-600 mb-4">Join us for the biggest game of the season! We'll have special food and drink promotions throughout the event. Reserve your table early as this will sell out.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">Kickoff: 7:30 PM</span>
+                            <a href="#reservation" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Trivia Night" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-light text-sm font-bold px-4 py-2">
+                            EVERY TUESDAY
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-2 uppercase">Sports Trivia Night</h3>
+                        <p class="text-gray-600 mb-4">Test your sports knowledge with our weekly trivia competition. Form a team of up to 6 people and compete for prizes and bragging rights!</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">Starts: 8:00 PM</span>
+                            <a href="#reservation" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Beer Tasting" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-light text-sm font-bold px-4 py-2">
+                            THU, MAY 20
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-2 uppercase">Craft Beer Tasting</h3>
+                        <p class="text-gray-600 mb-4">Sample new releases from local breweries with guided tasting notes from our beer experts. Includes 6 tasting pours and appetizer pairings.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">7:00 PM - 9:00 PM</span>
+                            <a href="#reservation" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-light px-8 py-3 uppercase font-bold tracking-wider hover:bg-primary/90 transition-colors duration-300">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Pub Gallery</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our pub, from our main bar area to our outdoor beer garden and game day atmosphere.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bar Area" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pub Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" alt="Burger" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1536&q=80" alt="Wings" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Beer Flight" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Game Day" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1576072446584-4a8eec0b2a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nachos" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Beer Garden" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">What Our Fans Say</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our regular patrons about their experiences at Hoppy Hour.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Best sports bar in the city, hands down! The beer selection is incredible, and they always have every game on. I've watched three different sports simultaneously without missing any action. The MVP Burger is a must-try, and the staff knows their beer. This is my go-to spot for any big game."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mike Johnson</h4>
+                            <p class="text-gray-500 text-sm">Sports Fan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I'm not even a huge sports fan, but I love coming to Hoppy Hour for their craft beer selection and food. The beer garden is perfect on nice days, and their trivia nights are super fun. The staff is knowledgeable about their beers and always happy to offer samples before you commit to a full pint."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Williams</h4>
+                            <p class="text-gray-500 text-sm">Beer Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"We reserved the semi-private area for my brother's birthday during a big playoff game, and it was perfect! The staff was attentive, the food came out hot and delicious, and they made sure we had a great view of the game. The loaded nachos are amazing and big enough to share with a group. Will definitely be back!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Thompson</h4>
+                            <p class="text-gray-500 text-sm">Event Host</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Reserve Your Table</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Secure your spot for game day or any special event. Large groups welcome!</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-light rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-display font-bold mb-6 text-secondary uppercase">Pub Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-secondary uppercase">Hours</h4>
+                            <p class="mb-1 text-gray-300">Monday - Thursday: 11:00 AM - 12:00 AM</p>
+                            <p class="mb-1 text-gray-300">Friday - Saturday: 11:00 AM - 2:00 AM</p>
+                            <p class="mb-1 text-gray-300">Sunday: 10:00 AM - 12:00 AM</p>
+                            <p class="mb-1 text-gray-300">Kitchen closes at 11:00 PM daily</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-secondary uppercase">Contact</h4>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-envelope mr-2"></i> reservations@hoppyhour.com</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-map-marker-alt mr-2"></i> 123 Sports Avenue, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-secondary uppercase">Large Groups</h4>
+                            <p class="mb-4 text-gray-300">For groups of 10 or more, please contact us directly to arrange your reservation and discuss special accommodations.</p>
+                            <a href="mailto:events@hoppyhour.com" class="text-secondary hover:text-accent transition-colors duration-300">events@hoppyhour.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2 font-bold">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2 font-bold">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2 font-bold">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2 font-bold">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1-2 People</option>
+                                        <option value="2">3-4 People</option>
+                                        <option value="3">5-6 People</option>
+                                        <option value="4">7-9 People</option>
+                                        <option value="5">10+ People (Call for Availability)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2 font-bold">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2 font-bold">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="13:30">1:30 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="event" class="block text-gray-700 mb-2 font-bold">Event/Game (Optional)</label>
+                                <input type="text" id="event" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="e.g., Championship Final, Trivia Night">
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2 font-bold">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any special requests or seating preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-light py-3 rounded-md hover:bg-accent/90 transition-colors duration-300 uppercase font-bold tracking-wider">Reserve Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Contact Us</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-display font-bold mb-6 uppercase">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2 font-bold">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2 font-bold">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2 font-bold">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2 font-bold">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-light py-3 rounded-md hover:bg-accent/90 transition-colors duration-300 uppercase font-bold tracking-wider">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-display font-bold mb-6 text-secondary uppercase">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-secondary text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-secondary uppercase">Address</h4>
+                                    <p class="text-gray-300">123 Sports Avenue, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-secondary uppercase">Phone</h4>
+                                    <p class="text-gray-300">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-secondary uppercase">Email</h4>
+                                    <p class="text-gray-300">info@hoppyhour.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-secondary uppercase">Hours</h4>
+                                    <p class="text-gray-300">Monday - Thursday: 11:00 AM - 12:00 AM</p>
+                                    <p class="text-gray-300">Friday - Saturday: 11:00 AM - 2:00 AM</p>
+                                    <p class="text-gray-300">Sunday: 10:00 AM - 12:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4 text-secondary uppercase">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-secondary text-dark p-3 rounded-md hover:bg-secondary/90 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-secondary text-dark p-3 rounded-md hover:bg-secondary/90 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-secondary text-dark p-3 rounded-md hover:bg-secondary/90 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Sports Avenue, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-secondary uppercase">Hoppy Hour</h3>
+                    <p class="text-gray-400 mb-4">The ultimate sports pub experience with craft beers, delicious food, and the best game day atmosphere in town. Join us for sports, food, and good times!</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-secondary uppercase">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-secondary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-secondary transition-colors duration-300">About</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-secondary transition-colors duration-300">Menu</a></li>
+                        <li><a href="#beers" class="text-gray-400 hover:text-secondary transition-colors duration-300">Beers</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-secondary transition-colors duration-300">Events</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-secondary transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-secondary transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-secondary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-secondary uppercase">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 Sports Avenue, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-accent"></i> info@hoppyhour.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-accent"></i> Mon-Thu: 11AM-12AM, Fri-Sat: 11AM-2AM, Sun: 10AM-12AM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-secondary uppercase">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates on upcoming games, events, and special promotions.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your Email Address" class="px-4 py-2 w-full rounded-l-md focus:outline-none">
+                            <button type="submit" class="bg-accent text-light px-4 py-2 rounded-r-md hover:bg-accent/90 transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Hoppy Hour Sports Pub. All rights reserved. | Designed by <a href="#" class="text-secondary">Socialite System</a></p>
+                <p class="text-gray-500 text-sm mt-2">Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

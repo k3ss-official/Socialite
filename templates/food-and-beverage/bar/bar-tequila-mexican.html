@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tequila Lounge | Mexican Bar</title>
+    <meta name="description" content="Tequila Lounge offers premium tequilas, mezcals, and craft cocktails in a vibrant Mexican-inspired atmosphere with live music, authentic tapas, and a lively nightlife experience.">
+    <meta name="keywords" content="tequila bar, mezcal, mexican cocktails, margaritas, tequila tasting, tapas, mexican bar, nightlife">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E63946',
+                        secondary: '#06D6A0',
+                        accent: '#FFD166',
+                        dark: '#1A1A1A',
+                        light: '#F8F9FA'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Bebas Neue', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-dark">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display font-bold text-primary">
+                TEQUILA <span class="text-secondary">LOUNGE</span>
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-light hover:text-secondary focus:outline-none focus:text-secondary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-light hover:text-secondary transition-colors duration-300">Home</a>
+                <a href="#about" class="text-light hover:text-secondary transition-colors duration-300">About</a>
+                <a href="#tequilas" class="text-light hover:text-secondary transition-colors duration-300">Tequilas</a>
+                <a href="#cocktails" class="text-light hover:text-secondary transition-colors duration-300">Cocktails</a>
+                <a href="#tapas" class="text-light hover:text-secondary transition-colors duration-300">Tapas</a>
+                <a href="#events" class="text-light hover:text-secondary transition-colors duration-300">Events</a>
+                <a href="#contact" class="text-light hover:text-secondary transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-light px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Reserve</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1620219365994-f451e1e20fef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-dark/70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-light">EXPERIENCE THE <span class="text-primary">SPIRIT</span> OF MEXICO</h1>
+                <p class="text-lg text-gray-300 mb-8">Discover our premium selection of tequilas, mezcals, and craft cocktails in a vibrant atmosphere inspired by Mexican culture and tradition.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#tequilas" class="bg-primary text-light text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Tequilas</a>
+                    <a href="#reservation" class="bg-secondary text-dark text-center px-8 py-3 rounded-md hover:bg-secondary/90 transition-colors duration-300 font-medium">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-glass-whiskey text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Premium Tequilas</h3>
+                    <p class="text-gray-600">Explore our extensive collection of over 100 premium tequilas and mezcals, from blanco to añejo, sourced from the finest distilleries across Mexico.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cocktail text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Craft Cocktails</h3>
+                    <p class="text-gray-600">Savor our signature craft cocktails created by expert mixologists using fresh ingredients, house-made infusions, and innovative techniques.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-music text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Live Entertainment</h3>
+                    <p class="text-gray-600">Enjoy live Latin music, DJ nights, and special events in our vibrant atmosphere that captures the energy and spirit of Mexican nightlife.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Our Story</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the passion and heritage behind Tequila Lounge, where Mexican tradition meets modern mixology.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1583507171283-0d663f8416c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bar Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">The Spirit of Jalisco</h3>
+                    <p class="text-gray-600 mb-6">Tequila Lounge was founded in 2018 by Carlos Mendoza, a third-generation tequila maker from Jalisco, Mexico, and Sofia Rodriguez, an award-winning mixologist. Their vision was to create a space that celebrates the rich heritage of tequila while introducing innovative cocktails that showcase this versatile spirit.</p>
+                    <p class="text-gray-600 mb-6">Our bar features authentic décor sourced directly from Mexico, including hand-painted tiles, traditional artwork, and vintage tequila artifacts that tell the story of this iconic spirit. The warm, vibrant atmosphere is designed to transport you to the heart of Mexico, whether you're a tequila connoisseur or just beginning your journey.</p>
+                    <p class="text-gray-600 mb-6">We take pride in our carefully curated selection of tequilas and mezcals, each chosen for its quality, authenticity, and unique character. Our team regularly visits distilleries across Mexico to discover new and exceptional spirits to share with our guests. We believe in supporting traditional production methods and small-batch producers who maintain the highest standards of craftsmanship.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>100+ Premium Tequilas</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Expert Mixologists</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Authentic Mexican Tapas</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Tequila Tasting Flights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tequilas Section -->
+    <section id="tequilas" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Our Tequilas</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our extensive collection of premium tequilas and mezcals, each with its own unique character and flavor profile.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tequila Category 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Blanco Tequilas</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Don Julio Blanco</h4>
+                                <p class="text-sm text-gray-500">Highlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$14</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Crisp agave flavor with notes of citrus and black pepper. Clean, smooth finish ideal for cocktails or sipping.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Clase Azul Plata</h4>
+                                <p class="text-sm text-gray-500">Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$28</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Exceptionally smooth with sweet notes of agave, mint, and fresh herbs. Presented in a hand-painted ceramic decanter.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Fortaleza Blanco</h4>
+                                <p class="text-sm text-gray-500">Lowlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$16</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Traditional stone-crushed tequila with vibrant agave flavor, citrus, olive, and earthy mineral notes.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">El Tesoro Platinum</h4>
+                                <p class="text-sm text-gray-500">Highlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$15</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Bright, floral aroma with sweet agave flavor and hints of pepper and mint. Exceptionally pure expression.</p>
+                    </div>
+                </div>
+                
+                <!-- Tequila Category 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Reposado Tequilas</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Casamigos Reposado</h4>
+                                <p class="text-sm text-gray-500">Highlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$16</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Aged 7 months in American oak barrels. Soft caramel and cocoa notes with hints of vanilla and barrel spice.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Herradura Reposado</h4>
+                                <p class="text-sm text-gray-500">Amatitán, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$14</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Aged 11 months in American oak. Rich vanilla and butter notes with a smooth, warm finish and hints of cinnamon.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Ocho Reposado</h4>
+                                <p class="text-sm text-gray-500">Highlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$17</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Single estate tequila aged 8 weeks and 8 days. Maintains bright agave character with subtle oak influence.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Siete Leguas Reposado</h4>
+                                <p class="text-sm text-gray-500">Highlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$15</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Aged 8 months in white oak. Complex flavor profile with agave, vanilla, and subtle wood notes. Exceptionally balanced.</p>
+                    </div>
+                </div>
+                
+                <!-- Tequila Category 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Añejo Tequilas</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Don Julio Añejo</h4>
+                                <p class="text-sm text-gray-500">Highlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$18</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Aged 18 months in American white oak barrels. Rich caramel and vanilla notes with a hint of wild honey and spice.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">El Tesoro Añejo</h4>
+                                <p class="text-sm text-gray-500">Highlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$19</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Aged 2-3 years in ex-bourbon barrels. Dried fruit, chocolate, and oak flavors with a remarkably smooth finish.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Patrón Añejo</h4>
+                                <p class="text-sm text-gray-500">Highlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$17</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Aged for 12-15 months in French oak, American oak, and used bourbon barrels. Vanilla, raisin, and honey notes.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Fortaleza Añejo</h4>
+                                <p class="text-sm text-gray-500">Lowlands, Jalisco</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$22</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Aged 3 years in American oak. Complex butterscotch, citrus, and hazelnut flavors with a long, warming finish.</p>
+                    </div>
+                </div>
+                
+                <!-- Tequila Category 4 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Mezcal Selection</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Del Maguey Vida</h4>
+                                <p class="text-sm text-gray-500">Oaxaca</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$14</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Organic, artisanal mezcal with fruit aromas, honey, vanilla, and roasted agave. Gentle smoke character.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Ilegal Reposado</h4>
+                                <p class="text-sm text-gray-500">Oaxaca</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$16</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Aged 4 months in American oak. Caramel and chocolate notes balance the signature smokiness. Smooth finish.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Montelobos Espadín</h4>
+                                <p class="text-sm text-gray-500">Oaxaca</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$15</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Organic mezcal with balanced smoke, herbal notes, and citrus. Clean, crisp finish ideal for cocktails.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Mezcal Vago Elote</h4>
+                                <p class="text-sm text-gray-500">Oaxaca</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$18</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Infused with roasted corn during distillation. Sweet corn and caramel notes complement the smoky agave character.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-light px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Tequila Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cocktails Section -->
+    <section id="cocktails" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Signature Cocktails</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our handcrafted cocktails created by our expert mixologists using premium spirits, fresh ingredients, and innovative techniques.</p>
+            </div>
+            
+            <!-- Cocktail Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cocktail Item 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1556855810-ac404aa91e85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Spicy Margarita" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Spicy Jalapeño Margarita</h3>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Blanco tequila, fresh lime juice, agave nectar, and muddled jalapeño. Served with a tajin rim and a jalapeño slice. The perfect balance of spicy, sweet, and tangy.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">SIGNATURE</span>
+                            <span class="bg-secondary/20 text-secondary text-xs font-bold px-3 py-1 rounded-full">SPICY</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail Item 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smoky Mezcal Negroni" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Smoky Mezcal Negroni</h3>
+                            <span class="text-primary font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Mezcal Espadín, Campari, sweet vermouth, and a dash of chocolate bitters. Served over a large ice cube with an orange peel. A smoky twist on the classic cocktail.</p>
+                        <div class="flex items-center">
+                            <span class="bg-accent/20 text-dark text-xs font-bold px-3 py-1 rounded-full">SMOKY</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail Item 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Paloma Fresca" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Paloma Fresca</h3>
+                            <span class="text-primary font-bold">$13</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Reposado tequila, fresh grapefruit juice, lime, agave, and a splash of soda water. Garnished with a grapefruit wedge and rosemary sprig. Refreshing and citrusy.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">HOUSE FAVORITE</span>
+                            <span class="bg-secondary/20 text-secondary text-xs font-bold px-3 py-1 rounded-full">REFRESHING</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail Item 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Oaxacan Old Fashioned" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Oaxacan Old Fashioned</h3>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Añejo tequila, mezcal, agave nectar, and chocolate bitters. Served over a large ice cube with an orange peel and cinnamon stick. Rich and complex.</p>
+                        <div class="flex items-center">
+                            <span class="bg-accent/20 text-dark text-xs font-bold px-3 py-1 rounded-full">SPIRIT FORWARD</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail Item 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cucumber Jalisco" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Cucumber Jalisco</h3>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Blanco tequila, fresh cucumber, lime juice, agave nectar, and a hint of cilantro. Served over ice with a cucumber ribbon. Light and refreshing.</p>
+                        <div class="flex items-center">
+                            <span class="bg-secondary/20 text-secondary text-xs font-bold px-3 py-1 rounded-full">REFRESHING</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail Item 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1620219362282-40403ae563ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Hibiscus Margarita" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Hibiscus Margarita</h3>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Reposado tequila, house-made hibiscus syrup, fresh lime juice, and a splash of orange liqueur. Served with a salt rim and dried hibiscus flower.</p>
+                        <div class="flex items-center">
+                            <span class="bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full mr-2">SIGNATURE</span>
+                            <span class="bg-secondary/20 text-secondary text-xs font-bold px-3 py-1 rounded-full">FLORAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-light px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Cocktail Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tapas Section -->
+    <section id="tapas" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Mexican Tapas</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Enjoy our selection of authentic Mexican small plates, perfect for sharing and pairing with our tequilas and cocktails.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tapas Category 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Antojitos</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Guacamole Tradicional</h4>
+                                <p class="text-sm text-gray-500">Made fresh to order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$12</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Fresh avocados mashed with lime, cilantro, onion, and serrano chile. Served with house-made tortilla chips.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Queso Fundido</h4>
+                                <p class="text-sm text-gray-500">With chorizo or mushrooms</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$14</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Melted Oaxaca and Chihuahua cheese with your choice of chorizo or wild mushrooms. Served with warm corn tortillas.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Elote</h4>
+                                <p class="text-sm text-gray-500">Mexican street corn</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$9</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Grilled corn on the cob topped with mayo, cotija cheese, chile powder, and lime. A classic Mexican street food.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Tostadas de Tinga</h4>
+                                <p class="text-sm text-gray-500">Three per order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$13</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Crispy corn tortillas topped with chipotle-braised chicken, refried beans, lettuce, crema, and queso fresco.</p>
+                    </div>
+                </div>
+                
+                <!-- Tapas Category 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Tacos</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Tacos al Pastor</h4>
+                                <p class="text-sm text-gray-500">Three per order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$14</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Marinated pork cooked on a vertical spit, served on corn tortillas with pineapple, onion, and cilantro.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Tacos de Pescado</h4>
+                                <p class="text-sm text-gray-500">Three per order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$16</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Beer-battered fish with cabbage slaw, chipotle aioli, and pickled onions on corn tortillas. Served with lime wedges.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Tacos de Carne Asada</h4>
+                                <p class="text-sm text-gray-500">Three per order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$15</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Grilled marinated steak with onions, cilantro, and salsa verde on corn tortillas. Simple and delicious.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Tacos de Hongos</h4>
+                                <p class="text-sm text-gray-500">Three per order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$13</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Sautéed wild mushrooms with epazote, garlic, and guajillo chile. Topped with queso fresco and microgreens.</p>
+                    </div>
+                </div>
+                
+                <!-- Tapas Category 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Ceviches</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Ceviche de Camarón</h4>
+                                <p class="text-sm text-gray-500">Shrimp ceviche</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$16</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Fresh shrimp marinated in lime juice with tomato, jalapeño, cilantro, and avocado. Served with tortilla chips.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Aguachile Verde</h4>
+                                <p class="text-sm text-gray-500">Spicy shrimp ceviche</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$17</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Raw shrimp marinated in lime juice with serrano chile, cucumber, and cilantro. Served with tostadas and avocado.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Ceviche Mixto</h4>
+                                <p class="text-sm text-gray-500">Mixed seafood ceviche</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$18</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Fresh fish, shrimp, and octopus marinated in citrus with tomato, onion, cilantro, and avocado. Served with tostadas.</p>
+                    </div>
+                </div>
+                
+                <!-- Tapas Category 4 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Especialidades</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Quesadillas de Huitlacoche</h4>
+                                <p class="text-sm text-gray-500">Mexican truffle</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$14</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Corn tortillas filled with Oaxaca cheese and huitlacoche (corn fungus). Served with salsa verde and crema.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Flautas de Pollo</h4>
+                                <p class="text-sm text-gray-500">Four per order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$13</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Crispy rolled tortillas filled with shredded chicken. Topped with lettuce, crema, queso fresco, and salsa roja.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Empanadas de Chorizo</h4>
+                                <p class="text-sm text-gray-500">Three per order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$14</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Corn masa empanadas filled with chorizo and potato. Served with avocado-tomatillo salsa and queso fresco.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold">Chiles Rellenos</h4>
+                                <p class="text-sm text-gray-500">Two per order</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-primary font-bold">$15</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Poblano peppers stuffed with Oaxaca cheese, battered and fried. Served with tomato sauce and Mexican rice.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-light px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Food Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Events & Entertainment</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us for special events, live music, and tequila tastings throughout the week.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Latin Music Night" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-white text-sm font-bold px-4 py-2">
+                            FRIDAY & SATURDAY
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Latin Music Night</h3>
+                        <p class="text-gray-600 mb-4">Experience the vibrant sounds of live Latin music every Friday and Saturday night. Our talented musicians perform a mix of traditional Mexican music, salsa, cumbia, and contemporary Latin hits.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">9:00 PM - 12:00 AM</span>
+                            <a href="#reservation" class="text-secondary hover:text-secondary/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Tequila Tasting" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-white text-sm font-bold px-4 py-2">
+                            WEDNESDAY
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Tequila Tasting Experience</h3>
+                        <p class="text-gray-600 mb-4">Join our expert tequiliers for a guided tasting journey through Mexico's finest tequilas. Learn about production methods, regional differences, and proper tasting techniques while sampling premium selections.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">7:00 PM - 9:00 PM</span>
+                            <a href="#reservation" class="text-secondary hover:text-secondary/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Cocktail Masterclass" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-white text-sm font-bold px-4 py-2">
+                            SUNDAY
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Cocktail Masterclass</h3>
+                        <p class="text-gray-600 mb-4">Learn the art of crafting perfect tequila and mezcal cocktails with our expert mixologists. This hands-on class includes instruction, tastings, and the opportunity to create your own signature cocktail.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">4:00 PM - 6:00 PM</span>
+                            <a href="#reservation" class="text-secondary hover:text-secondary/80 transition-colors duration-300 inline-flex items-center font-bold">
+                                Reserve
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-light px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Our Gallery</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our bar, cocktails, events, and the vibrant atmosphere.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1620219365994-f451e1e20fef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tequila Bottles" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1583507171283-0d663f8416c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bar Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1556855810-ac404aa91e85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Spicy Margarita" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Paloma Cocktail" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Live Music" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Tequila Tasting" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mezcal Cocktail" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Cocktail Making" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our valued customers about their experiences at Tequila Lounge.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a tequila enthusiast, I've visited many bars, but Tequila Lounge stands out for its exceptional selection and knowledgeable staff. The tequila tasting experience was educational and delicious, and the bartenders are true artists who can craft the perfect cocktail based on your preferences. The atmosphere is vibrant yet comfortable, and the tapas are authentic and flavorful. A must-visit for anyone who appreciates quality spirits!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Miguel Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Tequila Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I celebrated my birthday at Tequila Lounge, and it was an unforgettable experience! The staff went above and beyond to make our night special, recommending fantastic tequilas and creating custom cocktails for our group. The live music created the perfect ambiance, and the food was delicious - especially the tacos al pastor and guacamole. The spicy jalapeño margarita is now my favorite cocktail. Can't wait to return!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sophia Martinez</h4>
+                            <p class="text-gray-500 text-sm">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I'm not typically a tequila drinker, but the cocktail masterclass at Tequila Lounge completely changed my perspective! The mixologist was passionate and knowledgeable, teaching us about different types of tequila and mezcal while guiding us through creating delicious cocktails. The atmosphere is lively and authentic, and the staff makes everyone feel welcome regardless of their tequila expertise. A great spot for both connoisseurs and newcomers!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Thompson</h4>
+                            <p class="text-gray-500 text-sm">Cocktail Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Reserve Your Table</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Book your table at Tequila Lounge for an unforgettable experience of premium tequilas, craft cocktails, and authentic Mexican tapas.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-light rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-accent">Lounge Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-accent">Hours</h4>
+                            <p class="mb-1 text-gray-300">Tuesday - Thursday: 5:00 PM - 12:00 AM</p>
+                            <p class="mb-1 text-gray-300">Friday - Saturday: 5:00 PM - 2:00 AM</p>
+                            <p class="mb-1 text-gray-300">Sunday: 4:00 PM - 11:00 PM</p>
+                            <p class="mb-1 text-gray-300">Monday: Closed</p>
+                            <p class="mb-1 text-gray-300">Kitchen closes at 11:00 PM daily</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-accent">Contact</h4>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-envelope mr-2"></i> info@tequilalounge.com</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-map-marker-alt mr-2"></i> 123 Agave Street, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-accent">Private Events</h4>
+                            <p class="mb-4 text-gray-300">We offer private event options for special occasions, including tequila tastings, cocktail classes, and full venue buyouts. Our event space can accommodate up to 50 people.</p>
+                            <a href="mailto:events@tequilalounge.com" class="text-accent hover:text-secondary transition-colors duration-300">events@tequilalounge.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5-6 People</option>
+                                        <option value="6">7-8 People</option>
+                                        <option value="7">9+ People (Call for Availability)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                        <option value="21:30">9:30 PM</option>
+                                        <option value="22:00">10:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="event" class="block text-gray-700 mb-2">Event/Occasion (Optional)</label>
+                                <select id="event" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select an event</option>
+                                    <option value="latin">Latin Music Night (Fri/Sat)</option>
+                                    <option value="tasting">Tequila Tasting (Wed)</option>
+                                    <option value="masterclass">Cocktail Masterclass (Sun)</option>
+                                    <option value="birthday">Birthday Celebration</option>
+                                    <option value="regular">Regular Dining</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any special requests or seating preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-light py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 uppercase">Contact Us</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-light py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-accent">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Address</h4>
+                                    <p class="text-gray-300">123 Agave Street, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Phone</h4>
+                                    <p class="text-gray-300">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Email</h4>
+                                    <p class="text-gray-300">info@tequilalounge.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-accent">Hours</h4>
+                                    <p class="text-gray-300">Tuesday - Thursday: 5:00 PM - 12:00 AM</p>
+                                    <p class="text-gray-300">Friday - Saturday: 5:00 PM - 2:00 AM</p>
+                                    <p class="text-gray-300">Sunday: 4:00 PM - 11:00 PM</p>
+                                    <p class="text-gray-300">Monday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4 text-accent">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Agave Street, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4 text-primary">TEQUILA <span class="text-secondary">LOUNGE</span></h3>
+                    <p class="text-gray-400 mb-4">Experience the spirit of Mexico with our premium selection of tequilas, mezcals, and craft cocktails in a vibrant atmosphere inspired by Mexican culture and tradition.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-secondary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-secondary transition-colors duration-300">About</a></li>
+                        <li><a href="#tequilas" class="text-gray-400 hover:text-secondary transition-colors duration-300">Tequilas</a></li>
+                        <li><a href="#cocktails" class="text-gray-400 hover:text-secondary transition-colors duration-300">Cocktails</a></li>
+                        <li><a href="#tapas" class="text-gray-400 hover:text-secondary transition-colors duration-300">Tapas</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-secondary transition-colors duration-300">Events</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-secondary transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-secondary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-primary"></i> 123 Agave Street, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-primary"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-primary"></i> info@tequilalounge.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-primary"></i> Tue-Thu: 5PM-12AM, Fri-Sat: 5PM-2AM, Sun: 4PM-11PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates on special events, new tequila arrivals, and exclusive promotions.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your Email Address" class="px-4 py-2 w-full rounded-l-md focus:outline-none">
+                            <button type="submit" class="bg-primary text-light px-4 py-2 rounded-r-md hover:bg-primary/90 transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Tequila Lounge. All rights reserved. | Designed by <a href="#" class="text-secondary">Socialite System</a></p>
+                <p class="text-gray-500 text-sm mt-2">Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

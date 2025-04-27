@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rustic Barrel | Craft Beer Pub</title>
+    <meta name="description" content="The Rustic Barrel offers a wide selection of craft beers, delicious pub food, and a warm, rustic atmosphere perfect for beer enthusiasts and casual diners alike.">
+    <meta name="keywords" content="craft beer pub, microbrewery, beer tasting, pub food, rustic pub, beer garden, local brews, craft beer selection">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B4513',
+                        secondary: '#D4A76A',
+                        accent: '#3E2723',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                        display: ['Oswald', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header/Navigation -->
+    <header class="relative bg-accent shadow-md">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-display text-secondary">
+                The Rustic Barrel
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-white hover:text-secondary focus:outline-none focus:text-secondary" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-white hover:text-secondary transition-colors duration-300">Home</a>
+                <a href="#about" class="text-white hover:text-secondary transition-colors duration-300">About</a>
+                <a href="#beers" class="text-white hover:text-secondary transition-colors duration-300">Our Beers</a>
+                <a href="#food" class="text-white hover:text-secondary transition-colors duration-300">Food Menu</a>
+                <a href="#events" class="text-white hover:text-secondary transition-colors duration-300">Events</a>
+                <a href="#gallery" class="text-white hover:text-secondary transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-white hover:text-secondary transition-colors duration-300">Contact</a>
+                <a href="#reservation" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors duration-300">Book a Table</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-dark/60"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display leading-tight mb-6 text-white">Craft Beer <span class="text-secondary">Paradise</span></h1>
+                <p class="text-lg text-gray-200 mb-8">Experience our handcrafted selection of local and international beers in a warm, rustic atmosphere with delicious pub fare.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#beers" class="bg-primary text-white text-center px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Explore Our Beers</a>
+                    <a href="#reservation" class="bg-white text-primary text-center px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-300 font-medium">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-beer text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">20+ Craft Beers on Tap</h3>
+                    <p class="text-gray-600">Our rotating selection features local microbreweries and international favorites, with new options added weekly.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Farm-to-Table Food</h3>
+                    <p class="text-gray-600">Our kitchen uses locally-sourced ingredients to create delicious pub classics and innovative seasonal dishes.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Weekly Events</h3>
+                    <p class="text-gray-600">Join us for trivia nights, live music, beer tastings, and special brewery showcases throughout the week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover how The Rustic Barrel became the neighborhood's favorite craft beer destination.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1577301656525-dced3dbdbd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pub Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-serif font-bold mb-4">Crafted with Passion</h3>
+                    <p class="text-gray-600 mb-6">The Rustic Barrel was founded in 2018 by longtime friends and beer enthusiasts, Jack Thompson and Mike Reynolds. After years of home brewing and exploring craft breweries across the country, they dreamed of creating a space where people could discover exceptional beers in a welcoming, unpretentious environment.</p>
+                    <p class="text-gray-600 mb-6">Our pub is housed in a renovated barrel factory from the 1920s, preserving much of the original architecture and incorporating reclaimed materials throughout the space. The exposed brick walls, wooden beams, and vintage brewing equipment create an atmosphere that honors the craft and tradition of beer making.</p>
+                    <p class="text-gray-600 mb-6">What began as a small taproom with just 8 beers has grown into a beloved community hub, featuring over 20 rotating taps, a full kitchen serving elevated pub fare, and a spacious beer garden. We've built relationships with local brewers, farmers, and artisans to create an experience that celebrates craftsmanship and community.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Local Partnerships</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Sustainable Practices</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Beer Education</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3"></i>
+                            <span>Community Focused</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beer Menu Section -->
+    <section id="beers" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Our Craft Beers</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our rotating selection of craft beers, featuring local microbreweries and international favorites.</p>
+            </div>
+            
+            <!-- Beer Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-primary text-white rounded-md">All</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">IPAs</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Stouts & Porters</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Lagers & Pilsners</button>
+                <button class="px-6 py-2 m-2 bg-light text-dark rounded-md hover:bg-gray-200 transition-colors duration-300">Sours & Wilds</button>
+            </div>
+            
+            <!-- Beer Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Beer Category 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">IPAs & Pale Ales</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Hoppy Trails IPA</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$7</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">6.8% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Our flagship IPA featuring Cascade, Citra, and Mosaic hops with notes of citrus, pine, and tropical fruit.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Hazy Daydream NEIPA</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$8</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">7.2% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A juicy, hazy New England-style IPA with low bitterness and intense flavors of mango, pineapple, and stone fruit.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Copper Canyon Amber Ale</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$6</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">5.5% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A balanced amber ale with caramel malt sweetness and a subtle hop finish. Perfect for those new to craft beer.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">West Coast Double IPA</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$9</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">8.5% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A bold, hop-forward double IPA with intense pine and citrus flavors, balanced by a solid malt backbone.</p>
+                    </div>
+                </div>
+                
+                <!-- Beer Category 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Stouts & Porters</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Midnight Velvet Stout</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$7</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">6.2% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A smooth, rich stout with notes of dark chocolate, espresso, and a hint of vanilla. Silky mouthfeel with a dry finish.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Barrel-Aged Imperial Stout</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$10</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">10.5% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Our imperial stout aged in bourbon barrels for 6 months, developing complex flavors of oak, vanilla, bourbon, and dark fruits.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Robust Porter</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$6</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">5.8% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A traditional English-style porter with roasted malt character, notes of chocolate, coffee, and a subtle smokiness.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Coconut Coffee Stout</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$8</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">7.0% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A specialty stout infused with locally roasted coffee and toasted coconut for a unique tropical twist on a classic style.</p>
+                    </div>
+                </div>
+                
+                <!-- Beer Category 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Lagers & Pilsners</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Classic Pilsner</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$6</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">5.0% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A crisp, clean German-style pilsner with noble hop character, light malt sweetness, and a refreshing dry finish.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Vienna Lager</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$6</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">5.2% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A medium-bodied amber lager with toasty malt flavors, subtle noble hop presence, and a clean, crisp finish.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Bohemian Dark Lager</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$7</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">5.5% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A Czech-style dark lager with rich malt character, hints of caramel and chocolate, but still light and drinkable.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Helles Lager</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$6</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">4.8% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A traditional Munich-style golden lager with subtle malt sweetness, delicate hop aroma, and exceptional drinkability.</p>
+                    </div>
+                </div>
+                
+                <!-- Beer Category 4 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Specialty & Seasonal</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Raspberry Sour Ale</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$8</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">5.5% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A tart and refreshing kettle sour with fresh raspberry puree, balancing sweetness and acidity perfectly.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Belgian Tripel</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$9</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">9.0% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A golden strong ale with complex fruity esters, spicy phenols, and a dry finish that hides its substantial strength.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Pumpkin Spice Ale (Seasonal)</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$7</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">6.0% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Our fall seasonal amber ale brewed with real pumpkin and a blend of warming spices including cinnamon, nutmeg, and allspice.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Barrel-Aged Barleywine</h4>
+                            <div class="flex items-center">
+                                <span class="text-primary font-bold mr-2">$11</span>
+                                <span class="bg-secondary/20 text-accent text-xs px-2 py-1 rounded">11.5% ABV</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A rich, complex English-style barleywine aged in bourbon barrels, featuring notes of toffee, dark fruits, vanilla, and oak.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">Our tap list rotates regularly. Ask your server about today's special releases and guest taps.</p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View Full Beer Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="food" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Food Menu</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our kitchen serves elevated pub classics and seasonal specials using locally-sourced ingredients.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Food Category 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Starters & Sharables</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Bavarian Pretzel Board</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Warm, house-made soft pretzels served with beer cheese, whole grain mustard, and spicy beer mustard.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Loaded Pub Fries</h4>
+                            <span class="text-primary font-bold">$12</span>
+                        </div>
+                        <p class="text-gray-600">Crispy fries topped with beer cheese sauce, bacon, green onions, jalapeños, and sour cream.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Beer-Battered Onion Rings</h4>
+                            <span class="text-primary font-bold">$10</span>
+                        </div>
+                        <p class="text-gray-600">Thick-cut onion rings in our signature IPA batter, served with smoked paprika aioli.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Charcuterie & Cheese Board</h4>
+                            <span class="text-primary font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-600">Selection of artisanal cheeses, cured meats, pickled vegetables, nuts, and house-made beer jam with crostini.</p>
+                    </div>
+                </div>
+                
+                <!-- Food Category 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Burgers & Sandwiches</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">The Rustic Burger</h4>
+                            <span class="text-primary font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600">8oz grass-fed beef patty, aged cheddar, bacon jam, lettuce, tomato, and garlic aioli on a brioche bun. Served with fries.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Stout-Braised Brisket Sandwich</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">Slow-cooked brisket in our house stout, caramelized onions, horseradish cream, and arugula on sourdough. Served with fries.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Portobello Sandwich</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Marinated and grilled portobello cap, roasted red peppers, goat cheese, arugula, and balsamic glaze on ciabatta. Served with fries.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Nashville Hot Chicken Sandwich</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">Crispy fried chicken breast tossed in Nashville hot sauce, pickles, coleslaw, and ranch on a brioche bun. Served with fries.</p>
+                    </div>
+                </div>
+                
+                <!-- Food Category 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Pub Classics</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Fish & Chips</h4>
+                            <span class="text-primary font-bold">$17</span>
+                        </div>
+                        <p class="text-gray-600">Beer-battered cod fillets with house-cut fries, malt vinegar slaw, and tartar sauce.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Shepherd's Pie</h4>
+                            <span class="text-primary font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-600">Traditional lamb and vegetable stew topped with garlic mashed potatoes and baked until golden. Served with a side salad.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Bangers & Mash</h4>
+                            <span class="text-primary font-bold">$15</span>
+                        </div>
+                        <p class="text-gray-600">House-made beer bratwurst with garlic mashed potatoes, caramelized onion gravy, and braised cabbage.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Stout Mac & Cheese</h4>
+                            <span class="text-primary font-bold">$14</span>
+                        </div>
+                        <p class="text-gray-600">Cavatappi pasta in a rich four-cheese sauce made with our house stout, topped with crispy breadcrumbs and chives.</p>
+                    </div>
+                </div>
+                
+                <!-- Food Category 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-primary">Desserts</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Chocolate Stout Cake</h4>
+                            <span class="text-primary font-bold">$8</span>
+                        </div>
+                        <p class="text-gray-600">Rich chocolate cake made with our imperial stout, topped with salted caramel sauce and vanilla ice cream.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Apple Cider Donut Holes</h4>
+                            <span class="text-primary font-bold">$7</span>
+                        </div>
+                        <p class="text-gray-600">Warm, cinnamon-sugar coated donut holes served with bourbon caramel dipping sauce.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Bread Pudding</h4>
+                            <span class="text-primary font-bold">$8</span>
+                        </div>
+                        <p class="text-gray-600">House-made bread pudding with dried fruits and nuts, served warm with whiskey cream sauce.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold">Beer Float</h4>
+                            <span class="text-primary font-bold">$9</span>
+                        </div>
+                        <p class="text-gray-600">Vanilla ice cream topped with your choice of our Chocolate Stout or Raspberry Sour Ale.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">Our menu changes seasonally to showcase the freshest local ingredients. Ask your server about daily specials.</p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Download Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Upcoming Events</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us for weekly events, special tastings, and live entertainment at The Rustic Barrel.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Trivia Night</h3>
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">WEEKLY</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Every Tuesday at 7:00 PM</h4>
+                        <p class="text-gray-600 mb-4">Test your knowledge with our weekly trivia night! Form a team of up to 6 people and compete for prizes including gift cards, merchandise, and beer vouchers. Hosted by local trivia master, Dave Johnson.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">Free Entry</span>
+                            <span class="text-gray-500">Reservations Recommended</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1562&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Live Music</h3>
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">WEEKEND</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Friday & Saturday at 8:00 PM</h4>
+                        <p class="text-gray-600 mb-4">Enjoy live performances from local musicians every weekend! Our stage features a variety of genres from acoustic folk and indie rock to jazz and blues. Check our social media for this weekend's lineup.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">No Cover Charge</span>
+                            <span class="text-gray-500">Full Menu Available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584225064785-c62a8b43d148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-serif font-bold">Brewery Showcase</h3>
+                            <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">MONTHLY</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">First Thursday of Each Month</h4>
+                        <p class="text-gray-600 mb-4">Each month we feature a different local brewery with special taps, meet-the-brewer sessions, and exclusive beer releases. Join us for tastings, brewery swag giveaways, and food pairings.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-bold">Tasting Flights Available</span>
+                            <span class="text-gray-500">6:00 PM - 9:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Gallery</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Take a visual tour of our pub, beers, food, and events at The Rustic Barrel.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pub Interior" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1577301656525-dced3dbdbd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pub Bar" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1584225064785-c62a8b43d148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Beer Tasting" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1562&q=80" alt="Live Music" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Pub Food" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1567696911980-2c295b5df157?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Beer Flight" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Trivia Night" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Burger and Beer" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our valued customers about their experiences at The Rustic Barrel.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a craft beer enthusiast, I've visited breweries and pubs all over the country, and The Rustic Barrel stands out as one of the best. Their tap list is always interesting and well-curated, with a perfect balance of approachable styles and more adventurous offerings. The staff is incredibly knowledgeable and happy to make recommendations based on your preferences. I've never had a bad beer here, and their flights are a great way to sample multiple brews. The atmosphere is exactly what you want in a pub—warm, inviting, and unpretentious. It's become my go-to spot for introducing friends to craft beer."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Thompson</h4>
+                            <p class="text-gray-500 text-sm">Beer Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I'm not even a huge beer drinker, but I love The Rustic Barrel for their amazing food and atmosphere. The loaded pub fries are addictive, and their burgers are some of the best in town. What I appreciate most is that they put as much care into their food as they do their beer. Everything is made from scratch with quality ingredients, and it shows. The staff is always friendly and attentive, and the rustic decor makes for a cozy, welcoming environment. Their outdoor beer garden is perfect for summer evenings. This place has become our family's favorite weekend spot!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Martinez</h4>
+                            <p class="text-gray-500 text-sm">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-light p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I hosted a private event at The Rustic Barrel for my company's team building day, and it was an absolute hit! The staff helped us organize a beer tasting and food pairing experience that was both educational and fun. Everyone raved about the quality of the beers and how well they complemented the food. The event space was perfect for our group of 25, and the team at The Rustic Barrel made sure everything ran smoothly. They were flexible with our schedule and accommodated all our requests. If you're looking for a unique venue for a corporate event or celebration, I highly recommend considering The Rustic Barrel!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Wilson</h4>
+                            <p class="text-gray-500 text-sm">Corporate Event Planner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Book a Table</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Reserve your table at The Rustic Barrel for a memorable craft beer and dining experience.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Pub Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Hours</h4>
+                            <p class="mb-1">Monday - Thursday: 11:00 AM - 11:00 PM</p>
+                            <p class="mb-1">Friday - Saturday: 11:00 AM - 1:00 AM</p>
+                            <p class="mb-1">Sunday: 11:00 AM - 10:00 PM</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2">Contact</h4>
+                            <p class="mb-1"><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> info@therusticbarrel.com</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> 123 Brewery Lane, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Large Parties</h4>
+                            <p class="mb-4">For parties of 10 or more, please contact us directly by phone or email to arrange your reservation.</p>
+                            <a href="mailto:events@therusticbarrel.com" class="text-secondary hover:text-white transition-colors duration-300">events@therusticbarrel.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7 People</option>
+                                        <option value="8">8 People</option>
+                                        <option value="9">9 People</option>
+                                        <option value="10+">10+ People (Call for Reservation)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-700 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="1:00">1:00 PM</option>
+                                        <option value="1:30">1:30 PM</option>
+                                        <option value="2:00">2:00 PM</option>
+                                        <option value="5:00">5:00 PM</option>
+                                        <option value="5:30">5:30 PM</option>
+                                        <option value="6:00">6:00 PM</option>
+                                        <option value="6:30">6:30 PM</option>
+                                        <option value="7:00">7:00 PM</option>
+                                        <option value="7:30">7:30 PM</option>
+                                        <option value="8:00">8:00 PM</option>
+                                        <option value="8:30">8:30 PM</option>
+                                        <option value="9:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-700 mb-2">Occasion (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select an occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Meal</option>
+                                    <option value="casual">Casual Dining</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-700 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Any dietary restrictions or seating preferences?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Reserve Now</button>
+                            <p class="text-gray-500 text-sm mt-4 text-center">Reservations recommended for evenings and weekends. For same-day reservations, please call us directly.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90 transition-colors duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>123 Brewery Lane, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@therusticbarrel.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white text-primary p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p>Monday - Thursday: 11:00 AM - 11:00 PM</p>
+                                    <p>Friday - Saturday: 11:00 AM - 1:00 AM</p>
+                                    <p>Sunday: 11:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="bg-white text-primary p-3 rounded-md hover:bg-gray-100 transition-colors duration-300"><i class="fab fa-untappd"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-300">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-gray-300">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                <p class="text-gray-700">123 Brewery Lane, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary/10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-display mb-4">Join Our Mailing List</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for updates on new beer releases, upcoming events, and exclusive offers.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-300 font-medium">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display mb-4 text-secondary">The Rustic Barrel</h3>
+                    <p class="text-gray-400 mb-4">A craft beer pub offering a wide selection of local and international beers, delicious pub fare, and a warm, rustic atmosphere perfect for beer enthusiasts and casual diners alike.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors duration-300"><i class="fab fa-untappd"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-secondary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-secondary transition-colors duration-300">About</a></li>
+                        <li><a href="#beers" class="text-gray-400 hover:text-secondary transition-colors duration-300">Our Beers</a></li>
+                        <li><a href="#food" class="text-gray-400 hover:text-secondary transition-colors duration-300">Food Menu</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-secondary transition-colors duration-300">Events</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-secondary transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-secondary transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-secondary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-secondary"></i> 123 Brewery Lane, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-secondary"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-secondary"></i> info@therusticbarrel.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-secondary"></i> Mon-Thu: 11AM-11PM, Fri-Sat: 11AM-1AM, Sun: 11AM-10PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-secondary">We Offer</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-secondary mr-2"></i> 20+ Craft Beers on Tap</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-secondary mr-2"></i> Farm-to-Table Food</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-secondary mr-2"></i> Weekly Events</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-secondary mr-2"></i> Beer Tastings</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-secondary mr-2"></i> Private Events</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-secondary mr-2"></i> Outdoor Beer Garden</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-check text-secondary mr-2"></i> Gift Cards</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 The Rustic Barrel. All rights reserved. | Designed by <a href="#" class="text-secondary">Socialite System</a></p>
+                <p class="text-gray-500 text-sm mt-2">Please drink responsibly. Must be 21+ to consume alcohol.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

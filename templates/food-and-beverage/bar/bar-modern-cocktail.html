@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Nights | Modern Cocktail Bar</title>
+    <meta name="description" content="Experience the vibrant nightlife at Neon Nights, a modern cocktail bar featuring craft cocktails, DJ nights, and a sleek, energetic atmosphere in the heart of the city.">
+    <meta name="keywords" content="cocktail bar, nightlife, craft cocktails, mixology, DJ nights, lounge, modern bar, nightclub">
+    <meta name="author" content="Socialite System">
+    <meta name="created" content="April 2025">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F0F2D',
+                        secondary: '#2D2D6D',
+                        accent: '#FF00FF',
+                        dark: '#080818',
+                        light: '#F0F0FF'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-light bg-dark">
+    <!-- Header/Navigation -->
+    <header class="relative bg-primary/80 backdrop-blur-sm fixed w-full z-50">
+        <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-wider text-accent">
+                NEON<span class="text-light">NIGHTS</span>
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button type="button" class="text-light hover:text-accent focus:outline-none focus:text-accent" aria-label="toggle menu">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Home</a>
+                <a href="#about" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">About</a>
+                <a href="#cocktails" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Cocktails</a>
+                <a href="#events" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Events</a>
+                <a href="#gallery" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Gallery</a>
+                <a href="#contact" class="text-light hover:text-accent transition-colors duration-300 uppercase text-sm tracking-wider">Contact</a>
+                <a href="#reservation" class="bg-accent text-dark px-6 py-2 uppercase text-sm tracking-wider hover:bg-accent/90 transition-colors duration-300">Reserve</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1429&q=80');">
+        <div class="absolute inset-0 bg-gradient-to-r from-dark/90 to-primary/70"></div>
+        <div class="container mx-auto px-4 relative z-10 pt-24">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-light">Experience <span class="text-accent">Nightlife</span> Reimagined</h1>
+                <p class="text-lg text-gray-300 mb-8">Craft cocktails, electric atmosphere, and unforgettable nights in the heart of the city.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#cocktails" class="bg-accent text-dark text-center px-8 py-3 uppercase tracking-wider hover:bg-accent/90 transition-colors duration-300">Explore Menu</a>
+                    <a href="#reservation" class="bg-transparent text-light border border-light text-center px-8 py-3 uppercase tracking-wider hover:bg-white/10 transition-colors duration-300">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-light animate-bounce">
+            <a href="#about" class="text-3xl"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-accent/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cocktail text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-light">Craft Cocktails</h3>
+                    <p class="text-gray-300">Expertly crafted signature cocktails using premium spirits, fresh ingredients, and innovative techniques.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-accent/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-music text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-light">Live DJ Nights</h3>
+                    <p class="text-gray-300">Featuring top DJs spinning the latest tracks and timeless classics in our state-of-the-art sound system.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-accent/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-glass-cheers text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-light">VIP Experience</h3>
+                    <p class="text-gray-300">Exclusive VIP booths and bottle service for those seeking an elevated nightlife experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">Our Story</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">Discover the vision behind Neon Nights, where mixology meets modern nightlife.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Bar Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-light">Where Nightlife Comes Alive</h3>
+                    <p class="text-gray-300 mb-6">Founded in 2020, Neon Nights was born from a vision to create a modern cocktail bar that redefines the nightlife experience. Our founders, with decades of experience in the hospitality industry, wanted to create a space where exceptional mixology, cutting-edge design, and vibrant energy converge.</p>
+                    <p class="text-gray-300 mb-6">Our bar is designed to be a sensory experience, with custom lighting that transforms throughout the evening, a sound system that delivers crystal-clear audio, and an interior that balances sleek modernity with comfortable luxury.</p>
+                    <p class="text-gray-300 mb-6">At Neon Nights, we're committed to crafting not just drinks, but memories. Whether you're sipping one of our signature cocktails at the bar, dancing to our resident DJ's beats, or enjoying an intimate conversation in our lounge area, we aim to create an atmosphere that's both electric and welcoming.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span class="text-gray-300">Premium Spirits</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span class="text-gray-300">Expert Mixologists</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span class="text-gray-300">State-of-the-art Sound</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3"></i>
+                            <span class="text-gray-300">Dynamic Atmosphere</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cocktails Section -->
+    <section id="cocktails" class="py-20 bg-gradient-to-b from-primary to-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">Signature Cocktails</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">Explore our menu of handcrafted cocktails, created by our expert mixologists using premium spirits and fresh ingredients.</p>
+            </div>
+            
+            <!-- Cocktail Categories -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="px-6 py-2 m-2 bg-accent text-dark uppercase text-sm tracking-wider">All</button>
+                <button class="px-6 py-2 m-2 bg-dark/50 text-light uppercase text-sm tracking-wider border border-accent/30 hover:border-accent transition-colors duration-300">Signatures</button>
+                <button class="px-6 py-2 m-2 bg-dark/50 text-light uppercase text-sm tracking-wider border border-accent/30 hover:border-accent transition-colors duration-300">Classics</button>
+                <button class="px-6 py-2 m-2 bg-dark/50 text-light uppercase text-sm tracking-wider border border-accent/30 hover:border-accent transition-colors duration-300">Mocktails</button>
+                <button class="px-6 py-2 m-2 bg-dark/50 text-light uppercase text-sm tracking-wider border border-accent/30 hover:border-accent transition-colors duration-300">Seasonal</button>
+            </div>
+            
+            <!-- Cocktail Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cocktail 1 -->
+                <div class="bg-dark/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-accent/20 group hover:border-accent transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Neon Dream Cocktail" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-accent text-dark text-xs font-bold px-3 py-1 rounded-full">
+                            SIGNATURE
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold text-light">Neon Dream</h3>
+                            <span class="text-accent font-bold">$16</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Gin, blue curaçao, fresh lime juice, elderflower liqueur, and a splash of prosecco. Garnished with an LED ice cube that illuminates the drink.</p>
+                        <div class="flex items-center text-gray-400 text-sm">
+                            <span class="mr-2"><i class="fas fa-fire-alt text-accent"></i> Popular</span>
+                            <span><i class="fas fa-bolt text-accent ml-3 mr-1"></i> Contains alcohol</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 2 -->
+                <div class="bg-dark/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-accent/20 group hover:border-accent transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Electric Sunset Cocktail" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-accent text-dark text-xs font-bold px-3 py-1 rounded-full">
+                            SIGNATURE
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold text-light">Electric Sunset</h3>
+                            <span class="text-accent font-bold">$18</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Mezcal, blood orange liqueur, fresh lime juice, agave nectar, and habanero bitters. Served with a smoking cinnamon stick and edible gold flakes.</p>
+                        <div class="flex items-center text-gray-400 text-sm">
+                            <span class="mr-2"><i class="fas fa-pepper-hot text-accent"></i> Spicy</span>
+                            <span><i class="fas fa-bolt text-accent ml-3 mr-1"></i> Contains alcohol</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktail 3 -->
+                <div class="bg-dark/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-accent/20 group hover:border-accent transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Midnight Mirage Cocktail" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-accent text-dark text-xs font-bold px-3 py-1 rounded-full">
+                            SIGNATURE
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold text-light">Midnight Mirage</h3>
+                            <span class="text-accent font-bold">$17</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Bourbon, blackberry liqueur, fresh lemon juice, activated charcoal, and vanilla-infused simple syrup. Topped with a blackberry and thyme smoke bubble.</p>
+                        <div class="flex items-center text-gray-400 text-sm">
+                            <span class="mr-2"><i class="fas fa-star text-accent"></i> Award-winning</span>
+                            <span><i class="fas fa-bolt text-accent ml-3 mr-1"></i> Contains alcohol</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-accent text-dark px-8 py-3 uppercase tracking-wider hover:bg-accent/90 transition-colors duration-300">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">Upcoming Events</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">Join us for special events, DJ nights, and exclusive parties throughout the week.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-primary/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-accent/20 group hover:border-accent transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="DJ Night" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <p class="text-accent text-sm font-bold uppercase tracking-wider">Friday</p>
+                                    <h3 class="text-xl font-bold text-light">Neon Beats</h3>
+                                </div>
+                                <span class="bg-accent text-dark text-xs font-bold px-3 py-1 rounded-full">10 PM - 2 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">Our resident DJ spins the latest electronic and house tracks. Featuring special drink promotions and glow accessories for all guests.</p>
+                        <a href="#" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-primary/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-accent/20 group hover:border-accent transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1575408264798-b50b252663e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80" alt="Mixology Class" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <p class="text-accent text-sm font-bold uppercase tracking-wider">Saturday</p>
+                                    <h3 class="text-xl font-bold text-light">Mixology Masterclass</h3>
+                                </div>
+                                <span class="bg-accent text-dark text-xs font-bold px-3 py-1 rounded-full">6 PM - 8 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">Learn the art of cocktail making from our expert mixologists. Includes hands-on experience creating three signature cocktails and light appetizers.</p>
+                        <a href="#" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-primary/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-accent/20 group hover:border-accent transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Live Music" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <p class="text-accent text-sm font-bold uppercase tracking-wider">Thursday</p>
+                                    <h3 class="text-xl font-bold text-light">Acoustic Sessions</h3>
+                                </div>
+                                <span class="bg-accent text-dark text-xs font-bold px-3 py-1 rounded-full">8 PM - 11 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">A more relaxed evening featuring local acoustic artists performing live. Enjoy special cocktail pairings designed to complement the music.</p>
+                        <a href="#" class="text-accent hover:text-accent/80 transition-colors duration-300 inline-flex items-center">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-accent text-dark px-8 py-3 uppercase tracking-wider hover:bg-accent/90 transition-colors duration-300">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gradient-to-b from-dark to-primary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">Gallery</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">Take a visual tour of our vibrant atmosphere, signature cocktails, and unforgettable events.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1429&q=80" alt="Bar Interior" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Signature Cocktail" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="DJ Night" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Lounge Area" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Cocktail Preparation" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1575408264798-b50b252663e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80" alt="Mixology Class" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Signature Cocktail" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="VIP Area" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-accent text-dark px-8 py-3 uppercase tracking-wider hover:bg-accent/90 transition-colors duration-300">View More Photos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">Hear from our patrons about their experiences at Neon Nights.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-dark/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-accent/20">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"The cocktails at Neon Nights are on another level! The Neon Dream is not only visually stunning but tastes incredible. The atmosphere is electric, and the staff is knowledgeable and friendly. My new favorite spot for a night out!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-light">Sophia Rodriguez</h4>
+                            <p class="text-gray-400 text-sm">Cocktail Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-dark/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-accent/20">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"I hosted my birthday celebration in the VIP section at Neon Nights and it was absolutely perfect. The bottle service was impeccable, the music was on point, and they even surprised me with a special birthday cocktail. Everyone in my group had an amazing time!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-light">James Wilson</h4>
+                            <p class="text-gray-400 text-sm">VIP Guest</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-dark/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-accent/20">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"The mixology class at Neon Nights was such a fun experience! I learned so much about the art of cocktail making and got to take home some great recipes. The instructors were passionate and made the class engaging for everyone, regardless of experience level."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-light">Emily Chen</h4>
+                            <p class="text-gray-400 text-sm">Mixology Class Participant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">Reserve Your Experience</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">Secure your table or VIP booth at Neon Nights for an unforgettable evening.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-primary/30 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-accent/20">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-bold mb-6 text-light">Bar Information</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-light">Hours</h4>
+                            <p class="mb-1 text-gray-300">Tuesday - Thursday: 6:00 PM - 1:00 AM</p>
+                            <p class="mb-1 text-gray-300">Friday - Saturday: 6:00 PM - 3:00 AM</p>
+                            <p class="mb-1 text-gray-300">Sunday: 6:00 PM - 12:00 AM</p>
+                            <p class="mb-1 text-gray-300">Monday: Closed</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-2 text-light">Contact</h4>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-envelope mr-2 text-accent"></i> reservations@neonnights.com</p>
+                            <p class="mb-1 text-gray-300"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 Nightlife Avenue, City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-light">VIP Service</h4>
+                            <p class="mb-4 text-gray-300">For VIP booth reservations and bottle service, please contact our VIP host directly.</p>
+                            <a href="#" class="text-accent hover:text-accent/80 transition-colors duration-300">vip@neonnights.com</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-12">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-300 mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-300 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-300 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light" placeholder="(123) 456-7890">
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-300 mb-2">Number of Guests</label>
+                                    <select id="guests" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light">
+                                        <option value="1">1-2 People</option>
+                                        <option value="2">3-4 People</option>
+                                        <option value="3">5-6 People</option>
+                                        <option value="4">7-8 People</option>
+                                        <option value="5">9+ People (VIP)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-300 mb-2">Date</label>
+                                    <input type="date" id="date" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-gray-300 mb-2">Time</label>
+                                    <select id="time" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light">
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                        <option value="21:30">9:30 PM</option>
+                                        <option value="22:00">10:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="occasion" class="block text-gray-300 mb-2">Occasion (Optional)</label>
+                                <select id="occasion" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light">
+                                    <option value="">Select an occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="bachelor">Bachelor/Bachelorette</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="special-requests" class="block text-gray-300 mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="3" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light" placeholder="Any special requests or additional information?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-dark py-3 uppercase tracking-wider hover:bg-accent/90 transition-colors duration-300 font-bold">Request Reservation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-primary to-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">Contact Us</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row bg-dark/50 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-accent/20">
+                    <div class="md:w-1/2 p-12">
+                        <h3 class="text-2xl font-bold mb-6 text-light">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="contact-name" class="block text-gray-300 mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light" placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-email" class="block text-gray-300 mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-300 mb-2">Subject</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light" placeholder="Feedback">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-300 mb-2">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 bg-dark/50 border border-accent/30 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-dark py-3 uppercase tracking-wider hover:bg-accent/90 transition-colors duration-300 font-bold">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-primary p-12 text-white">
+                        <h3 class="text-2xl font-bold mb-6 text-light">Find Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-light">Address</h4>
+                                    <p class="text-gray-300">123 Nightlife Avenue, City, Country</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-light">Phone</h4>
+                                    <p class="text-gray-300">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-light">Email</h4>
+                                    <p class="text-gray-300">info@neonnights.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent text-dark p-3 rounded-md mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1 text-light">Hours</h4>
+                                    <p class="text-gray-300">Tuesday - Thursday: 6:00 PM - 1:00 AM</p>
+                                    <p class="text-gray-300">Friday - Saturday: 6:00 PM - 3:00 AM</p>
+                                    <p class="text-gray-300">Sunday: 6:00 PM - 12:00 AM</p>
+                                    <p class="text-gray-300">Monday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4 text-light">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="bg-accent text-dark p-3 rounded-md hover:bg-accent/90 transition-colors duration-300"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-dark">
+        <!-- Map placeholder - In a real implementation, this would be replaced with an actual map -->
+        <div class="h-full flex items-center justify-center bg-dark">
+            <div class="text-center">
+                <i class="fas fa-map-marked-alt text-5xl text-accent mb-4"></i>
+                <p class="text-gray-300">123 Nightlife Avenue, City, Country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-light">Neon Nights</h3>
+                    <p class="text-gray-400 mb-4">A modern cocktail bar featuring craft cocktails, DJ nights, and a vibrant atmosphere in the heart of the city.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-light">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="#cocktails" class="text-gray-400 hover:text-accent transition-colors duration-300">Cocktails</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-accent transition-colors duration-300">Events</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-accent transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-accent transition-colors duration-300">Reservation</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-light">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 123 Nightlife Avenue, City, Country</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2 text-accent"></i> (123) 456-7890</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-accent"></i> info@neonnights.com</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2 text-accent"></i> Tue-Thu: 6PM-1AM, Fri-Sat: 6PM-3AM, Sun: 6PM-12AM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-light">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates on events, special promotions, and exclusive offers.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your Email Address" class="px-4 py-2 w-full bg-dark/50 border border-accent/30 rounded-l-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-light">
+                            <button type="submit" class="bg-accent text-dark px-4 py-2 rounded-r-md hover:bg-accent/90 transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Neon Nights. All rights reserved. | Designed by <a href="#" class="text-accent">Socialite System</a></p>
+                <p class="text-gray-500 text-sm mt-2">Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="fixed bottom-8 right-8 bg-accent text-dark p-3 rounded-full shadow-lg hover:bg-accent/90 transition-colors duration-300">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+</body>
+</html>
