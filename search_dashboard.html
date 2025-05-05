@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialite - Search Clients</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Search Dashboard HTML -->
+    <div class="search-dashboard">
+      <header class="dashboard-header">
+        <h1 class="site-title">SOCIALITE</h1>
+        <p class="site-subtitle">Let's Find Some Clients</p>
+      </header>
+      
+      <div class="search-container">
+        <div class="search-bar-container">
+          <input type="text" class="search-input" placeholder="Search for local businesses...">
+          <button class="search-button">Search</button>
+        </div>
+        
+        <div class="search-results-container">
+          <div class="search-result" data-has-facebook="true">
+            <div class="result-info">
+              <h3 class="result-title">Mountain View Hotel</h3>
+              <p class="result-address">123 Lakeside, Pokhara, Nepal</p>
+              <p class="result-phone">+977 61-123456</p>
+            </div>
+            <div class="result-actions">
+              <button class="build-it-button" data-business-id="mountain-view-hotel">Build It</button>
+              <button class="facebook-it-button" data-facebook-page="mountainviewhotel">Facebook It</button>
+            </div>
+          </div>
+          
+          <div class="search-result" data-has-facebook="false">
+            <div class="result-info">
+              <h3 class="result-title">Lakeside Café</h3>
+              <p class="result-address">45 Lakeside Road, Pokhara, Nepal</p>
+              <p class="result-phone">+977 61-789012</p>
+            </div>
+            <div class="result-actions">
+              <button class="build-it-button" data-business-id="lakeside-cafe">Build It</button>
+            </div>
+          </div>
+          
+          <div class="search-result" data-has-facebook="true">
+            <div class="result-info">
+              <h3 class="result-title">Himalayan Spa Retreat</h3>
+              <p class="result-address">78 Mountain View Road, Pokhara, Nepal</p>
+              <p class="result-phone">+977 61-345678</p>
+            </div>
+            <div class="result-actions">
+              <button class="build-it-button" data-business-id="himalayan-spa-retreat">Build It</button>
+              <button class="facebook-it-button" data-facebook-page="himalayanspa">Facebook It</button>
+            </div>
+          </div>
+          
+          <div class="search-result" data-has-facebook="true">
+            <div class="result-info">
+              <h3 class="result-title">Annapurna Trekking Services</h3>
+              <p class="result-address">122 Trekking Avenue, Pokhara, Nepal</p>
+              <p class="result-phone">+977 61-234567</p>
+            </div>
+            <div class="result-actions">
+              <button class="build-it-button" data-business-id="annapurna-trekking">Build It</button>
+              <button class="facebook-it-button" data-facebook-page="annapurnatrekking">Facebook It</button>
+            </div>
+          </div>
+          
+          <div class="search-result" data-has-facebook="false">
+            <div class="result-info">
+              <h3 class="result-title">Lakeside Souvenirs</h3>
+              <p class="result-address">56 Tourist Lane, Pokhara, Nepal</p>
+              <p class="result-phone">+977 61-456789</p>
+            </div>
+            <div class="result-actions">
+              <button class="build-it-button" data-business-id="lakeside-souvenirs">Build It</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
