@@ -7,37 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Login Dashboard HTML -->
     <div class="login-container">
-      <header>
-        <h1 class="site-title">SOCIALITE</h1>
-        <p class="site-subtitle">Let's Find Some Clients</p>
-      </header>
+        <div class="login-header-controls">
+            <!-- These buttons seem to be for a previewer, keeping them as per screenshots -->
+            <button class="view-button preview-control-button" data-view="web">Web</button>
+            <button class="view-button preview-control-button" data-view="tablet">Tablet</button>
+            <button class="view-button preview-control-button" data-view="iphone">iPhone</button>
+        </div>
+
+        <header class="login-main-header">
+            <h1 class="site-title-login">SOCIALITE</h1>
+        </header>
       
-      <div class="login-form-container">
-        <div class="login-form">
-          <input type="email" id="email-input" placeholder="enter email" class="login-input">
-          <button id="next-button" class="login-button">Next</button>
+        <div class="login-form-container" id="login-form-container">
+            <!-- Initial Email Input Form -->
+            <div class="login-step" id="email-step">
+                <input type="email" id="email-input" placeholder="enter email" class="login-input">
+                <button id="next-button" class="login-button-next">Next</button>
+            </div>
+            
+            <!-- Password Input Form (Initially Hidden) -->
+            <div class="login-step" id="password-step" style="display: none;">
+                <input type="password" id="password-input" placeholder="password" class="login-input">
+                <button id="login-button" class="login-button-enter">Enter</button>
+            </div>
+            
+            <!-- Recovery/Restart Options (Initially Hidden) -->
+            <div class="login-step recovery-options" id="recovery-step" style="display: none;">
+                <button id="reset-password-button" class="recovery-button">Reset password</button>
+                <button id="sign-up-button" class="recovery-button">Sign up</button>
+                <button id="restart-login-button" class="recovery-button">Restart</button>
+            </div>
         </div>
-        
-        <div class="login-error" id="login-error"></div>
-        
-        <div class="password-form" style="display: none;">
-          <input type="password" id="password-input" placeholder="password" class="login-input">
-          <button id="login-button" class="login-button">Enter</button>
-        </div>
-        
-        <div class="recovery-options" style="display: none;">
-          <button id="reset-password" class="recovery-button">Reset password</button>
-          <button id="sign-up" class="recovery-button">Sign up</button>
-        </div>
-      </div>
-      
-      <div class="responsive-view-buttons">
-        <button class="view-button" data-view="web">Web</button>
-        <button class="view-button" data-view="tablet">Tablet</button>
-        <button class="view-button" data-view="iphone">iPhone</button>
-      </div>
     </div>
 
     <script src="script.js"></script>
