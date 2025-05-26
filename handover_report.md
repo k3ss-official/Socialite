@@ -113,3 +113,52 @@ The original handover document provided guidance for future implementation:
 
 This document summarizes the state of the Socialite project based on the provided handover materials. The core front-end components have been extracted and organized. The project presents a clear concept for a business-in-a-box website builder targeting local businesses. Significant development effort is required, particularly on the backend and API integration fronts, to transition the project from its current MVP state to a fully functional platform.
 
+
+
+
+## 7. Addendum: "Magic" Build Animation UX Requirement
+
+A key user experience (UX) requirement for the **Build Dashboard** is the implementation of a "magic" or "smoke and mirrors" visual effect during the website generation and template switching processes. The objective is to create a compelling illusion that Socialite is performing a complex, on-the-fly site generation, thereby enhancing its perceived value and technological sophistication.
+
+**Detailed Explanation of the Illusion:**
+
+1.  **Initial Build from Search:**
+    *   When the user clicks the "Build It" button on the Search Dashboard for a selected business, they are automatically transitioned to the Build Dashboard.
+    *   The UI should resemble a modern development environment (e.g., a mix of Replit, Loveable.dev, Bolt.new aesthetics), with prompts/session thread on the left and a large build/preview canvas on the right.
+    *   Upon arrival at the Build Dashboard, the main canvas area (where the website preview will appear) should initially display a **large, blurred animation**. This animation should visually suggest construction, processing, or complex computations (e.g., flowing data, abstract shapes morphing, code-like elements appearing and disappearing within the blur).
+    *   This animation should persist for a noticeable duration (e.g., a few moments, potentially adjustable or appearing to last as long as the backend processing takes, or a fixed satisfying duration if backend is too fast).
+    *   After the animation completes, it should **smoothly and elegantly disintegrate or fade away**, revealing the newly generated website. The website should appear fully populated with the scraped Facebook content (text, images, contact details), a well-designed hero section, and a complete landing page structure including a contact form.
+
+2.  **Applying a New Template (from Carousel):**
+    *   When the user selects a different landing page template from the carousel in the Build Dashboard and clicks an "Apply" (or similar) button:
+    *   The canvas displaying the current website preview should again transition into the **blurred animation** described above. This reinforces the idea that Socialite is actively "rebuilding" the site with the new template.
+    *   The animation should persist for a suitable duration.
+    *   Following the animation, it should again **smoothly disintegrate**, revealing the website now beautifully rendered in the newly chosen template, with all previously scraped content appropriately re-mapped and populated.
+
+**The Intended Effect:**
+
+*   To create a strong "wow" factor and make the platform feel incredibly powerful and technologically advanced, especially during live demonstrations to potential business clients.
+*   To shift focus from the (simpler) technical reality of template population to the impressive outcome of a rapidly generated, professional-looking website.
+*   To enhance user engagement and satisfaction through a visually rich and dynamic experience.
+
+**Implementation Considerations (for Genspark):**
+
+*   **Quality of Animation:** The blurred animation needs to be high quality and convincing, not a simple static blur. It should evoke a sense of active, intelligent processing.
+*   **Timing:** The duration should feel substantial enough to imply significant work but not so long as to cause user frustration.
+*   **Smooth Transitions:** The fade-in/out or disintegration effects for the animation and the reveal of the website are critical for a polished feel.
+*   **Performance:** The animation should be optimized to run smoothly without degrading browser performance.
+
+This "magic" build sequence is considered a core part of the desired user experience for the Socialite MVP.
+
+
+
+## 8. Addendum 2: Build Dashboard Preview Canvas Behavior
+
+Further clarifying the UI/UX for the **Build Dashboard**, the **Website Preview Canvas** (which displays the live website preview and the "magic" build animation) has specific behavioral requirements:
+
+*   **Size and Prominence:** The preview canvas should occupy a significant portion of the Build Dashboard, ideally at least 50% of the available viewport width/height, to ensure the website preview and the build animation are clearly visible and impactful.
+*   **Collapsible/Expandable:** The user must have the ability to collapse and expand this preview canvas. This allows users to focus on editing tools or the session thread when needed, and then expand the canvas to see the full preview.
+*   **Default State:** The preview canvas should **default to its fully open/expanded state**, particularly when the "magic" build animation is active. This ensures the animation is showcased effectively.
+*   **Animation Adaptability:** The "magic" build animation (the blurred, busy effect) should be designed with these canvas dynamics in mind. It needs to be visually effective and maintain its impact whether the canvas is fully expanded, partially collapsed, or resized. The animation should scale gracefully and not rely on fixed-edge details that might be lost or look awkward if the canvas dimensions change.
+
+These requirements ensure a flexible and user-friendly interface for the Build Dashboard, balancing the need for a large preview area with the user's control over their workspace.

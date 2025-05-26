@@ -1,43 +1,74 @@
-# Socialite Project Status Report (May 5, 2025)
+# Socialite Project Status Report (May 14, 2025)
 
 ## Current Status
 
-*   **Handover Complete:** The project handover process is complete. All available assets (HTML, CSS, JavaScript for Login, Search, and Build dashboards) and documentation (Handover Report, extracted page content) have been processed and organized.
-*   **Repository Updated:** The GitHub repository ([https://github.com/k3ss-official/Socialite](https://github.com/k3ss-official/Socialite)) has been updated with all project files, including:
-    *   `login_dashboard.html`
-    *   `search_dashboard.html`
-    *   `build_dashboard.html`
-    *   `styles.css`
-    *   `script.js`
-    *   `handover_report.md` (Detailed documentation based on initial handover)
-    *   `docs/full_page_extract.md` (Raw content extracted from the handover site)
-*   **MVP Front-End:** The front-end components represent a Minimum Viable Product (MVP) demonstrating the core user flow and features (login simulation, business search results display, template switching, simulated Facebook content application).
-*   **Demonstration Issues:** Attempts to demonstrate the MVP using a simple Python web server and exposed ports (8000, 8080, 15732) encountered persistent connectivity issues (`ERR_EMPTY_RESPONSE`), preventing external access despite local server functionality being confirmed. This suggests potential issues with the port exposure service or network environment, rather than the project code itself.
+*   **Handover Preparation:** Project is being prepared for handover to Genspark for continued MVP development.
+*   **MVP Scope Refined:** Based on recent discussions, the MVP scope has been further refined to focus on core functionality and user experience, with some advanced features placeholder for V2.
+*   **Repository Updated:** The local project repository (`/home/ubuntu/Socialite_repo`) contains all current assets (HTML, CSS, JavaScript for Login, Search, and Build dashboards) and documentation (`handover_report.md` including "magic" animation UX, `README.md`, this `status_report.md`, and the `Genspark Creative Doc.pdf` in `documentation_references/`).
+*   **Key UI/UX Elements:**
+    *   Login Dashboard: UI/UX updated as per detailed PDF reference and user feedback.
+    *   "Magic" Build Animation: A core UX requirement for the Build Dashboard to simulate on-the-fly site generation and template switching, enhancing perceived value. User will provide SOTA video AI-generated animations for this.
 
-## Next Steps (Immediate)
+## Refined MVP Scope & Next Steps for Genspark
 
-1.  **Backend Development:** Initiate development of the backend infrastructure. This will be crucial for:
-    *   User authentication and management.
-    *   Database setup for storing user data, business information, and saved website configurations.
-    *   Creating API endpoints to handle requests from the front-end dashboards.
-2.  **Google Places API Integration:**
-    *   Obtain a Google Places API key.
-    *   Implement API calls within the backend to fetch real local business data based on search queries from the Search Dashboard.
-    *   Update the Search Dashboard front-end to display real data retrieved from the backend API, replacing the current placeholder results.
-3.  **Facebook Content Scraping (Crawl4AI):**
-    *   Set up Crawl4AI (or an alternative scraping solution) within the backend environment.
-    *   Develop a backend process triggered by the "Facebook It" button on the Search Dashboard.
-    *   Implement scraping logic to extract relevant content (profile info, about text, posts, contact details) from a target Facebook business page.
-    *   Create backend API endpoints to serve this scraped data to the Build Dashboard.
-    *   Update the Build Dashboard front-end (`script.js`) to fetch and apply real Facebook data from the backend API, replacing the current simulation.
-4.  **Refine Build Dashboard Functionality:**
-    *   Implement the actual logic for the editing tools (Text Editing, Images, Colors) to modify the website template based on user input and backend interactions.
-    *   Implement the "Save" and "Publish" functionality, requiring backend logic to store website configurations and potentially deploy static site files.
+**Core User Journey for MVP:** Find Business -> Scrape Facebook Content -> Populate Initial Template -> Basic Edit -> Swap to One Alternate Template -> Get Shareable Live Link.
 
-## Interim Goals
+1.  **Login Dashboard:**
+    *   Implement as per the refined UI/UX specifications (error handling, attempt counters, 3-button recovery options, visual fidelity to `Genspark Creative Doc.pdf`).
 
-1.  **Functional Search:** Achieve a working Search Dashboard that uses the Google Places API via the backend to display real local businesses based on user searches.
-2.  **Basic Facebook Integration:** Implement the backend scraping process and API endpoints to successfully fetch basic information from a Facebook page and display it in the Build Dashboard's Facebook Content panel.
-3.  **Content Application:** Enable the "Apply Facebook Content" button in the Build Dashboard to populate the selected website template preview with the *real* fetched Facebook data.
-4.  **Stable Demonstration/Testing Environment:** Establish a more robust development/staging environment (potentially using a proper web framework like Flask/Django/Node.js and a cloud hosting platform) to overcome the limitations encountered with the simple Python server and port exposure for reliable testing and demonstration.
+2.  **Search Dashboard:**
+    *   Integrate with Google Places API (as per Tony's work) to parse and display 5 live search results.
+    *   Ensure "Build It" button is functional for all 5 results, leading to the Build Dashboard and passing the selected business context.
 
+3.  **Build Dashboard - Initial Build & Content Scraping:**
+    *   On clicking "Build It", transition to Build Dashboard.
+    *   Implement Facebook content scraping using Crawl4AI for the chosen business (publicly available text, images, contact details).
+    *   Populate a **single, default, well-chosen static landing page template** with the scraped Facebook content.
+    *   Implement the **"Magic" Build Animation (Initial):**
+        *   Display a high-quality, blurred animation (color-matched to the default template, provided by user via SOTA video AI) suggesting site construction.
+        *   Incorporate intermittent, friendly, on-screen status updates during the animation (e.g., "Ok, we about to get BUSY!!", "Your site is in the oven!", "Oh boy, you’re gonna LOVE this!") to manage perceived wait time.
+        *   Animation smoothly disintegrates to reveal the populated default template.
+
+4.  **Build Dashboard - Basic Editing (MVP V1):**
+    *   **Text Editing:** Allow users to click on predefined editable text regions within the populated template and modify content via simple input fields or modals (not full chat-based editing for MVP V1).
+    *   **Image Replacement:** Allow users to click on predefined image placeholders and replace them with uploaded images or images from a simple selection mechanism (e.g., URL input).
+    *   **"Live Edit" Button:** Placeholder this feature. When clicked, a call-out/modal should appear stating: "Full Live Edit mode is coming in V2 - not long now!" or similar.
+    *   **Constrained Editing:** Ensure edits do not break the fundamental framework or responsiveness of the template.
+
+5.  **Build Dashboard - Template Swap (MVP V1 - Simplified):**
+    *   Provide a carousel or selection mechanism for **one alternate landing page template** (in addition to the default one).
+    *   When the user chooses to apply this alternate template:
+        *   Implement the **"Magic" Build Animation (Template Swap):**
+            *   Display a high-quality, blurred animation (color-matched to the *newly selected* alternate template, provided by user) suggesting site reconstruction.
+            *   Incorporate intermittent, friendly status updates as above.
+            *   Animation smoothly disintegrates to reveal the site content re-populated into the chosen alternate template. (Note: Since templates are pre-made with dummy content as per user clarification, this is about populating the *new* template structure with the *original* scraped Facebook data, or if simpler for MVP, re-triggering scrape & populate for the new template structure).
+
+6.  **Build Dashboard - AI-Powered "Suggest" Button:**
+    *   Placeholder this entire feature for V2. If a button is shown, it should trigger a message like: "AI Suggestions are coming in V2 - you are going to love this!".
+    *   (If any minimal AI text suggestion is considered for MVP V1, it should be limited to very simple transformations like tone adjustment, with clear UI for loading/rejection. Image AI via stock photos is a good V1 fallback if the placeholder is not preferred).
+
+7.  **Publish Button (MVP V1 - Simplified):**
+    *   Implement a "Publish" button that generates a live, shareable link to the built/edited static site (e.g., using a simple static hosting solution or temporary link generation).
+    *   The feature to email the link to the user or the business owner is deferred post-MVP.
+
+8.  **"Pitch" Tab & Automation:**
+    *   Defer this entire module to post-MVP. For MVP V1, the focus is on generating the shareable live link from the Publish button.
+
+## Key Deliverables for Genspark (in Handover ZIP):
+
+*   All current HTML, CSS, JavaScript files.
+*   `handover_report.md` (including detailed "Magic" animation UX requirements).
+*   This updated `status_report.md` (reflecting refined MVP scope).
+*   `README.md`.
+*   `Genspark Creative Doc.pdf` (in `documentation_references/`).
+*   Existing template files.
+
+## Interim Goals (for Genspark based on refined MVP):
+
+1.  **Functional Login:** Secure and working login page as per UI/UX specs.
+2.  **Functional Search & Build Trigger:** Search dashboard retrieves 5 live results; "Build It" correctly initiates the build process for the selected business.
+3.  **Core Build & "Magic" Part 1:** Facebook content scraped and populates the default template, showcased with the initial "Magic" build animation and status updates.
+4.  **Basic Editing Implemented:** Users can perform simple text and image edits on the populated default template.
+5.  **Template Swap & "Magic" Part 2:** User can switch to the one alternate template, with content re-populated, showcased with the second "Magic" build animation and status updates.
+6.  **Live Link Generation:** "Publish" button generates a shareable live link of the current site state.
+7.  **Placeholder V2 Features:** Clearly indicated placeholders for deferred features (Live Edit advanced functions, AI Suggest, full Pitch tab).
